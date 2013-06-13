@@ -126,3 +126,51 @@ input
 
 	.icon-angle-down
 		font-size: 60px
+		position: fixed
+		left: 50%
+		bottom: 300px
+		margin-left: -20px
+		cursor: pointer
+		+transition(color .5s ease)
+
+		&:hover
+			color: $orange
+
+	.frontend
+		font-size: $large
+		position: fixed
+		left: 50%
+		bottom: 180px
+		margin-left: -98px
+		border: 3px solid $white
+		padding: 10px 20px
+		cursor: pointer
+		+transition(border-color .5s ease)
+
+		&:hover
+			border-color: transparent
+
+		span
+			color: $orange
+
+	.vert-line
+		width: 1px
+		height: 100px
+		display: inline-block
+		position: fixed
+		left: 50%
+		bottom: 0
+
+		&.white
+			background: $white
+			border-left: 1px solid $white
+
+		&:before
+			content: ''
+			display: inline-block
+			width: 16px
+			height: 15px
+			background: $white
+			position: absolute
+			left: -8px
+			top: -15px
