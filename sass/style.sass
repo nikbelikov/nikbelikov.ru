@@ -91,10 +91,15 @@ input
 	a
 		color: $white
 		text-decoration: none
-		font-size: $medium
+		font-size: $normal
+		+transition(color .5s ease, border-color .5s ease)
+
+		&:hover
+			color: $orange
 
 		&#sitename
 			position: absolute
+			font-size: $medium
 
 	ul
 		list-style: none
@@ -108,14 +113,16 @@ input
 			a
 				font-size: $normal
 				border-bottom: 1px dashed $grey
-				+transition(color .5s ease, border-color .5s ease)
+				padding-bottom: 3px
 
 				&:hover
-					color: $orange
 					border-bottom: 1px dashed transparent
 
 
 
 /* Middle -----------------------------------------------------------------------------*/
 #content
-	padding: 0 0 $footer-height
+	color: $white
+
+	.icon-angle-down
+		font-size: 60px
