@@ -5,6 +5,8 @@ $min-width: 320px
 $max-width: 1170px
 $header-height: 111px
 $footer-height: 100px
+$contacts-height: 534px
+$portfolio-height: 604px
 
 // font-sizes
 $normal: 15px
@@ -19,6 +21,9 @@ $orange: #e35c23
 $dark-blue: #3f6eb4
 $light-blue: #6b91b8
 $blue: #23b8e3
+
+// other
+$parallax-amount: 150px
 
 *
 	margin: 0
@@ -63,6 +68,27 @@ input
 	background-repeat: no-repeat
 	background-position: center center
 	background-size: cover
+	+box-shadow(0 0 10px rgba(0,0,0,1))
+	+transition(top .5s ease, background-position .5s ease)
+
+	&.disabled
+		.frontend
+			border-color: transparent
+		&:after
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+
+	&.contacts
+		top: $contacts-height
+		background-position: center (-$parallax-amount)
+	&.portfolio
+		top: -$portfolio-height
+		background-position: center $parallax-amount
 
 	&.bg01
 		background-image: url(/img/bg01.jpg)
@@ -126,38 +152,45 @@ input
 
 	.icon-angle-down
 		font-size: 60px
-		position: fixed
+		position: absolute
 		left: 50%
 		bottom: 300px
 		margin-left: -20px
 		cursor: pointer
-		+transition(color .5s ease)
+		+transition(color .5s ease, bottom .5s ease)
 
 		&:hover
 			color: $orange
+			bottom: 295px
 
 	.frontend
 		font-size: $large
-		position: fixed
+		position: absolute
 		left: 50%
 		bottom: 180px
 		margin-left: -98px
 		border: 3px solid $white
 		padding: 10px 20px
 		cursor: pointer
-		+transition(border-color .5s ease)
+		+transition(border-color .5s ease, bottom .5s ease, color .5s ease)
 
 		&:hover
 			border-color: transparent
+			bottom: 175px
+			color: $orange
+
+			span
+				color: $white
 
 		span
 			color: $orange
+			+transition(color .5s ease)
 
 	.vert-line
 		width: 1px
 		height: 100px
 		display: inline-block
-		position: fixed
+		position: absolute
 		left: 50%
 		bottom: 0
 
