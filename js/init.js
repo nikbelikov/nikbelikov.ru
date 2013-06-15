@@ -1,5 +1,10 @@
 $(document).ready(function(){
 	initMenu();
+	initBg();
+});
+
+$(window).load(function(){
+	GenerateBg(false);
 });
 
 initMenu = function(){
@@ -25,5 +30,29 @@ initMenu = function(){
 		if (!$('#wrapper').hasClass('portfolio')) {
 			$('#wrapper').removeClass('contacts').addClass('portfolio');
 		}
+	});
+}
+
+function GenerateBg(timer){
+	var bg_count = 4;
+	var bg_num = Math.round(Math.random()*(bg_count-1))+1;
+
+	$('#dark').removeClass('disabled');
+
+	if (timer === true) {
+		setTimeout(function(){
+			$('#dark').addClass('disabled');
+			$('#wrapper').removeClass('bg01 bg02 bg03 bg04').addClass('bg0'+bg_num);
+		}, 500);
+	}
+	else {
+		$('#dark').addClass('disabled');
+		$('#wrapper').removeClass('bg01 bg02 bg03 bg04').addClass('bg0'+bg_num);
+	}
+}
+
+initBg = function(){
+	$('#icon-refresh').on('click', function(){
+		GenerateBg(true);
 	});
 }

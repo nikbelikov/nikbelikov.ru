@@ -58,6 +58,20 @@ img
 input
 	vertical-align: middle
 
+#dark
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	background: #000
+	z-index: 100
+	+transition(background .5s ease, z-index .5s ease)
+
+	&.disabled
+		z-index: -1
+		background: transparent
+
 #wrapper
 	width: 100%
 	min-width: $min-width
@@ -98,8 +112,6 @@ input
 		background-image: url(/img/bg03.jpg)
 	&.bg04
 		background-image: url(/img/bg04.jpg)
-	&.bg05
-		background-image: url(/img/bg05.jpg)
 
 	#main-container
 		max-width: $max-width
@@ -114,7 +126,7 @@ input
 	height: $header-height
 	padding-top: 10px
 
-	a
+	a, span
 		color: $white
 		text-decoration: none
 		font-size: $normal
@@ -136,13 +148,27 @@ input
 			float: left
 			margin: 0 20px
 
-			a
+			span
 				font-size: $normal
 				border-bottom: 1px dashed $grey
 				padding-bottom: 3px
+				cursor: pointer
 
 				&:hover
 					border-bottom: 1px dashed transparent
+
+	.icon-refresh
+		color: $white
+		opacity: 0.5
+		position: absolute
+		right: 12px
+		top: 15px
+		cursor: pointer
+		+transition(all .3s ease)
+
+		&:hover
+			opacity: 1
+			+transform(rotate(180deg))
 
 
 
