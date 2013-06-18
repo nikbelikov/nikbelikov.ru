@@ -46,17 +46,36 @@ a
 	outline: none
 	text-decoration: underline
 
-a:hover
-	text-decoration: none
+	&:hover
+		text-decoration: none
 
 p
 	margin: 0 0 18px
 
+h1
+	font-size: $large
+	text-transform: uppercase
+	margin-bottom: 30px
+
 img
 	border: none
 
-input
+input, textarea
+	width: 100%
 	vertical-align: middle
+	border: 1px solid $grey
+	font-size: $medium
+	padding: 6px 13px
+	margin-bottom: 20px
+	outline: none
+	+transition(border-color .5s ease)
+
+	&:focus
+		border: 1px solid $orange
+
+textarea
+	height: 160px
+	resize: none
 
 #dark
 	width: 100%
@@ -113,124 +132,133 @@ input
 	&.bg04
 		background-image: url(/img/bg04.jpg)
 
-	#main-container
-		max-width: $max-width
-		min-width: $min-width
-		margin: 0 auto
-		padding: 0 20px
+	#header
+		height: $header-height
+		padding-top: 10px
 
+		a, span
+			color: $white
+			text-decoration: none
+			font-size: $normal
+			+transition(color .5s ease, border-color .5s ease)
 
+			&:hover
+				color: $orange
 
-/* Header -----------------------------------------------------------------------------*/
-#header
-	height: $header-height
-	padding-top: 10px
+			&#sitename
+				position: absolute
+				font-size: $medium
 
-	a, span
-		color: $white
-		text-decoration: none
-		font-size: $normal
-		+transition(color .5s ease, border-color .5s ease)
+		ul
+			list-style: none
+			float: right
+			margin-top: 3px
 
-		&:hover
-			color: $orange
+			li
+				float: left
+				margin: 0 20px
 
-		&#sitename
+				span
+					font-size: $normal
+					border-bottom: 1px dashed $grey
+					padding-bottom: 3px
+					cursor: pointer
+
+					&:hover
+						border-bottom: 1px dashed transparent
+
+		.icon-refresh
+			color: $white
+			opacity: 0.5
 			position: absolute
-			font-size: $medium
+			right: 0
+			top: 0
+			padding: 15px
+			cursor: pointer
+			+transition(all .3s ease)
 
-	ul
-		list-style: none
-		float: right
-		margin-top: 3px
+			&:hover
+				opacity: 1
+				+transform(rotate(180deg))
 
-		li
-			float: left
-			margin: 0 20px
-
-			span
-				font-size: $normal
-				border-bottom: 1px dashed $grey
-				padding-bottom: 3px
-				cursor: pointer
-
-				&:hover
-					border-bottom: 1px dashed transparent
-
-	.icon-refresh
+	#content
 		color: $white
-		opacity: 0.5
-		position: absolute
-		right: 0
-		top: 0
-		padding: 15px
-		cursor: pointer
-		+transition(all .3s ease)
 
-		&:hover
-			opacity: 1
-			+transform(rotate(180deg))
+		.icon-angle-down
+			font-size: 60px
+			position: absolute
+			left: 50%
+			bottom: 300px
+			margin-left: -20px
+			cursor: pointer
+			+transition(color .5s ease, bottom .5s ease)
 
+			&:hover
+				color: $orange
+				bottom: 295px
 
+		.frontend
+			font-size: $large
+			position: absolute
+			left: 50%
+			bottom: 180px
+			margin-left: -98px
+			border: 3px solid $white
+			padding: 10px 20px
+			cursor: pointer
+			+transition(border-color .5s ease, bottom .5s ease, color .5s ease)
 
-/* Middle -----------------------------------------------------------------------------*/
-#content
-	color: $white
+			&:hover
+				border-color: transparent
+				bottom: 175px
+				color: $orange
 
-	.icon-angle-down
-		font-size: 60px
-		position: absolute
-		left: 50%
-		bottom: 300px
-		margin-left: -20px
-		cursor: pointer
-		+transition(color .5s ease, bottom .5s ease)
-
-		&:hover
-			color: $orange
-			bottom: 295px
-
-	.frontend
-		font-size: $large
-		position: absolute
-		left: 50%
-		bottom: 180px
-		margin-left: -98px
-		border: 3px solid $white
-		padding: 10px 20px
-		cursor: pointer
-		+transition(border-color .5s ease, bottom .5s ease, color .5s ease)
-
-		&:hover
-			border-color: transparent
-			bottom: 175px
-			color: $orange
+				span
+					color: $white
 
 			span
-				color: $white
+				color: $orange
+				+transition(color .5s ease)
 
-		span
-			color: $orange
-			+transition(color .5s ease)
-
-	.vert-line
-		width: 1px
-		height: 100px
-		display: inline-block
-		position: absolute
-		left: 50%
-		bottom: 0
-
-		&.white
-			background: $white
-			border-left: 1px solid $white
-
-		&:before
-			content: ''
+		.vert-line
+			width: 1px
+			height: 100px
 			display: inline-block
-			width: 16px
-			height: 15px
-			background: $white
 			position: absolute
-			left: -8px
-			top: -15px
+			left: 50%
+			bottom: 0
+
+			&.white
+				background: $white
+				border-left: 1px solid $white
+
+			&:before
+				content: ''
+				display: inline-block
+				width: 16px
+				height: 15px
+				background: $white
+				position: absolute
+				left: -8px
+				top: -15px
+
+.main-container
+	max-width: $max-width
+	min-width: $min-width
+	margin: 0 auto
+	padding: 0 20px
+
+#contacts
+	width: 547px
+	position: absolute
+	top: -100px
+	opacity: 0
+	+transition(opacity .5s ease, top .5s ease)
+
+	&.visible
+		opacity: 1
+		top: 0
+
+	h1
+		margin: 30px
+		float: right

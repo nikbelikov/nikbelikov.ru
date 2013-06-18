@@ -10,14 +10,16 @@ $(window).load(function(){
 initMenu = function(){
 	$('#wrapper').on('click', function(){
 		if ($(this).hasClass('contacts') || $(this).hasClass('portfolio')) {
-			$(this).removeClass('contacts portfolio disabled')
+			$(this).removeClass('contacts portfolio disabled');
+			$('#contacts').removeClass('visible');
 		}
 	});
 
 	$('#menu-contacts').on('click', function(event){
 		event.preventDefault();
 		event.stopPropagation();
-		$('#wrapper').addClass('disabled')
+		$('#contacts').addClass('visible');
+		$('#wrapper').addClass('disabled');
 		if (!$('#wrapper').hasClass('contacts')) {
 			$('#wrapper').removeClass('portfolio').addClass('contacts');
 		}
@@ -26,10 +28,14 @@ initMenu = function(){
 	$('#menu-portfolio, #icon-angle-down, #frontend').on('click', function(event){
 		event.preventDefault();
 		event.stopPropagation();
-		$('#wrapper').addClass('disabled')
+		$('#wrapper').addClass('disabled');
 		if (!$('#wrapper').hasClass('portfolio')) {
 			$('#wrapper').removeClass('contacts').addClass('portfolio');
 		}
+	});
+
+	$(document).keyup(function(e) {
+		if (e.keyCode == 27) { $('#wrapper').click(); }
 	});
 }
 
