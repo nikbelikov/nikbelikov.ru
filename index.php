@@ -31,7 +31,7 @@
 			</div>
 			<div id="map">
 				<h1>Контакты</h1>
-				<iframe width="547" height="349" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ru/?ie=UTF8&amp;t=m&amp;ll=53.917281,49.416504&amp;spn=4.516689,11.99707&amp;z=6&amp;output=embed"></iframe>
+				<iframe width="547" height="349" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ru/?ie=UTF8&amp;t=m&amp;ll=54.213861,48.405762&amp;spn=4.484577,11.99707&amp;z=6&amp;output=embed"></iframe>
 			</div>
 		</div>
 		<hr>
