@@ -37,6 +37,10 @@ initMenu = function(){
 	$(document).keyup(function(e) {
 		if (e.keyCode == 27) { $('#wrapper').click(); }
 	});
+
+	$('.close').on('click', function(){
+		$('#wrapper').click();
+	});
 }
 
 function GenerateBg(timer){

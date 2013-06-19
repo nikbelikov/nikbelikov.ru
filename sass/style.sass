@@ -5,7 +5,7 @@ $min-width: 320px
 $max-width: 1170px
 $header-height: 111px
 $footer-height: 100px
-$contacts-height: 490px
+$contacts-height: 560px
 $portfolio-height: 604px
 
 // font-sizes
@@ -79,6 +79,29 @@ h1
 img
 	border: none
 
+hr
+	border: none
+	outline: none
+	height: 1px
+	width: 100%
+	background: $orange
+	margin: 40px 0 20px
+	position: relative
+
+	&:after
+		content: ''
+		display: block
+		width: 16px
+		height: 15px
+		position: absolute
+		left: 50%
+		top: -7px
+		margin-left: -78px
+		background: $orange
+		border:
+			left: 70px solid $white
+			right: 70px solid $white
+
 input, textarea
 	width: 519px
 	vertical-align: middle
@@ -91,6 +114,10 @@ input, textarea
 
 	&:focus
 		border: 1px solid $orange
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder
+	color: $grey
 
 textarea
 	height: 160px
@@ -110,7 +137,7 @@ textarea
 		z-index: -1
 		background: transparent
 
-section#wrapper
+#wrapper
 	width: 100%
 	min-width: $min-width
 	min-height: 100%
@@ -125,7 +152,7 @@ section#wrapper
 
 	&.disabled
 		.frontend
-			border-color: transparent
+			border-color: transparent !important
 		&:after
 			content: ''
 			display: block
@@ -261,13 +288,29 @@ section#wrapper
 				left: -8px
 				top: -15px
 
-section.main-container
+.main-container
 	max-width: $max-width
 	min-width: $min-width
 	margin: 0 auto
 	padding: 0 20px
 
-section#contacts
+	.content
+		overflow: hidden
+
+.close
+	font-size: 50px
+	position: absolute
+	right: 0
+	top: 21px
+	color: $grey
+	cursor: pointer
+	+transition(all .5s ease)
+
+	&:hover
+		color: $black
+		+transform(rotate(180deg))
+
+#contacts
 	width: $max-width
 	position: absolute
 	top: -100px
@@ -303,3 +346,7 @@ section#contacts
 
 	#map
 		margin-left: 76px
+
+.copyright
+	color: $grey
+	float: right

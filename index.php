@@ -18,18 +18,24 @@
 
 <section class="main-container">
 	<section id="contacts">
-		<div id="message">
-			<h1 class="float-right">Написать мне</h1>
-			<form action="">
-				<input type="text" placeholder="Имя">
-				<input type="text" placeholder="Email">
-				<textarea placeholder="Сообщение"></textarea>
-				<a class="button" href="#"><span class="icon-comments"></span>Отправить</a>
-			</form>
+		<div class="close">&times;</div>
+		<div class="content">
+			<div id="message">
+				<h1 class="float-right">Написать мне</h1>
+				<form action="">
+					<input type="text" placeholder="ИМЯ">
+					<input type="text" placeholder="EMAIL">
+					<textarea placeholder="СООБЩЕНИЕ"></textarea>
+					<a class="button" href="#"><span class="icon-comments"></span>Отправить</a>
+				</form>
+			</div>
+			<div id="map">
+				<h1>Контакты</h1>
+				<iframe width="547" height="349" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ru/?ie=UTF8&amp;t=m&amp;ll=53.917281,49.416504&amp;spn=4.516689,11.99707&amp;z=6&amp;output=embed"></iframe>
+			</div>
 		</div>
-		<div id="map">
-			<h1>Контакты</h1>
-		</div>
+		<hr>
+		<div class="copyright"><? echo date('Y'); ?> (c) - nikbelikov.ru</div>
 	</section>
 </section>
 
