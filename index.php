@@ -20,7 +20,7 @@
 	<section id="contacts">
 		<div class="close">&times;</div>
 		<div class="content">
-			<div id="message">
+			<div id="message" class="block">
 				<h1 class="float-right">Написать мне</h1>
 				<form action="">
 					<input type="text" placeholder="ИМЯ">
@@ -29,7 +29,7 @@
 					<a class="button" href="#"><span class="icon-comments"></span>Отправить</a>
 				</form>
 			</div>
-			<div id="map">
+			<div id="map" class="block">
 				<h1>Контакты</h1>
 				<iframe width="547" height="349" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ru/?ie=UTF8&amp;t=m&amp;ll=54.213861,48.405762&amp;spn=4.484577,11.99707&amp;z=6&amp;output=embed"></iframe>
 			</div>
@@ -40,9 +40,7 @@
 </section>
 
 <section id="wrapper" class="bg01">
-
 	<section class="main-container">
-
 		<header id="header">
 			<a href="/" id="sitename">nikbelikov.ru</a>
 
@@ -62,10 +60,19 @@
 			<div id="frontend" class="frontend"><span>Front.</span>End</div>
 			<div class="vert-line white"></div>
 		</section><!-- #content-->
-
 	</section>
-
 </section><!-- #wrapper -->
+
+<section class="main-container">
+	<section id="portfolio">
+		<div class="close">&times;</div>
+		<div class="content">
+			
+		</div>
+		<hr>
+		<div class="copyright"><? echo date('Y'); ?> (c) - nikbelikov.ru</div>
+	</section>
+</section>
 
 </body>
 </html>

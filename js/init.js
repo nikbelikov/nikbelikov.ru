@@ -12,6 +12,7 @@ initMenu = function(){
 		if ($(this).hasClass('contacts') || $(this).hasClass('portfolio')) {
 			$(this).removeClass('contacts portfolio disabled');
 			$('#contacts').removeClass('visible');
+			$('#portfolio').removeClass('visible');
 		}
 	});
 
@@ -28,6 +29,7 @@ initMenu = function(){
 	$('#menu-portfolio, #icon-angle-down, #frontend').on('click', function(event){
 		event.preventDefault();
 		event.stopPropagation();
+		$('#portfolio').addClass('visible');
 		$('#wrapper').addClass('disabled');
 		if (!$('#wrapper').hasClass('portfolio')) {
 			$('#wrapper').removeClass('contacts').addClass('portfolio');
