@@ -8,15 +8,14 @@ $(window).load(function(){
 });
 
 initMenu = function(){
-	$('#wrapper').on('click', function(){
+	$('#wrapper').on('click',function(){
 		if ($(this).hasClass('contacts') || $(this).hasClass('portfolio')) {
 			$(this).removeClass('contacts portfolio disabled');
-			$('#contacts').removeClass('visible');
-			$('#portfolio').removeClass('visible');
+			$('#contacts, #portfolio').removeClass('visible');
 		}
 	});
 
-	$('#menu-contacts').on('click', function(event){
+	$('#menu-contacts').on('click',function(event){
 		event.preventDefault();
 		event.stopPropagation();
 		$('#contacts').addClass('visible');
@@ -26,7 +25,7 @@ initMenu = function(){
 		}
 	});
 
-	$('#menu-portfolio, #icon-angle-down, #frontend').on('click', function(event){
+	$('#menu-portfolio, #icon-angle-down, #frontend').on('click',function(event){
 		event.preventDefault();
 		event.stopPropagation();
 		$('#portfolio').addClass('visible');
@@ -40,7 +39,7 @@ initMenu = function(){
 		if (e.keyCode == 27) { $('#wrapper').click(); }
 	});
 
-	$('.close').on('click', function(){
+	$('.close').on('click',function(){
 		$('#wrapper').click();
 	});
 }
@@ -64,7 +63,7 @@ function GenerateBg(timer){
 }
 
 initBg = function(){
-	$('#icon-refresh').on('click', function(){
+	$('#icon-refresh').on('click',function(){
 		GenerateBg(true);
 	});
 }
