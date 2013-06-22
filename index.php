@@ -5,10 +5,12 @@
 	<title>Портфолио Николая Беликова</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
+	<link rel="stylesheet" href="/css/lib/font-awesome.min.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="/css/lib/jquery.mCustomScrollbar.css" type="text/css" media="screen, projection" />
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen, projection" />
-	<link rel="stylesheet" href="/css/libs/font-awesome.min.css" type="text/css" media="screen, projection" />
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="/js/lib/jquery.mCustomScrollbar.min.js"></script>
 	<script type="text/javascript" src="/js/init.js"></script>
 </head>
 
@@ -20,8 +22,8 @@
 	<section id="contacts">
 		<div class="close">&times;</div>
 		<div class="content">
-			<div id="message" class="block">
-				<h1 class="float-right">Написать мне</h1>
+			<div class="block">
+				<h1>Написать мне</h1>
 				<form action="">
 					<input type="text" placeholder="ИМЯ">
 					<input type="text" placeholder="EMAIL">
@@ -29,7 +31,7 @@
 					<a class="button" href="#"><span class="icon-comments"></span>Отправить</a>
 				</form>
 			</div>
-			<div id="map" class="block">
+			<div class="block">
 				<h1>Контакты</h1>
 				<iframe width="547" height="349" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ru/?ie=UTF8&amp;t=m&amp;ll=54.213861,48.405762&amp;spn=4.484577,11.99707&amp;z=6&amp;output=embed"></iframe>
 			</div>
@@ -46,9 +48,9 @@
 
 			<nav>
 				<ul>
-					<li><span id="menu-portfolio">Портфолио</span></li>
-					<li><span id="menu-blog">Блог</span></li>
-					<li><span id="menu-contacts">Контакты</span></li>
+					<li><span id="menu-portfolio">Портфолио</span>
+					<li><span id="menu-blog">Блог</span>
+					<li><span id="menu-contacts">Контакты</span>
 				</ul>
 			</nav>
 
@@ -67,7 +69,46 @@
 	<section id="portfolio">
 		<div class="close">&times;</div>
 		<div class="content">
-			
+			<div class="block">
+				<h1>PassGenius.ru</h1>
+				<span class="desc">Простой генератор паролей для iPhone</span>
+				<img src="http://placekitten.com/547/249" alt="">
+			</div>
+			<div class="block">
+				<h1>Vis-Mos.ru</h1>
+				<span class="desc">Горизонтально-направленное бурение</span>
+				<img src="http://placekitten.com/547/249" alt="">
+			</div>
+			<div class="block">
+				<h1>PassGenius.ru</h1>
+				<span class="desc">Простой генератор паролей для iPhone</span>
+				<img src="http://placekitten.com/547/249" alt="">
+			</div>
+			<div class="block">
+				<h1>Vis-Mos.ru</h1>
+				<span class="desc">Горизонтально-направленное бурение</span>
+				<img src="http://placekitten.com/547/249" alt="">
+			</div>
+			<div class="block">
+				<h1>PassGenius.ru</h1>
+				<span class="desc">Простой генератор паролей для iPhone</span>
+				<img src="http://placekitten.com/547/249" alt="">
+			</div>
+			<div class="block">
+				<h1>Vis-Mos.ru</h1>
+				<span class="desc">Горизонтально-направленное бурение</span>
+				<img src="http://placekitten.com/547/249" alt="">
+			</div>
+			<div class="block">
+				<h1>PassGenius.ru</h1>
+				<span class="desc">Простой генератор паролей для iPhone</span>
+				<img src="http://placekitten.com/547/249" alt="">
+			</div>
+			<div class="block">
+				<h1>Vis-Mos.ru</h1>
+				<span class="desc">Горизонтально-направленное бурение</span>
+				<img src="http://placekitten.com/547/249" alt="">
+			</div>
 		</div>
 		<hr>
 		<div class="copyright"><? echo date('Y'); ?> (c) - nikbelikov.ru</div>

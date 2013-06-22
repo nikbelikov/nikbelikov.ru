@@ -1,6 +1,14 @@
 $(document).ready(function(){
 	initMenu();
 	initBg();
+	$("#portfolio .content").mCustomScrollbar({
+		scrollInertia:150,
+		//autoHideScrollbar: true,
+		advanced: {
+			updateOnContentResize: true,
+			updateOnBrowserResize: true
+		}
+	});
 });
 
 $(window).load(function(){
