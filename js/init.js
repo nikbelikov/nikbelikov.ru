@@ -1,15 +1,7 @@
 $(document).ready(function(){
 	initMenu();
 	initBg();
-	$("#portfolio .content").mCustomScrollbar({
-		scrollInertia:150,
-		autoHideScrollbar: true,
-		advanced: {
-			updateOnContentResize: true,
-			updateOnBrowserResize: true
-		},
-		contentTouchScroll: true
-	});
+	initCustomScrollbar();
 });
 
 $(window).load(function(){
@@ -66,7 +58,7 @@ initMenu = function(){
 }
 
 function GenerateBg(timer){
-	var bg_count = 4;
+	var bg_count = 6;
 	var bg_num = Math.round(Math.random()*(bg_count-1))+1;
 
 	$('#dark').removeClass('disabled');
@@ -86,5 +78,17 @@ function GenerateBg(timer){
 initBg = function(){
 	$('#icon-refresh').on('click',function(){
 		GenerateBg(true);
+	});
+}
+
+initCustomScrollbar = function(){
+	$("#portfolio .content").mCustomScrollbar({
+		scrollInertia:150,
+		autoHideScrollbar: true,
+		advanced: {
+			updateOnContentResize: true,
+			updateOnBrowserResize: true
+		},
+		contentTouchScroll: true
 	});
 }
