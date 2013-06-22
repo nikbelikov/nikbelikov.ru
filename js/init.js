@@ -3,11 +3,12 @@ $(document).ready(function(){
 	initBg();
 	$("#portfolio .content").mCustomScrollbar({
 		scrollInertia:150,
-		//autoHideScrollbar: true,
+		autoHideScrollbar: true,
 		advanced: {
 			updateOnContentResize: true,
 			updateOnBrowserResize: true
-		}
+		},
+		contentTouchScroll: true
 	});
 });
 
@@ -45,6 +46,18 @@ initMenu = function(){
 
 	$(document).keyup(function(e) {
 		if (e.keyCode == 27) { $('#wrapper').click(); }
+		if (e.keyCode == 40) {
+			if (!$('#wrapper').hasClass('portfolio')) {
+				$('#wrapper').click(); $('#menu-contacts').click();
+			}
+			else { $('#wrapper').click(); }
+		}
+		if (e.keyCode == 38) {
+			if (!$('#wrapper').hasClass('contacts')) {
+				$('#wrapper').click(); $('#menu-portfolio').click();
+			}
+			else { $('#wrapper').click(); }
+		}
 	});
 
 	$('.close').on('click',function(){
