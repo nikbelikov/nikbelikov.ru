@@ -58,7 +58,7 @@ initMenu = function(){
 }
 
 function GenerateBg(timer){
-	var bg_count = 6;
+	var bg_count = 14;
 	var bg_num = Math.round(Math.random()*(bg_count-1))+1;
 
 	$('#dark').removeClass('disabled');
@@ -66,12 +66,12 @@ function GenerateBg(timer){
 	if (timer === true) {
 		setTimeout(function(){
 			$('#dark').addClass('disabled');
-			$('#wrapper').removeClass('bg01 bg02 bg03 bg04').addClass('bg0'+bg_num);
+			$('#wrapper').removeClass('bg1 bg2 bg3 bg4').addClass('bg'+bg_num);
 		}, 500);
 	}
 	else {
 		$('#dark').addClass('disabled');
-		$('#wrapper').removeClass('bg01 bg02 bg03 bg04').addClass('bg0'+bg_num);
+		$('#wrapper').removeClass('bg1 bg2 bg3 bg4').addClass('bg'+bg_num);
 	}
 }
 
