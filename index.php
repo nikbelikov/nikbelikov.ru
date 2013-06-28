@@ -5,13 +5,16 @@
 	<title>Портфолио Николая Беликова</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<link rel="stylesheet" href="/css/lib/font-awesome.min.css" type="text/css" media="screen, projection" />
-	<link rel="stylesheet" href="/css/lib/jquery.mCustomScrollbar.css" type="text/css" media="screen, projection" />
-	<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen, projection" />
+
+	<meta name="viewport" content="width=device-width>
+
+	<link rel="stylesheet" href="css/lib/font-awesome.min.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="css/lib/jquery.mCustomScrollbar.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script type="text/javascript" src="/js/lib/jquery.mCustomScrollbar.min.js"></script>
-	<script type="text/javascript" src="/js/init.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
 </head>
 
 <body>
@@ -49,7 +52,7 @@
 			<nav>
 				<ul>
 					<li><span id="menu-portfolio">Портфолио</span>
-					<li><span id="menu-blog">Блог</span>
+					<?/*<li><span id="menu-blog">Блог</span>*/?>
 					<li><span id="menu-contacts">Контакты</span>
 				</ul>
 			</nav>

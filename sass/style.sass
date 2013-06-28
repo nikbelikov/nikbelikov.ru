@@ -173,33 +173,27 @@ textarea
 		background-position: center $parallax-amount
 
 	&.bg1
-		background-image: url(/img/summer/bg1.jpg)
+		background-image: url(../img/summer/bg1.jpg)
 	&.bg2
-		background-image: url(/img/summer/bg2.jpg)
+		background-image: url(../img/summer/bg2.jpg)
 	&.bg3
-		background-image: url(/img/summer/bg3.jpg)
+		background-image: url(../img/summer/bg3.jpg)
 	&.bg4
-		background-image: url(/img/summer/bg4.jpg)
+		background-image: url(../img/summer/bg4.jpg)
 	&.bg5
-		background-image: url(/img/summer/bg5.jpg)
+		background-image: url(../img/summer/bg5.jpg)
 	&.bg6
-		background-image: url(/img/summer/bg6.jpg)
+		background-image: url(../img/summer/bg6.jpg)
 	&.bg7
-		background-image: url(/img/summer/bg7.jpg)
+		background-image: url(../img/summer/bg7.jpg)
 	&.bg8
-		background-image: url(/img/summer/bg8.jpg)
+		background-image: url(../img/summer/bg8.jpg)
 	&.bg9
-		background-image: url(/img/summer/bg9.jpg)
+		background-image: url(../img/summer/bg9.jpg)
 	&.bg10
-		background-image: url(/img/summer/bg10.jpg)
+		background-image: url(../img/summer/bg10.jpg)
 	&.bg11
-		background-image: url(/img/summer/bg11.jpg)
-	&.bg12
-		background-image: url(/img/summer/bg12.jpg)
-	&.bg13
-		background-image: url(/img/summer/bg13.jpg)
-	&.bg14
-		background-image: url(/img/summer/bg14.jpg)
+		background-image: url(../img/summer/bg11.jpg)
 
 	#header
 		height: $header-height
@@ -381,6 +375,10 @@ textarea
 		overflow: auto
 		+box-shadow(0 -20px 0 rgba(255,255,255,0.5))
 
+		.block
+			&:after
+				height: 73px
+
 .close
 	font-size: 50px
 	position: absolute
@@ -406,3 +404,6 @@ textarea
 		.block
 			width: 50%
 			margin-left: 0 !important
+
+			&:after
+				display: none !important
