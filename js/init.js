@@ -64,14 +64,15 @@ function GenerateBg(timer){
 	$('#dark').removeClass('disabled');
 
 	if (timer === true) {
+		console.log(bg_num);
 		setTimeout(function(){
 			$('#dark').addClass('disabled');
-			$('#wrapper').removeClass('bg1 bg2 bg3 bg4').addClass('bg'+bg_num);
+			$('#wrapper').attr('class', '').addClass('bg'+bg_num);
 		}, 500);
 	}
 	else {
 		$('#dark').addClass('disabled');
-		$('#wrapper').removeClass('bg1 bg2 bg3 bg4').addClass('bg'+bg_num);
+		$('#wrapper').attr('class', '').addClass('bg'+bg_num);
 	}
 }
 
