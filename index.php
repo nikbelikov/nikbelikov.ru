@@ -6,7 +6,7 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 
-	<meta name="viewport" content="width=device-width>
+	<meta name="viewport" content="width=500px, user-scalable=no">
 
 	<link rel="stylesheet" href="css/lib/font-awesome.min.css" type="text/css" media="screen, projection" />
 	<link rel="stylesheet" href="css/lib/jquery.mCustomScrollbar.css" type="text/css" media="screen, projection" />

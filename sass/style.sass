@@ -397,7 +397,7 @@ textarea
 	color: $grey
 	float: right
 
-@media (max-width: 1200px)
+/* @media (max-width: 1200px)
 	#contacts
 		width: auto
 
@@ -406,4 +406,16 @@ textarea
 			margin-left: 0 !important
 
 			&:after
-				display: none !important
+				display: none !important */
+
+@media (max-width: 640px)
+	#icon-angle-down,
+	#icon-refresh
+		display: none
+
+	#wrapper
+		#content
+			.frontend
+				bottom: 130px
+			.vert-line
+				bottom: -50px
