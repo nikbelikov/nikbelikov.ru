@@ -6,12 +6,12 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 
-	<meta name="viewport" content="width=600px, user-scalable=no">
+	<meta name="viewport" content="width=600, user-scalable=no">
 
 	<link rel="stylesheet" href="css/lib/font-awesome.min.css" type="text/css" media="screen, projection" />
 	<link rel="stylesheet" href="css/lib/jquery.mCustomScrollbar.css" type="text/css" media="screen, projection" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
-	<link rel="stylesheet" media="handheld and (orientation:landscape)" href="css/landscape.css"> 
+	<link rel="stylesheet" media="handled and (orientation:landscape)" href="css/landscape.css">
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="js/lib/jquery.mCustomScrollbar.min.js"></script>
@@ -76,42 +76,42 @@
 			<div class="block">
 				<h1>PassGenius.ru</h1>
 				<span class="desc">Простой генератор паролей для iPhone</span>
-				<img src="http://placekitten.com/547/249" alt="">
+				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>Vis-Mos.ru</h1>
 				<span class="desc">Горизонтально-направленное бурение</span>
-				<img src="http://placekitten.com/547/249" alt="">
+				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>PassGenius.ru</h1>
 				<span class="desc">Простой генератор паролей для iPhone</span>
-				<img src="http://placekitten.com/547/249" alt="">
+				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>Vis-Mos.ru</h1>
 				<span class="desc">Горизонтально-направленное бурение</span>
-				<img src="http://placekitten.com/547/249" alt="">
+				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>PassGenius.ru</h1>
 				<span class="desc">Простой генератор паролей для iPhone</span>
-				<img src="http://placekitten.com/547/249" alt="">
+				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>Vis-Mos.ru</h1>
 				<span class="desc">Горизонтально-направленное бурение</span>
-				<img src="http://placekitten.com/547/249" alt="">
+				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>PassGenius.ru</h1>
 				<span class="desc">Простой генератор паролей для iPhone</span>
-				<img src="http://placekitten.com/547/249" alt="">
+				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>Vis-Mos.ru</h1>
 				<span class="desc">Горизонтально-направленное бурение</span>
-				<img src="http://placekitten.com/547/249" alt="">
+				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
 			</div>
 		</div>
 		<hr>
