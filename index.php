@@ -6,22 +6,23 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 
-	<meta name="viewport" content="width=500px, user-scalable=no">
+	<meta name="viewport" content="width=600px, user-scalable=no">
 
 	<link rel="stylesheet" href="css/lib/font-awesome.min.css" type="text/css" media="screen, projection" />
 	<link rel="stylesheet" href="css/lib/jquery.mCustomScrollbar.css" type="text/css" media="screen, projection" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" media="handheld and (orientation:landscape)" href="css/landscape.css"> 
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="js/lib/jquery.mCustomScrollbar.min.js"></script>
 	<script type="text/javascript" src="js/init.js"></script>
 </head>
 
-<body>
+<body ontouchmove="NoElasticScroll(event);">
 
 <div id="dark"></div>
 
-<section class="main-container">
+<!-- <section class="main-container">
 	<section id="contacts">
 		<div class="close">&times;</div>
 		<div class="content">
@@ -42,7 +43,7 @@
 		<hr>
 		<div class="copyright"><? echo date('Y'); ?> (c) - nikbelikov.ru</div>
 	</section>
-</section>
+</section> -->
 
 <section id="wrapper" class="bg01">
 	<section class="main-container">
@@ -68,7 +69,7 @@
 	</section>
 </section><!-- #wrapper -->
 
-<section class="main-container">
+<section class="main-container portfolio-container">
 	<section id="portfolio">
 		<div class="close">&times;</div>
 		<div class="content">

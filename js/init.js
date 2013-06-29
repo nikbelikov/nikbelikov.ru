@@ -8,6 +8,10 @@ $(window).load(function(){
 	GenerateBg(false);
 });
 
+function NoElasticScroll(e) {
+	e.preventDefault();
+}
+
 initMenu = function(){
 	$('#wrapper').on('click',function(){
 		if ($(this).hasClass('contacts') || $(this).hasClass('portfolio')) {

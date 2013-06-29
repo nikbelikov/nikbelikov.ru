@@ -33,6 +33,7 @@ $parallax-amount: 150px
 
 html
 	height: 100%
+	overflow: hidden
 
 header, nav, section, article, aside, footer
 	display: block
@@ -397,16 +398,32 @@ textarea
 	color: $grey
 	float: right
 
-/* @media (max-width: 1200px)
-	#contacts
-		width: auto
+@media (max-width: 1200px)
+	.portfolio-container
+		padding: 0
 
-		.block
-			width: 50%
-			margin-left: 0 !important
+		#contacts, #portfolio
+			width: auto
 
-			&:after
-				display: none !important */
+			.block
+				width: 50%
+				margin-left: 0 !important
+
+				&:after
+					display: none !important
+
+				img
+					width: 100%
+
+				.desc
+					font-size: $normal
+
+			.copyright
+				margin-right: 10px
+
+	.mCustomScrollBox>.mCSB_scrollTools
+		height: 372px
+		top: 130px
 
 @media (max-width: 640px)
 	#icon-angle-down,
@@ -414,8 +431,37 @@ textarea
 		display: none
 
 	#wrapper
-		#content
-			.frontend
-				bottom: 130px
+		+box-shadow(0 0 30px rgba(0,0,0,0.5))
+
+		&.portfolio
 			.vert-line
-				bottom: -50px
+				bottom: 0 !important
+
+	nav
+		position: relative
+		right: -20px
+
+	#contacts, #portfolio
+		width: auto
+
+		.close
+			top: 11px
+
+		.block
+			width: 100% !important
+
+			h1
+				font-size: $medium
+				float: none !important
+				text-align: center
+
+			.desc
+				display: none
+
+	.mCustomScrollBox>.mCSB_scrollTools
+		height: 418px
+		top: 84px
+
+	hr
+		&:after
+			display: none
