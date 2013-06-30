@@ -193,8 +193,6 @@ textarea
 		background-image: url(../img/summer/bg9.jpg)
 	&.bg10
 		background-image: url(../img/summer/bg10.jpg)
-	&.bg11
-		background-image: url(../img/summer/bg11.jpg)
 
 	#header
 		height: $header-height
@@ -441,11 +439,8 @@ textarea
 			#sitename
 				font-size: $large !important
 
-			nav ul
-				margin-top: 50px
-
-				li span
-					font-size: $medium
+			nav ul li span
+				font-size: $medium
 
 	nav
 		position: relative
@@ -478,3 +473,14 @@ textarea
 	hr
 		&:after
 			display: none
+
+@media only screen and (orientation:landscape) and (max-width:640px)
+	#wrapper
+		top: 0 !important
+		background-position: center center !important
+
+		*
+			display: none
+
+	#contacts, #portfolio
+		display: none

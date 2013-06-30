@@ -62,7 +62,7 @@ initMenu = function(){
 }
 
 function GenerateBg(timer){
-	var bg_count = 11;
+	var bg_count = 10;
 	var bg_num = Math.round(Math.random()*(bg_count-1))+1;
 
 	$('#dark').removeClass('disabled');
