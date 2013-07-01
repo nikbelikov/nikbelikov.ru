@@ -71,7 +71,7 @@ function GenerateBg(timer){
 		setTimeout(function(){
 			$('#dark').addClass('disabled');
 			$('#wrapper').attr('class', '').addClass('bg'+bg_num);
-		}, 500);
+		}, 1000);
 	}
 	else {
 		$('#dark').addClass('disabled');
