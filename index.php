@@ -118,5 +118,7 @@
 	</section>
 </section>
 
+<img id="hidden-img" src="img/summer/bg1.jpg" alt="hidden-img">
+
 </body>
 </html>
