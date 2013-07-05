@@ -21,7 +21,7 @@
 
 <div id="dark"></div>
 
-<section class="main-container">
+<section class="main-container contacts-container">
 	<section id="contacts">
 		<div class="close">&times;</div>
 		<div class="content">
