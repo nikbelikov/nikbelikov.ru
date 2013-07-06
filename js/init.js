@@ -8,10 +8,6 @@ $(window).load(function(){
 	GenerateBg(false);
 });
 
-function NoElasticScroll(e) {
-	e.preventDefault();
-}
-
 initMenu = function(){
 	$('#wrapper').on('click',function(){
 		if ($(this).hasClass('contacts') || $(this).hasClass('portfolio')) {
@@ -76,8 +72,10 @@ function GenerateBg(timer){
 		}, 1000);
 	}
 	else {
-		$('#dark').addClass('disabled');
-		$('#wrapper').attr('class', '').addClass('bg'+bg_num);
+		setTimeout(function(){
+			$('#dark').addClass('disabled');
+			$('#wrapper').attr('class', '').addClass('bg'+bg_num);
+		}, 1000);
 	}
 }
 

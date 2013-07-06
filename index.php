@@ -8,6 +8,14 @@
 
 	<meta name="viewport" content="width=600, user-scalable=no">
 
+	<meta name="apple-mobile-web-app-title" content="@_nikbelikov" />
+
+	<link rel="apple-touch-startup-image" href="startup-image.png" />
+	<link rel="apple-touch-startup-image" href="startup-image-iphone5.png" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
+
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
+
 	<link rel="stylesheet" href="css/lib/font-awesome.min.css" type="text/css" media="screen, projection" />
 	<link rel="stylesheet" href="css/lib/jquery.mCustomScrollbar.css" type="text/css" media="screen, projection" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
@@ -17,9 +25,34 @@
 	<script type="text/javascript" src="js/init.js"></script>
 </head>
 
-<body ontouchmove="NoElasticScroll(event);">
+<body>
 
-<div id="dark"></div>
+<div id="dark">
+	<div id="preloader">
+		<div id="t1" class="blur">
+		З</div>
+		<div id="t2" class="blur">
+		а</div>
+		<div id="t3" class="blur">
+		г</div>
+		<div id="t4" class="blur">
+		р</div>
+		<div id="t5" class="blur">
+		у</div>
+		<div id="t6" class="blur">
+		з</div>
+		<div id="t7" class="blur">
+		к</div>
+		<div id="t8" class="blur">
+		а</div>
+		<div id="t9" class="blur">
+		.</div>
+		<div id="t10" class="blur">
+		.</div>
+		<div id="t11" class="blur">
+		.</div>
+	</div>
+</div>
 
 <section class="main-container contacts-container">
 	<section id="contacts">

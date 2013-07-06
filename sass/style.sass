@@ -27,9 +27,51 @@ $blue: #23b8e3
 // other
 $parallax-amount: 150px
 
+
+// mixins
+=anim-delay($delay)
+	-moz-animation-delay: $delay
+	-webkit-animation-delay: $delay
+	-ms-animation-delay: $delay
+	-o-animation-delay: $delay
+	animation-delay: $delay
+
+=keyframes($name)
+	@-webkit-keyframes #{$name}
+		@content
+	@-moz-keyframes #{$name}
+		@content
+	@-ms-keyframes #{$name}
+		@content
+	@keyframes #{$name}
+		@content
+
+=anim($name, $duration, $count, $direction)
+	-moz-animation-name: $name
+	-moz-animation-duration: $duration
+	-moz-animation-iteration-count: $count
+	-moz-animation-direction: $direction
+	-webkit-animation-name: $name
+	-webkit-animation-duration: $duration
+	-webkit-animation-iteration-count: $count
+	-webkit-animation-direction: $direction
+	-ms-animation-name: $name
+	-ms-animation-duration: $duration
+	-ms-animation-iteration-count: $count
+	-ms-animation-direction: $direction
+	-o-animation-name: $name
+	-o-animation-duration: $duration
+	-o-animation-iteration-count: $count
+	-o-animation-direction: $direction
+	animation-name: $name
+	animation-duration: $count
+	animation-iteration-count: $count
+	animation-direction: $direction
+
 *
 	margin: 0
 	padding: 0
+	-webkit-tap-highlight-color: rgba(0,0,0,0)
 
 html
 	height: 100%
@@ -113,6 +155,8 @@ input, textarea
 	padding: 6px 13px
 	margin-bottom: 20px
 	outline: none
+	+border-radius(0)
+	-webkit-appearance: none
 	+transition(border-color .5s ease)
 
 	&:focus
@@ -129,16 +173,56 @@ textarea
 #dark
 	width: 100%
 	height: 100%
-	position: absolute
+	position: fixed
 	top: 0
 	left: 0
-	background: #000
+	background: white
 	z-index: 100
 	+transition(background .5s ease, z-index .5s ease)
 
 	&.disabled
 		z-index: -1
 		background: transparent
+
+		#preloader
+			+opacity(0)
+
+	#preloader
+		width: 128px
+		position: fixed
+		top: 50%
+		left: 50%
+		margin: -15px 0 0 -64px
+
+		.blur
+			color: transparent
+			float: left
+			font-size: 25px
+			text-shadow: #e35c23 0 0 0
+			+anim(preloader, 1.95s, infinite, linear)
+
+		#t1
+			+anim-delay(0.52s)
+		#t2
+			+anim-delay(0.65s)
+		#t3
+			+anim-delay(0.78s)
+		#t4
+			+anim-delay(0.91s)
+		#t5
+			+anim-delay(1.04s)
+		#t6
+			+anim-delay(1.17s)
+		#t7
+			+anim-delay(1.3s)
+		#t8
+			+anim-delay(1.43s)
+		#t9
+			+anim-delay(1.56s)
+		#t10
+			+anim-delay(1.69s)
+		#t11
+			+anim-delay(1.82s)
 
 #wrapper
 	width: 100%
@@ -421,6 +505,9 @@ textarea
 		.copyright
 			margin-right: 10px
 
+	.close
+		right: 3%
+
 	#contacts
 		&.visible
 			width: 100%
@@ -434,9 +521,15 @@ textarea
 			h1
 				margin-right: 10%
 
-			input, textarea
-				width: 90%
-				margin: 10px 3%
+			form
+				text-align: center
+
+				input, textarea
+					width: 90%
+					margin: 10px 3%
+
+				a.button
+					margin-right: 3%
 
 	.mCustomScrollBox>.mCSB_scrollTools
 		height: 372px
@@ -467,11 +560,15 @@ textarea
 
 	#contacts, #portfolio
 		width: auto
+		+transition(opacity 0s ease)
 
 		.close
 			top: 7px
 			font-size: 60px
 			right: 10px
+
+		.icon-comments
+			display: none
 
 		.block
 			width: 100% !important
@@ -485,13 +582,21 @@ textarea
 			.desc
 				display: none
 
+	#portfolio
+		display: none
+
+		&.visible
+			display: block
+
+	#contacts input, textarea
+		margin: 7px 2% !important
+
 	.mCustomScrollBox>.mCSB_scrollTools
 		height: 433px
 		top: 69px
 
-	hr
-		&:after
-			display: none
+	hr:after
+		display: none
 
 @media only screen and (orientation:landscape) and (max-width:640px)
 	#wrapper
@@ -503,3 +608,9 @@ textarea
 
 	#contacts, #portfolio
 		display: none
+
++keyframes(preloader)
+0%
+	text-shadow: $orange 0 0 0
+100%
+	text-shadow: white 0 0 20px
