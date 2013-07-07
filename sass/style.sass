@@ -20,9 +20,9 @@ $white: #fff
 $grey: #d7d7d7
 $black: #353535
 $orange: #e35c23
+$light-blue: #23b8e3
+$blue: #6b91b8
 $dark-blue: #3f6eb4
-$light-blue: #6b91b8
-$blue: #23b8e3
 
 // other
 $parallax-amount: 150px
@@ -81,7 +81,7 @@ header, nav, section, article, aside, footer
 	display: block
 
 body
-	font: $normal Arial, Tahoma, Verdana, sans-serif
+	font: $normal Arial, Helvetica CY, Nimbus Sans L, sans-serif
 	color: $black
 	height: 100%
 	overflow: hidden
@@ -236,7 +236,7 @@ textarea
 	background-size: cover
 	z-index: 10
 	+box-shadow(0 0 10px rgba(0,0,0,1))
-	+transition(top .5s ease, background-position .5s ease)
+	+transition(all .5s ease)
 
 	&.disabled
 		.frontend
@@ -448,6 +448,27 @@ textarea
 	&.visible
 		top: 0
 
+	.social-icons
+		position: absolute
+		bottom: 0
+
+		a
+			font-size: 30px
+			margin-right: 10px
+			+transition(opacity .3s ease, top .3s ease)
+
+			&:hover
+				+opacity(0.7)
+				position: relative
+				top: -2px
+
+			&.icon-twitter
+				color: $light-blue
+			&.icon-instagram
+				color: $blue
+			&.icon-tumblr
+				color: $dark-blue
+
 #portfolio
 	bottom: -$block-displace
 
@@ -502,6 +523,9 @@ textarea
 			.desc
 				font-size: $normal
 
+		.social-icons
+			margin-left: 3%
+
 		.copyright
 			margin-right: 10px
 
@@ -536,7 +560,6 @@ textarea
 		top: 130px
 
 @media (max-width: 640px)
-	#icon-angle-down,
 	#icon-refresh
 		display: none
 
@@ -567,9 +590,6 @@ textarea
 			font-size: 60px
 			right: 10px
 
-		.icon-comments
-			display: none
-
 		.block
 			width: 100% !important
 
@@ -588,8 +608,16 @@ textarea
 		&.visible
 			display: block
 
-	#contacts input, textarea
-		margin: 7px 2% !important
+	#contacts
+		.social-icons a
+			font-size: 40px !important
+
+		input, textarea
+			margin: 7px 2% !important
+			padding: 14px 13px
+
+		a.button
+			font-size: $medium
 
 	.mCustomScrollBox>.mCSB_scrollTools
 		height: 433px
