@@ -8,7 +8,7 @@
 
 	<meta name="viewport" content="width=600, user-scalable=no">
 
-	<meta name="apple-mobile-web-app-title" content="@_nikbelikov" />
+	<meta name="apple-mobile-web-app-title" content="@_" />
 
 	<link rel="apple-touch-startup-image" href="startup-image.png" />
 	<link rel="apple-touch-startup-image" href="startup-image-iphone5.png" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
