@@ -61,7 +61,7 @@ function GenerateBg(timer){
 	var bg_count = 10;
 	var bg_num = Math.round(Math.random()*(bg_count-1))+1;
 
-	$('#hidden-img').attr('src', 'img/summer/'+bg_num+'.jpg');
+	$('#hidden-img').attr('src', 'img/summer/bg'+bg_num+'.jpg');
 
 	$('#dark').removeClass('disabled');
 

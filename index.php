@@ -27,32 +27,7 @@
 
 <body>
 
-<div id="dark">
-	<div id="preloader">
-		<div id="t1" class="blur">
-		З</div>
-		<div id="t2" class="blur">
-		а</div>
-		<div id="t3" class="blur">
-		г</div>
-		<div id="t4" class="blur">
-		р</div>
-		<div id="t5" class="blur">
-		у</div>
-		<div id="t6" class="blur">
-		з</div>
-		<div id="t7" class="blur">
-		к</div>
-		<div id="t8" class="blur">
-		а</div>
-		<div id="t9" class="blur">
-		.</div>
-		<div id="t10" class="blur">
-		.</div>
-		<div id="t11" class="blur">
-		.</div>
-	</div>
-</div>
+<div id="dark"></div>
 
 <section class="main-container contacts-container">
 	<section id="contacts">
