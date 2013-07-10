@@ -1,32 +1,78 @@
-<?php
-/**
- * The main template file.
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+		<section class="main-container contacts-container">
+			<section id="contacts">
+				<div class="close">&times;</div>
+				<div class="content">
+					<div class="block">
+						<h1>Написать мне</h1>
+						<form action="">
+							<input type="text" placeholder="ИМЯ">
+							<input type="text" placeholder="EMAIL">
+							<textarea placeholder="СООБЩЕНИЕ"></textarea>
+							<div class="social-icons">
+								<a href="https://twitter.com/_nikbelikov" class="icon-twitter" target="_blank"></a>
+								<a href="http://instagram.com/nikbelikov" class="icon-instagram" target="_blank"></a>
+								<a href="http://buknotes.tumblr.com/" class="icon-tumblr" target="_blank"></a>
+							</div>
+							<a class="button" href="#"><span class="icon-comments"></span>Отправить</a>
+						</form>
+					</div>
+					<div class="block">
+						<h1>Контакты</h1>
+						<iframe width="547" height="349" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ru/?ie=UTF8&amp;t=m&amp;ll=54.213861,48.405762&amp;spn=4.484577,11.99707&amp;z=6&amp;output=embed"></iframe>
+					</div>
+				</div>
+				<hr>
+				<div class="copyright"><? echo date('Y'); ?> (c) - nikbelikov.ru</div>
+			</section>
+		</section>
 
-		<div id="container">
-			<div id="content" role="main">
+		<section id="wrapper" class="bg01">
+			<section class="main-container">
+				<header id="header">
+					<a href="/" id="sitename">nikbelikov.ru</a>
 
-			<?php
-			/* Run the loop to output the posts.
-			 * If you want to overload this in a child theme then include a file
-			 * called loop-index.php and that will be used instead.
-			 */
-			 get_template_part( 'loop', 'index' );
-			?>
-			</div><!-- #content -->
-		</div><!-- #container -->
+					<nav>
+						<ul>
+							<li><span id="menu-portfolio">Портфолио</span>
+							<?/*<li><span id="menu-blog">Блог</span>*/?>
+							<li><span id="menu-contacts">Контакты</span>
+						</ul>
+					</nav>
 
-<?php get_sidebar(); ?>
+					<div id="icon-refresh" class="icon-refresh"></div>
+				</header><!-- #header-->
+
+				<section id="content">
+					<i id="icon-angle-down" class="icon-angle-down"></i>
+					<div id="frontend" class="frontend"><span>Front.</span>End</div>
+					<div class="vert-line white"></div>
+				</section><!-- #content-->
+			</section>
+		</section><!-- #wrapper -->
+
+		<section class="main-container portfolio-container">
+			<section id="portfolio">
+				<div class="close">&times;</div>
+				<div class="content">
+
+					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<?php if ($col == 1) echo "<div class=\"row\">"; ?>
+						<div class="block">
+							<h1><?php the_title(); ?></h1>
+							<span class="desc">Простой генератор паролей для iPhone</span>
+							<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+						</div>
+					<?php endwhile;?>
+					<?php endif; ?>
+
+				</div>
+				<hr>
+				<div class="copyright"><? echo date('Y'); ?> (c) - nikbelikov.ru</div>
+			</section>
+		</section>
+
+		<img id="hidden-img" src="img/summer/bg1.jpg" alt="hidden-img">
+
 <?php get_footer(); ?>
