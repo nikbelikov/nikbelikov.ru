@@ -58,11 +58,10 @@
 				<div class="content">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					<?php if ($col == 1) echo "<div class=\"row\">"; ?>
 						<div class="block">
 							<h1><?php the_title(); ?></h1>
-							<span class="desc">Простой генератор паролей для iPhone</span>
-							<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+							<span class="desc"><?php the_content(); ?></span>
+							<a href="#"><?php the_post_thumbnail('large'); ?></a>
 						</div>
 					<?php endwhile;?>
 					<?php endif; ?>
