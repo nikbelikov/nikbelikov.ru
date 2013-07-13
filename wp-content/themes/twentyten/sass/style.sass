@@ -56,7 +56,7 @@ a
 p
 	margin: 0 0 18px
 
-h1
+div.title
 	font-size: $large
 	text-transform: uppercase
 	margin-bottom: 30px
@@ -345,21 +345,21 @@ textarea
 				top: 33px
 				right: -40px
 
-			h1, .desc
+			div.title
 				float: right
 
 			.desc
-				margin: -18px 30px 30px 0
+				margin: 0 30px 30px 0
+				text-align: right
 
 		&:nth-child(2n)
 			margin-left: 76px
 
-		h1
+		div.title
 			margin: 30px
 
 		.desc
-			float: left
-			margin: -18px 0 30px 30px
+			margin: 0 0 30px 30px
 			font-size: $medium
 
 			p
@@ -444,6 +444,7 @@ textarea
 
 			img
 				width: 97%
+				height: auto
 				margin: 0 1.7%
 
 			.desc
@@ -468,7 +469,7 @@ textarea
 			&:last-child
 				display: none
 
-			h1
+			div.title
 				margin-right: 10%
 
 			form
@@ -522,7 +523,7 @@ textarea
 		.block
 			width: 100% !important
 
-			h1
+			div.title
 				font-size: $medium
 				float: none !important
 				text-align: center
