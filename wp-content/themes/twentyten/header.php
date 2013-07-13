@@ -18,10 +18,13 @@
 
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/lib/font-awesome.min.css" type="text/css" media="screen, projection" />
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/lib/jquery.mCustomScrollbar.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="/wp-content/plugins/contact-form-7/includes/css/styles.css" type="text/css" media="screen, projection" />
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/style.css" type="text/css" media="screen, projection" />
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/lib/jquery.mCustomScrollbar.min.js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js"></script>
+	<script type="text/javascript" src="/wp-content/plugins/contact-form-7/includes/js/scripts.js"></script>
 	<script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/init.js"></script>
 </head>
 

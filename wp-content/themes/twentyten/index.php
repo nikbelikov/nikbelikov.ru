@@ -6,7 +6,8 @@
 				<div class="content">
 					<div class="block">
 						<h1>Написать мне</h1>
-						<form action="">
+						<?php echo do_shortcode( '[contact-form-7 id="32" title="Написать мне"]' ); ?>
+						<?/*<form action="">
 							<input type="text" placeholder="ИМЯ">
 							<input type="text" placeholder="EMAIL">
 							<textarea placeholder="СООБЩЕНИЕ"></textarea>
@@ -16,7 +17,7 @@
 								<a href="http://buknotes.tumblr.com/" class="icon-tumblr" target="_blank"></a>
 							</div>
 							<a class="button" href="#"><span class="icon-comments"></span>Отправить</a>
-						</form>
+						</form>*/?>
 					</div>
 					<div class="block">
 						<h1>Контакты</h1>
