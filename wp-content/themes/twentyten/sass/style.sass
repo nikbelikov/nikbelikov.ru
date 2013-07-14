@@ -1,5 +1,9 @@
 @import compass
 
+
+
+/* VARS */
+
 // wrappers
 $min-width: 320px
 $max-width: 1170px
@@ -27,6 +31,9 @@ $dark-blue: #3f6eb4
 // other
 $parallax-amount: 150px
 
+
+
+/* RESET */
 *
 	margin: 0
 	padding: 0
@@ -60,6 +67,9 @@ h1
 	font-size: $large
 	text-transform: uppercase
 	margin-bottom: 30px
+	text-overflow: ellipsis
+	white-space: nowrap
+	overflow: hidden
 
 img
 	border: none
@@ -110,6 +120,9 @@ textarea
 	height: 160px
 	resize: none
 
+
+
+/* PRELOADER */
 #dark
 	width: 100%
 	height: 100%
@@ -124,6 +137,9 @@ textarea
 		z-index: -1
 		background: transparent
 
+
+
+/* BUTTONS */
 .button
 	width: auto
 	padding: 11px 16px
@@ -144,6 +160,9 @@ textarea
 	span
 		margin-right: 10px
 
+
+
+/* LAYOUT */
 #wrapper
 	width: 100%
 	min-width: $min-width
@@ -309,6 +328,9 @@ textarea
 				left: -8px
 				top: -15px
 
+
+
+/* PORTFOLIO AND CONTACTS */
 .main-container
 	max-width: $max-width
 	min-width: $min-width
@@ -428,6 +450,9 @@ textarea
 	color: $grey
 	float: right
 
+
+
+/* RESPONSIVE 1200 */
 @media (max-width: 1200px)
 	.contacts-container, .portfolio-container
 		padding: 0
@@ -444,10 +469,11 @@ textarea
 
 			img
 				width: 97%
+				height: auto
 				margin: 0 1.7%
 
 			.desc
-				font-size: $normal
+				display: none
 
 		.social-icons
 			margin-left: 3%
@@ -484,10 +510,17 @@ textarea
 		.social-icons
 			display: none
 
-	.mCustomScrollBox>.mCSB_scrollTools
-		height: 372px
-		top: 130px
+	#portfolio
+		h1
+			font-size: $medium
 
+	.mCustomScrollBox>.mCSB_scrollTools
+		height: 418px
+		top: 84px
+
+
+
+/* RESPONSIVE 640 */
 @media (max-width: 640px)
 	#icon-refresh
 		display: none
@@ -555,6 +588,9 @@ textarea
 	hr:after
 		display: none
 
+
+
+/* MOBILE LANSCAPE */
 @media only screen and (orientation:landscape) and (max-width:640px)
 	#wrapper
 		top: 0 !important

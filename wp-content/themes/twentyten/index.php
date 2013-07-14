@@ -7,17 +7,6 @@
 					<div class="block">
 						<h1>Написать мне</h1>
 						<?php echo do_shortcode( '[contact-form-7 id="32" title="Написать мне"]' ); ?>
-						<?/*<form action="">
-							<input type="text" placeholder="ИМЯ">
-							<input type="text" placeholder="EMAIL">
-							<textarea placeholder="СООБЩЕНИЕ"></textarea>
-							<div class="social-icons">
-								<a href="https://twitter.com/_nikbelikov" class="icon-twitter" target="_blank"></a>
-								<a href="http://instagram.com/nikbelikov" class="icon-instagram" target="_blank"></a>
-								<a href="http://buknotes.tumblr.com/" class="icon-tumblr" target="_blank"></a>
-							</div>
-							<a class="button" href="#"><span class="icon-comments"></span>Отправить</a>
-						</form>*/?>
 					</div>
 					<div class="block">
 						<h1>Контакты</h1>
