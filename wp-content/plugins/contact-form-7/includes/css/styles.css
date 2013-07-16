@@ -35,10 +35,10 @@ span.wpcf7-form-control-wrap {
 
 span.wpcf7-not-valid-tip {
 	position: absolute;
-	top: 20%;
+	top: 0;
 	right: 3px;
 	z-index: 100;
-	font-size: 14px;
+	font-size: 12px;
 	color: #e35c23;
 }
 
