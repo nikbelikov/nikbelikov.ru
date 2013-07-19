@@ -62,6 +62,18 @@
 								}
 							?>
 							" target="_blank"><?php the_post_thumbnail('large'); ?></a>
+							<div class="about-work">
+								<? /*
+									<i class="icon-puzzle-piece"></i>Часть верстки и скриптов
+									<i class="icon-bug"></i>Исправления багов
+									<i class="icon-coffee"></i>Разработка
+									<i class="icon-pencil"></i>Дизайн
+									<i class="icon-bolt"></i>Скрипты
+									<i class="icon-th"></i>Верстка
+								*/ ?>
+								<? $thumb_title = get_post(get_post_thumbnail_id($id))->post_title;
+									echo $thumb_title; ?>
+							</div>
 						</div>
 					<?php endwhile;?>
 					<?php endif; ?>

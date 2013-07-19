@@ -436,6 +436,9 @@ textarea
 		+box-shadow(0 -20px 0 rgba(255,255,255,0.5))
 
 		.block
+			position: relative
+			height: 400px
+
 			&:after
 				height: 73px
 
@@ -452,13 +455,31 @@ textarea
 					top: -40px
 					opacity: 0.3
 
-			&:nth-child(2n)
-				img
-					position: relative
+			&:nth-child(2n) img
+				position: relative
 
-					&:hover
-						+transform(rotate(-4deg))
-						left: -20px
+				&:hover
+					+transform(rotate(-4deg))
+					left: -20px
+
+			a
+				position: absolute
+				left: 0
+				top: 127px
+				z-index: 1
+
+		.about-work
+			width: 100%
+			font: 20px Arial, Helvetica CY, Nimbus Sans L, sans-serif
+			position: absolute
+			bottom: 30px
+			left: 10px
+			z-index: 0
+			text-align: center
+
+			i
+				margin-right: 5px
+				color: $orange
 
 .close
 	font-size: 50px
