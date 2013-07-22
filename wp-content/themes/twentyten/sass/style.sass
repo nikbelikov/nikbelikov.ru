@@ -38,6 +38,7 @@ $parallax-amount: 150px
 	margin: 0
 	padding: 0
 	-webkit-tap-highlight-color: rgba(0,0,0,0)
+	cursor: default
 
 html
 	height: 100%
@@ -111,6 +112,9 @@ input, textarea
 
 	&:focus
 		border: 1px solid $orange
+
+textarea
+	overflow: auto
 
 textarea::-webkit-input-placeholder,
 input::-webkit-input-placeholder
@@ -372,10 +376,8 @@ textarea
 				right: -40px
 
 			h1, .desc
-				float: right
-
-			.desc
-				margin: -18px 30px 30px 0
+				text-align: right
+				width: 487px
 
 		&:nth-child(2n)
 			margin-left: 76px
@@ -397,11 +399,28 @@ textarea
 	&.visible
 		top: 0
 
-	.wpcf7-form p
-		margin-bottom: 0
+	.wpcf7-form
+		+transition(all .5s ease)
+
+		&.blur
+			-webkit-filter: blur(5px)
+			-moz-filter: blur(5px)
+
+			*
+				cursor: progress
+
+		&.invalid, &.sent
+			-webkit-filter: none
+
+			*
+				cursor: default
+
+		p
+			margin-bottom: 0
 
 	.social-icons
 		position: absolute
+		bottom: 26px
 
 		a
 			font-size: 30px

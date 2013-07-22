@@ -2,6 +2,7 @@ $(document).ready(function(){
 	initMenu();
 	initBg();
 	initCustomScrollbar();
+	initFeedbackForm();
 });
 
 $(window).load(function(){
@@ -55,7 +56,7 @@ initMenu = function(){
 	$('.close').on('click',function(){
 		$('#wrapper').click();
 	});
-}
+};
 
 function GenerateBg(timer){
 	var bg_count = 10;
@@ -83,7 +84,7 @@ initBg = function(){
 	$('#icon-refresh').on('click',function(){
 		GenerateBg(true);
 	});
-}
+};
 
 initCustomScrollbar = function(){
 	$("#portfolio .content").mCustomScrollbar({
@@ -95,4 +96,13 @@ initCustomScrollbar = function(){
 		},
 		contentTouchScroll: true
 	});
-}
+};
+
+initFeedbackForm = function(){
+	var $form = $('.wpcf7-form');
+	var $btn = $form.find('input[type=submit]');
+
+	$btn.on('click',function(){
+		$form.addClass('blur').removeClass('invalid');
+	});
+};
