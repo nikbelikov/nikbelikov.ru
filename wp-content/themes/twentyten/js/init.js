@@ -105,4 +105,10 @@ initFeedbackForm = function(){
 	$btn.on('click',function(){
 		$form.addClass('blur').removeClass('invalid');
 	});
+
+	setInterval(function(){
+		if ($form.hasClass('sent')){
+			$form.removeClass('blur');
+		}
+	},500);
 };
