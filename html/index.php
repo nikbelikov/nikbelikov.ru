@@ -6,7 +6,7 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 
-	<meta name="viewport" content="width=600, user-scalable=no">
+	<meta name="viewport" content="width=400, user-scalable=no">
 
 	<meta name="apple-mobile-web-app-title" content="@_" />
 
