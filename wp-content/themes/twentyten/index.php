@@ -84,6 +84,6 @@
 			</section>
 		</section>
 
-		<img id="hidden-img" src="img/summer/bg1.jpg" alt="hidden-img">
+		<img id="hidden-img" src="/wp-content/themes/twentyten/img/summer/bg1.jpg" alt="hidden-img">
 
 <?php get_footer(); ?>
