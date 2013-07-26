@@ -3,10 +3,26 @@ $(document).ready(function(){
 	initBg();
 	initCustomScrollbar();
 	initFeedbackForm();
+	$(window).resize();
 });
 
 $(window).load(function(){
 	GenerateBg(false);
+}).resize(function(){
+	var $block = $('#portfolio .block');
+	var $img = $('#portfolio .block img');
+
+	if ($(this).width()<1200){
+		// пересчет высоты контейнера портфолио
+		$('.mCustomScrollbar').height($('html').height());
+
+		// блоки в портфолио
+		$block.height($img.height());
+	}
+	else {
+		$('.mCustomScrollbar').attr('style', '');
+		$block.attr('style', '');
+	}
 });
 
 initMenu = function(){
@@ -15,6 +31,7 @@ initMenu = function(){
 			$(this).removeClass('contacts portfolio disabled');
 			$('#contacts, #portfolio').removeClass('visible');
 		}
+		$('html').removeClass('scroll');
 	});
 
 	$('#menu-contacts').on('click',function(event){
@@ -25,6 +42,7 @@ initMenu = function(){
 		if (!$('#wrapper').hasClass('contacts')) {
 			$('#wrapper').removeClass('portfolio').addClass('contacts');
 		}
+		$('html').addClass('scroll');
 	});
 
 	$('#menu-portfolio, #icon-angle-down, #frontend').on('click',function(event){

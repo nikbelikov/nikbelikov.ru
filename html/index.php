@@ -6,7 +6,7 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 
-	<meta name="viewport" content="width=400, user-scalable=no">
+	<meta name="viewport" content="width=400, user-scalable=no, initial-scale=1.0">
 
 	<meta name="apple-mobile-web-app-title" content="@_" />
 
@@ -85,6 +85,46 @@
 	<section id="portfolio">
 		<div class="close">&times;</div>
 		<div class="content">
+			<div class="block">
+				<h1>PassGenius.ru</h1>
+				<span class="desc">Простой генератор паролей для iPhone</span>
+				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+			</div>
+			<div class="block">
+				<h1>Vis-Mos.ru</h1>
+				<span class="desc">Горизонтально-направленное бурение</span>
+				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+			</div>
+			<div class="block">
+				<h1>PassGenius.ru</h1>
+				<span class="desc">Простой генератор паролей для iPhone</span>
+				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+			</div>
+			<div class="block">
+				<h1>Vis-Mos.ru</h1>
+				<span class="desc">Горизонтально-направленное бурение</span>
+				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+			</div>
+			<div class="block">
+				<h1>PassGenius.ru</h1>
+				<span class="desc">Простой генератор паролей для iPhone</span>
+				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+			</div>
+			<div class="block">
+				<h1>Vis-Mos.ru</h1>
+				<span class="desc">Горизонтально-направленное бурение</span>
+				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+			</div>
+			<div class="block">
+				<h1>PassGenius.ru</h1>
+				<span class="desc">Простой генератор паролей для iPhone</span>
+				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+			</div>
+			<div class="block">
+				<h1>Vis-Mos.ru</h1>
+				<span class="desc">Горизонтально-направленное бурение</span>
+				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+			</div>
 			<div class="block">
 				<h1>PassGenius.ru</h1>
 				<span class="desc">Простой генератор паролей для iPhone</span>

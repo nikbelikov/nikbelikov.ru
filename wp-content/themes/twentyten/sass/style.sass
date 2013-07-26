@@ -1,3 +1,4 @@
+/* IMPORT */
 @import compass
 
 
@@ -351,6 +352,7 @@ textarea
 	width: $max-width
 	position: absolute
 	opacity: 0
+	z-index: -1
 	+transition(opacity .5s ease, top .5s ease, bottom .5s ease)
 
 	&.visible
@@ -456,26 +458,6 @@ textarea
 			&:after
 				height: 73px
 
-			img
-				position: relative
-				left: 0
-				top: 0
-				+transition(all .3s ease)
-				
-				&:hover
-					+transform(rotate(4deg))
-					+transition(all .3s ease 1s)
-					left: 20px
-					top: -40px
-					opacity: 0.3
-
-			&:nth-child(2n) img
-				position: relative
-
-				&:hover
-					+transform(rotate(-4deg))
-					left: -20px
-
 			a
 				position: absolute
 				left: 0
@@ -517,12 +499,80 @@ textarea
 
 
 /* RESPONSIVE 1200 */
+
+// разрешение > 1200
+@media (min-width: 1200px)
+
+	// при наведении на работу она отодвигается и появляется описание
+	#portfolio .content .block
+		&:nth-child(2n) img
+			position: relative
+
+			&:hover
+				+transform(rotate(-4deg))
+				left: -20px
+
+		img
+			position: relative
+			left: 0
+			top: 0
+			+transition(all .3s ease)
+			
+			&:hover
+				+transform(rotate(4deg))
+				+transition(all .3s ease 1s)
+				left: 20px
+				top: -40px
+				opacity: 0.3
+
+// разрешение < 1200
 @media (max-width: 1200px)
+	html.scroll
+		overflow: auto
+
 	#wrapper
 		&.contacts
 			top: 100%
 		&.portfolio
 			top: -100%
+
+	#portfolio
+		width: 100%
+
+		&.visible
+			bottom: 0
+
+		h1, span, .about-work
+			display: none
+
+		.block
+			width: 50%
+
+			a
+				top: 0 !important
+
+			&:after
+				display: none !important
+
+			img
+				width: 100%
+				height: auto
+
+	.portfolio-container
+		padding: 0
+
+		.block
+			margin: 0 !important
+
+	hr, .copyright
+		display: none
+
+	.mCustomScrollBox>.mCSB_scrollTools
+		top: 0
+		height: 100%
+
+	.close
+		right: 20px
 
 /*@media (max-width: 1200px)
 	.contacts-container, .portfolio-container

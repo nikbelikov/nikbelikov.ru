@@ -2,10 +2,27 @@ $(document).ready(function(){
 	initMenu();
 	initBg();
 	initCustomScrollbar();
+	initFeedbackForm();
+	$(window).resize();
 });
 
 $(window).load(function(){
 	GenerateBg(false);
+}).resize(function(){
+	var $block = $('#portfolio .block');
+	var $img = $('#portfolio .block img');
+
+	if ($(this).width()<1200){
+		// пересчет высоты контейнера портфолио
+		$('.mCustomScrollbar').height($('html').height());
+
+		// блоки в портфолио
+		$block.height($img.height());
+	}
+	else {
+		$('.mCustomScrollbar').attr('style', '');
+		$block.attr('style', '');
+	}
 });
 
 initMenu = function(){
@@ -14,6 +31,7 @@ initMenu = function(){
 			$(this).removeClass('contacts portfolio disabled');
 			$('#contacts, #portfolio').removeClass('visible');
 		}
+		$('html').removeClass('scroll');
 	});
 
 	$('#menu-contacts').on('click',function(event){
@@ -24,6 +42,7 @@ initMenu = function(){
 		if (!$('#wrapper').hasClass('contacts')) {
 			$('#wrapper').removeClass('portfolio').addClass('contacts');
 		}
+		$('html').addClass('scroll');
 	});
 
 	$('#menu-portfolio, #icon-angle-down, #frontend').on('click',function(event){
@@ -55,13 +74,13 @@ initMenu = function(){
 	$('.close').on('click',function(){
 		$('#wrapper').click();
 	});
-}
+};
 
 function GenerateBg(timer){
 	var bg_count = 10;
 	var bg_num = Math.round(Math.random()*(bg_count-1))+1;
 
-	$('#hidden-img').attr('src', 'img/summer/bg'+bg_num+'.jpg');
+	$('#hidden-img').attr('src', '/wp-content/themes/twentyten/img/summer/bg'+bg_num+'.jpg');
 
 	$('#dark').removeClass('disabled');
 
@@ -83,7 +102,7 @@ initBg = function(){
 	$('#icon-refresh').on('click',function(){
 		GenerateBg(true);
 	});
-}
+};
 
 initCustomScrollbar = function(){
 	$("#portfolio .content").mCustomScrollbar({
@@ -95,4 +114,19 @@ initCustomScrollbar = function(){
 		},
 		contentTouchScroll: true
 	});
-}
+};
+
+initFeedbackForm = function(){
+	var $form = $('.wpcf7-form');
+	var $btn = $form.find('input[type=submit]');
+
+	$btn.on('click',function(){
+		$form.addClass('blur').removeClass('invalid');
+	});
+
+	setInterval(function(){
+		if ($form.hasClass('sent')){
+			$form.removeClass('blur');
+		}
+	},500);
+};
