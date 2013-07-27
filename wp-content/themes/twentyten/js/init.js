@@ -17,7 +17,6 @@ function SmallScreen(){
 
 $(window).load(function(){
 	GenerateBg(false);
-	$('#portfolio').addClass('invisible');
 }).resize(function(){
 	var $block = $('#portfolio .block');
 	var $img = $('#portfolio .block img');
@@ -29,6 +28,9 @@ $(window).load(function(){
 
 		// блоки в портфолио
 		$block.height($img.height());
+
+		$('#wrapper').removeClass('disabled contacts');
+		$('#contacts').removeClass('visible');
 	}
 	else {
 		$scrollbar.attr('style', '');
@@ -42,7 +44,6 @@ initMenu = function(){
 			$(this).removeClass('contacts portfolio disabled');
 			$('#contacts, #portfolio').removeClass('visible');
 		}
-		$('html').removeClass('scroll');
 	});
 
 	$('#menu-contacts').on('click',function(event){
@@ -54,7 +55,6 @@ initMenu = function(){
 			if (!$('#wrapper').hasClass('contacts')) {
 				$('#wrapper').removeClass('portfolio').addClass('contacts');
 			}
-			$('html').addClass('scroll');
 		}
 	});
 
@@ -119,7 +119,7 @@ initBg = function(){
 
 initCustomScrollbar = function(){
 	$("#portfolio .content").mCustomScrollbar({
-		scrollInertia:150,
+		scrollInertia:50,
 		autoHideScrollbar: true,
 		advanced: {
 			updateOnContentResize: true,

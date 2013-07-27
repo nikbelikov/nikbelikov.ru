@@ -10,20 +10,27 @@ window.addEventListener('load', function(){
 	setTimeout(scrollTo, 0, 0, 1);
 }, false);
 
+function SmallScreen(){
+	if ($(this).width()<1200){ return true }
+	else { return false }
+}
+
 $(window).load(function(){
 	GenerateBg(false);
-	$('#portfolio').addClass('invisible');
 }).resize(function(){
 	var $block = $('#portfolio .block');
 	var $img = $('#portfolio .block img');
 	var $scrollbar = $('.mCustomScrollbar');
 
-	if ($(this).width()<1200){
+	if (SmallScreen()){
 		// пересчет высоты контейнера портфолио
 		$scrollbar.height($('html').height());
 
 		// блоки в портфолио
 		$block.height($img.height());
+
+		$('#wrapper').removeClass('disabled contacts');
+		$('#contacts').removeClass('visible');
 	}
 	else {
 		$scrollbar.attr('style', '');
@@ -37,18 +44,18 @@ initMenu = function(){
 			$(this).removeClass('contacts portfolio disabled');
 			$('#contacts, #portfolio').removeClass('visible');
 		}
-		$('html').removeClass('scroll');
 	});
 
 	$('#menu-contacts').on('click',function(event){
-		event.preventDefault();
-		event.stopPropagation();
-		$('#contacts').addClass('visible');
-		$('#wrapper').addClass('disabled');
-		if (!$('#wrapper').hasClass('contacts')) {
-			$('#wrapper').removeClass('portfolio').addClass('contacts');
+		if (!SmallScreen()) {
+			event.preventDefault();
+			event.stopPropagation();
+			$('#contacts').addClass('visible');
+			$('#wrapper').addClass('disabled');
+			if (!$('#wrapper').hasClass('contacts')) {
+				$('#wrapper').removeClass('portfolio').addClass('contacts');
+			}
 		}
-		$('html').addClass('scroll');
 	});
 
 	$('#menu-portfolio, #icon-angle-down, #frontend').on('click',function(event){
@@ -112,7 +119,7 @@ initBg = function(){
 
 initCustomScrollbar = function(){
 	$("#portfolio .content").mCustomScrollbar({
-		scrollInertia:150,
+		scrollInertia:50,
 		autoHideScrollbar: true,
 		advanced: {
 			updateOnContentResize: true,
