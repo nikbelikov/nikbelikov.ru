@@ -6,21 +6,27 @@ $(document).ready(function(){
 	$(window).resize();
 });
 
+window.addEventListener('load', function(){
+	setTimeout(scrollTo, 0, 0, 1);
+}, false);
+
 $(window).load(function(){
 	GenerateBg(false);
+	$('#portfolio').addClass('invisible');
 }).resize(function(){
 	var $block = $('#portfolio .block');
 	var $img = $('#portfolio .block img');
+	var $scrollbar = $('.mCustomScrollbar');
 
 	if ($(this).width()<1200){
 		// пересчет высоты контейнера портфолио
-		$('.mCustomScrollbar').height($('html').height());
+		$scrollbar.height($('html').height());
 
 		// блоки в портфолио
 		$block.height($img.height());
 	}
 	else {
-		$('.mCustomScrollbar').attr('style', '');
+		$scrollbar.attr('style', '');
 		$block.attr('style', '');
 	}
 });

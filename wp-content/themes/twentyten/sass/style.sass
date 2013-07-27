@@ -267,10 +267,6 @@ textarea
 			cursor: pointer
 			+transition(all .3s ease)
 
-			&:hover
-				opacity: 1
-				+transform(rotate(180deg))
-
 	#content
 		color: $white
 
@@ -525,6 +521,12 @@ textarea
 				top: -40px
 				opacity: 0.3
 
+// разрешение > 547
+@media (min-width: 547px)
+	.icon-refresh:hover
+		opacity: 1 !important
+		+transform(rotate(180deg))
+
 // разрешение < 1200
 @media (max-width: 1200px)
 	html.scroll
@@ -536,11 +538,21 @@ textarea
 		&.portfolio
 			top: -100%
 
+	#contacts
+		display: none
+
+		&.visible
+			display: block
+		
+
 	#portfolio
 		width: 100%
 
+		&.invisible
+			display: none
 		&.visible
 			bottom: 0
+			display: block
 
 		h1, span, .about-work
 			display: none
@@ -549,6 +561,7 @@ textarea
 			width: 50%
 
 			a
+				width: 100%
 				top: 0 !important
 
 			&:after
@@ -564,15 +577,27 @@ textarea
 		.block
 			margin: 0 !important
 
-	hr, .copyright
+	hr, .copyright, nav
 		display: none
 
 	.mCustomScrollBox>.mCSB_scrollTools
 		top: 0
+		right: 0
 		height: 100%
 
 	.close
 		right: 20px
+
+// разрешение < 547 (ширина картинки)
+@media (max-width: 547px)
+	#portfolio .block
+		width: 100%
+
+	.icon-refresh
+		font-size: 20px
+
+	.icon-angle-down
+		display: none
 
 /*@media (max-width: 1200px)
 	.contacts-container, .portfolio-container
