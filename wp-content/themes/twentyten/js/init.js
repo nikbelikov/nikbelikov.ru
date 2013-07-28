@@ -101,13 +101,13 @@ function GenerateBg(timer){
 		setTimeout(function(){
 			$('#dark').addClass('disabled');
 			$('#wrapper').attr('class', '').addClass('bg'+bg_num);
-		}, 1000);
+		}, 1500);
 	}
 	else {
 		setTimeout(function(){
 			$('#dark').addClass('disabled');
 			$('#wrapper').attr('class', '').addClass('bg'+bg_num);
-		}, 1000);
+		}, 1500);
 	}
 }
 

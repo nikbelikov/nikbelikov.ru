@@ -31,7 +31,7 @@
 
 <div id="dark"></div>
 
-<!-- <section class="main-container contacts-container">
+<section class="main-container contacts-container">
 	<section id="contacts">
 		<div class="close">&times;</div>
 		<div class="content">
@@ -57,7 +57,7 @@
 		<hr>
 		<div class="copyright"><? echo date('Y'); ?> (c) - nikbelikov.ru</div>
 	</section>
-</section> -->
+</section>
 
 <section id="wrapper" class="bg01">
 	<section class="main-container">

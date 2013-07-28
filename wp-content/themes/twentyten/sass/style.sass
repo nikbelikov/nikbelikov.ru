@@ -141,6 +141,17 @@ textarea
 		z-index: -1
 		background: transparent
 
+		span
+			display: none
+
+	span
+		font-size: 35px
+		position: absolute
+		left: 50%
+		bottom: 193px
+		margin-left: -75px
+		color: $orange
+
 
 
 /* BUTTONS */
@@ -405,7 +416,7 @@ textarea
 			*
 				cursor: progress
 
-		&.invalid, &.sent
+		&.invalid, &.sent, &.failed
 			-webkit-filter: none
 
 			*
@@ -592,167 +603,4 @@ textarea
 		font-size: 20px
 
 	.icon-angle-down
-		display: none
-
-/*@media (max-width: 1200px)
-	.contacts-container, .portfolio-container
-		padding: 0
-
-	#contacts, #portfolio
-		width: 100%
-
-		.block
-			width: 50%
-			height: 330px !important
-			margin-left: 0 !important
-
-			&:after
-				display: none !important
-
-			img
-				width: 97%
-				height: auto
-				margin: 0 1.7%
-
-			.desc
-				display: none
-
-		.social-icons
-			margin-left: 3%
-
-		.copyright
-			margin-right: 10px
-
-		.about-work
-			display: none
-
-	.close
-		right: 3%
-
-	#contacts
-		&.visible
-			width: 100%
-
-		.content .block
-			width: 100%
-
-			&:last-child
-				display: none
-
-			h1
-				margin-right: 10%
-
-			form
-				text-align: center
-
-				input, textarea
-					width: 89%
-					margin: 10px 3%
-
-				a.button
-					margin-right: 3%
-
-		.social-icons
-			display: none
-
-	#portfolio
-		h1
-			font-size: $medium
-			width: auto !important
-
-		.block a
-			top: 77px !important
-
-	.mCustomScrollBox>.mCSB_scrollTools
-		height: 428px
-		top: 77px
-
-	span.wpcf7-not-valid-tip
-		right: 40px
-
-
-
-/* RESPONSIVE 640 */
-/*@media (max-width: 640px)
-	#sitename
-		display: none
-
-	#icon-refresh
-		display: none
-
-	#wrapper
-		+box-shadow(0 0 30px rgba(0,0,0,0.5))
-
-		&.portfolio
-			.vert-line
-				bottom: 0 !important
-
-		#header
-			#sitename
-				font-size: $large !important
-
-			nav ul li span
-				font-size: $medium
-
-	nav
-		position: relative
-		right: -20px
-
-	#contacts, #portfolio
-		width: auto
-		+transition(opacity 0s ease)
-
-		.close
-			top: 7px
-			font-size: 60px
-			right: 10px
-
-		.block
-			width: 100% !important
-
-			h1
-				font-size: $medium
-				float: none !important
-				text-align: center
-				margin-bottom: 15px
-
-			.desc
-				display: none
-
-	#portfolio
-		display: none
-
-		&.visible
-			display: block
-
-	#contacts
-		.social-icons a
-			font-size: 40px !important
-
-		input, textarea
-			margin: 7px 2% !important
-			padding: 14px 13px
-
-		a.button
-			font-size: $medium
-
-	.mCustomScrollBox>.mCSB_scrollTools
-		height: 433px
-		top: 69px
-
-	hr:after
-		display: none
-
-
-
-/* MOBILE LANSCAPE */
-/*@media only screen and (orientation:landscape) and (max-width:640px)
-	#wrapper
-		top: 0 !important
-		background-position: center center !important
-
-		*
-			display: none
-
-	#contacts, #portfolio
 		display: none
