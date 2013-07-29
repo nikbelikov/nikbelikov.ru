@@ -90,82 +90,82 @@
 			<div class="block">
 				<h1>PassGenius.ru</h1>
 				<span class="desc">Простой генератор паролей для iPhone</span>
-				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+				<a href="#"><img src="http://lorempixel.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>Vis-Mos.ru</h1>
 				<span class="desc">Горизонтально-направленное бурение</span>
-				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+				<a href="#"><img src="http://lorempixel.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>PassGenius.ru</h1>
 				<span class="desc">Простой генератор паролей для iPhone</span>
-				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+				<a href="#"><img src="http://lorempixel.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>Vis-Mos.ru</h1>
 				<span class="desc">Горизонтально-направленное бурение</span>
-				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+				<a href="#"><img src="http://lorempixel.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>PassGenius.ru</h1>
 				<span class="desc">Простой генератор паролей для iPhone</span>
-				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+				<a href="#"><img src="http://lorempixel.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>Vis-Mos.ru</h1>
 				<span class="desc">Горизонтально-направленное бурение</span>
-				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+				<a href="#"><img src="http://lorempixel.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>PassGenius.ru</h1>
 				<span class="desc">Простой генератор паролей для iPhone</span>
-				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+				<a href="#"><img src="http://lorempixel.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>Vis-Mos.ru</h1>
 				<span class="desc">Горизонтально-направленное бурение</span>
-				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+				<a href="#"><img src="http://lorempixel.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>PassGenius.ru</h1>
 				<span class="desc">Простой генератор паролей для iPhone</span>
-				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+				<a href="#"><img src="http://lorempixel.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>Vis-Mos.ru</h1>
 				<span class="desc">Горизонтально-направленное бурение</span>
-				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+				<a href="#"><img src="http://lorempixel.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>PassGenius.ru</h1>
 				<span class="desc">Простой генератор паролей для iPhone</span>
-				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+				<a href="#"><img src="http://lorempixel.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>Vis-Mos.ru</h1>
 				<span class="desc">Горизонтально-направленное бурение</span>
-				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+				<a href="#"><img src="http://lorempixel.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>PassGenius.ru</h1>
 				<span class="desc">Простой генератор паролей для iPhone</span>
-				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+				<a href="#"><img src="http://lorempixel.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>Vis-Mos.ru</h1>
 				<span class="desc">Горизонтально-направленное бурение</span>
-				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+				<a href="#"><img src="http://lorempixel.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>PassGenius.ru</h1>
 				<span class="desc">Простой генератор паролей для iPhone</span>
-				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+				<a href="#"><img src="http://lorempixel.com/547/249" alt=""></a>
 			</div>
 			<div class="block">
 				<h1>Vis-Mos.ru</h1>
 				<span class="desc">Горизонтально-направленное бурение</span>
-				<a href="#"><img src="http://placekitten.com/547/249" alt=""></a>
+				<a href="#"><img src="http://lorempixel.com/547/249" alt=""></a>
 			</div>
 		</div>
 		<hr>
