@@ -1,1 +1,8 @@
+Allow from all
 AddDefaultCharset utf-8
+
+# protect wpconfig.php
+<files wp-config.php>
+order allow,deny
+deny from all
+</files>
