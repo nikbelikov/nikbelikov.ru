@@ -1,0 +1,606 @@
+/* IMPORT */
+@import compass
+
+
+
+/* VARS */
+
+// wrappers
+$min-width: 320px
+$max-width: 1170px
+$header-height: 111px
+$footer-height: 100px
+$contacts-height: 560px
+$portfolio-height: 604px
+$portfolio-content-height: 505px
+$block-displace: 100px
+
+// font-sizes
+$normal: 15px
+$medium: 20px
+$large: 35px
+
+// colors
+$white: #fff
+$grey: #d7d7d7
+$black: #353535
+$orange: #e35c23
+$light-blue: #23b8e3
+$blue: #6b91b8
+$dark-blue: #3f6eb4
+
+// other
+$parallax-amount: 150px
+
+
+
+/* RESET */
+*
+	margin: 0
+	padding: 0
+	-webkit-tap-highlight-color: rgba(0,0,0,0)
+
+html
+	height: 100%
+	overflow: hidden
+
+header, nav, section, article, aside, footer
+	display: block
+
+body
+	font: $normal Arial, Helvetica CY, Nimbus Sans L, sans-serif
+	color: $black
+	height: 100%
+	overflow: hidden
+
+a
+	color: blue
+	outline: none
+	text-decoration: underline
+
+	&:hover
+		text-decoration: none
+
+p
+	margin: 0 0 18px
+
+h1
+	font-size: $large
+	text-transform: uppercase
+	margin-bottom: 30px
+	text-overflow: ellipsis
+	white-space: nowrap
+	overflow: hidden
+
+img
+	border: none
+
+hr
+	border: none
+	outline: none
+	height: 1px
+	width: 100%
+	background: $orange
+	margin: 40px 0 20px
+	position: relative
+
+	&:after
+		content: ''
+		display: block
+		width: 16px
+		height: 15px
+		position: absolute
+		left: 50%
+		top: -7px
+		margin-left: -78px
+		background: $orange
+		border:
+			left: 70px solid $white
+			right: 70px solid $white
+
+input, textarea
+	width: 519px
+	vertical-align: middle
+	border: 1px solid $grey
+	font: $medium Arial, Helvetica CY, Nimbus Sans L, sans-serif
+	padding: 6px 13px
+	margin-bottom: 20px
+	outline: none
+	+border-radius(0)
+	-webkit-appearance: none
+	+transition(border-color .5s ease)
+
+	&:focus
+		border: 1px solid $orange
+
+textarea
+	overflow: auto
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder
+	color: $grey
+
+textarea
+	height: 160px
+	resize: none
+
+
+
+/* PRELOADER */
+#dark
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+	background: $white
+	z-index: 100
+	+transition(background .5s ease, z-index .5s ease)
+
+	&.disabled
+		z-index: -1
+		background: transparent
+
+		span
+			display: none
+
+	span
+		font-size: 35px
+		position: absolute
+		left: 50%
+		bottom: 193px
+		margin-left: -75px
+		color: $orange
+
+
+
+/* BUTTONS */
+.button
+	width: auto
+	padding: 11px 16px
+	float: right
+	background: $orange
+	color: $white
+	text-transform: uppercase
+	font-size: $normal
+	text-decoration: none
+	cursor: pointer
+	+transition(background .5s ease)
+
+	&:hover
+		background: lighten($orange, 5%)
+	&:active
+		padding: 12px 16px 10px 16px
+
+	span
+		margin-right: 10px
+
+
+
+/* LAYOUT */
+#wrapper
+	width: 100%
+	min-width: $min-width
+	min-height: 100%
+	height: auto !important
+	height: 100%
+	position: relative
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	z-index: 10
+	top: 0
+	+box-shadow(0 0 10px rgba(0,0,0,1))
+	+transition(all .5s ease)
+
+	&.disabled
+		.frontend
+			border-color: transparent !important
+		&:after
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+
+	&.contacts
+		top: $contacts-height
+		background-position: center (-$parallax-amount)
+	&.portfolio
+		top: -$portfolio-height
+		background-position: center $parallax-amount
+
+	&.bg1
+		background-image: url(../img/summer/bg1.jpg)
+	&.bg2
+		background-image: url(../img/summer/bg2.jpg)
+	&.bg3
+		background-image: url(../img/summer/bg3.jpg)
+	&.bg4
+		background-image: url(../img/summer/bg4.jpg)
+	&.bg5
+		background-image: url(../img/summer/bg5.jpg)
+	&.bg6
+		background-image: url(../img/summer/bg6.jpg)
+	&.bg7
+		background-image: url(../img/summer/bg7.jpg)
+	&.bg8
+		background-image: url(../img/summer/bg8.jpg)
+	&.bg9
+		background-image: url(../img/summer/bg9.jpg)
+	&.bg10
+		background-image: url(../img/summer/bg10.jpg)
+
+	#header
+		height: $header-height
+		padding-top: 10px
+
+		a, span
+			color: $white
+			text-decoration: none
+			font-size: $normal
+			+transition(color .5s ease, border-color .5s ease)
+
+			&:hover
+				color: $orange
+
+			&#sitename
+				position: absolute
+				font-size: $medium
+
+		ul
+			list-style: none
+			float: right
+			margin-top: 3px
+
+			li
+				float: left
+				margin: 0 20px
+
+				span
+					font-size: $normal
+					border-bottom: 1px dashed $grey
+					padding-bottom: 3px
+					cursor: pointer
+
+					&:hover
+						border-bottom: 1px dashed transparent
+
+		.icon-refresh
+			color: $white
+			opacity: 0.5
+			position: absolute
+			right: 0
+			top: 0
+			padding: 15px
+			cursor: pointer
+			+transition(all .3s ease)
+
+	#content
+		color: $white
+
+		.icon-angle-down
+			font-size: 60px
+			position: absolute
+			left: 50%
+			bottom: 300px
+			margin-left: -20px
+			cursor: pointer
+			+transition(color .5s ease, bottom .5s ease)
+
+			&:before
+				cursor: pointer
+
+			&:hover
+				color: $orange
+				bottom: 295px
+
+		.frontend
+			font-size: $large
+			position: absolute
+			left: 50%
+			bottom: 180px
+			margin-left: -98px
+			border: 3px solid $white
+			padding: 10px 20px
+			cursor: pointer
+			+transition(border-color .5s ease, bottom .5s ease, color .5s ease)
+
+			&:hover
+				border-color: transparent
+				bottom: 175px
+				color: $orange
+
+				span
+					color: $white
+
+			span
+				color: $orange
+				+transition(color .5s ease)
+
+		.vert-line
+			width: 1px
+			height: 100px
+			display: inline-block
+			position: absolute
+			left: 50%
+			bottom: 0
+			margin-left: -1px
+
+			&.white
+				background: $white
+				border-left: 1px solid $white
+
+			&:before
+				content: ''
+				display: inline-block
+				width: 16px
+				height: 15px
+				background: $white
+				position: absolute
+				left: -8px
+				top: -15px
+
+
+
+/* PORTFOLIO AND CONTACTS */
+.main-container
+	max-width: $max-width
+	min-width: $min-width
+	margin: 0 auto
+	padding: 0 20px
+
+	.content
+		overflow: hidden
+
+#contacts, #portfolio
+	width: $max-width
+	position: absolute
+	opacity: 0
+	z-index: -1
+	+transition(opacity .5s ease, top .5s ease, bottom .5s ease)
+
+	&.visible
+		opacity: 1
+		z-index: 1
+
+	.block
+		width: 547px
+		float: left
+
+		&:nth-child(2n+1)
+			position: relative
+
+			&:after
+				content: ''
+				display: block
+				width: 2px
+				height: 35px
+				background: $orange
+				position: absolute
+				top: 33px
+				right: -40px
+
+			h1, .desc
+				text-align: right
+				width: 487px
+
+		&:nth-child(2n)
+			margin-left: 76px
+
+		h1
+			margin: 30px
+
+		.desc
+			float: left
+			margin: -18px 0 30px 30px
+			font-size: $medium
+
+			p
+				margin: 0
+
+#contacts
+	top: -$block-displace
+
+	&.visible
+		top: 0
+
+	.wpcf7-form
+		+transition(all .5s ease)
+
+		&.blur
+			-webkit-filter: blur(5px)
+
+			*
+				cursor: progress
+
+		&.invalid, &.sent, &.failed
+			-webkit-filter: none
+
+			*
+				cursor: default
+
+		p
+			margin-bottom: 0
+
+	.social-icons
+		position: absolute
+		bottom: 26px
+
+		a
+			font-size: 30px
+			margin-right: 10px
+			top: 0
+			+transition(opacity .3s ease, top .3s ease)
+
+			&:hover
+				+opacity(0.7)
+				position: relative
+				top: -3px
+
+			&.icon-twitter
+				color: $light-blue
+			&.icon-instagram
+				color: $blue
+			&.icon-tumblr
+				color: $dark-blue
+
+#portfolio
+	bottom: -$block-displace
+
+	&.visible
+		bottom: 20px
+
+	.content
+		height: $portfolio-content-height
+		overflow: auto
+		+box-shadow(0 -20px 0 rgba(255,255,255,0.5))
+
+		.block
+			position: relative
+			height: 400px
+
+			&:after
+				height: 73px
+
+			a
+				position: absolute
+				left: 0
+				top: 127px
+				z-index: 1
+				cursor: pointer !important
+
+		.about-work
+			width: 100%
+			font: 20px Arial, Helvetica CY, Nimbus Sans L, sans-serif
+			position: absolute
+			bottom: 30px
+			left: 10px
+			z-index: 0
+			text-align: center
+
+			i
+				margin-right: 5px
+				color: $orange
+
+.close
+	font-size: 50px
+	position: absolute
+	right: 0
+	top: 21px
+	color: $grey
+	cursor: pointer
+	z-index: 10
+	+transition(all .5s ease)
+
+	&:hover
+		color: $black
+		+transform(rotate(180deg))
+
+.copyright
+	color: $grey
+	float: right
+
+
+
+/* RESPONSIVE 1200 */
+
+// разрешение > 1200
+@media (min-width: 1200px)
+
+	// при наведении на работу она отодвигается и появляется описание
+	#portfolio .content .block
+		&:nth-child(2n) img
+			position: relative
+
+			&:hover
+				+transform(rotate(-4deg))
+				left: -20px
+
+		img
+			position: relative
+			left: 0
+			top: 0
+			+transition(all .3s ease)
+			
+			&:hover
+				+transform(rotate(4deg))
+				+transition(all .3s ease 1s)
+				left: 20px
+				top: -40px
+				opacity: 0.3
+
+// разрешение > 547
+@media (min-width: 547px)
+	.icon-refresh:hover
+		opacity: 1 !important
+		+transform(rotate(180deg))
+
+// разрешение < 1200
+@media (max-width: 1200px)
+	#wrapper
+		&.contacts
+			top: 100%
+		&.portfolio
+			top: -100%
+
+	#contacts
+		display: none
+
+		&.visible
+			display: block
+		
+
+	#portfolio
+		width: 100%
+		bottom: 0
+
+		&.visible
+			bottom: 0
+			display: block
+
+		h1, span, .about-work
+			display: none
+
+		.block
+			width: 50%
+
+			a
+				width: 100%
+				top: 0 !important
+
+			&:after
+				display: none !important
+
+			img
+				width: 100%
+				height: auto
+
+	.portfolio-container
+		padding: 0
+
+		.block
+			margin: 0 !important
+
+	hr, .copyright, nav
+		display: none
+
+	.mCustomScrollBox>.mCSB_scrollTools
+		top: 0
+		height: 100%
+
+	.close
+		right: 20px
+
+// разрешение < 547 (ширина картинки)
+@media (max-width: 547px)
+	#portfolio .block
+		width: 100%
+
+	.icon-refresh
+		font-size: 20px
+
+	.icon-angle-down
+		display: none
