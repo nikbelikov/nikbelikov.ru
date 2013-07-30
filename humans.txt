@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Belikov Nikolay -- Design, Development -- @_nikbelikov
+
+# THANKS
+
+    to my Muse
+
+# TECHNOLOGY COLOPHON
+
+    WORDPRESS
+    HTML5, CSS3
+    SASS, jQuery
