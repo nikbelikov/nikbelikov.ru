@@ -114,6 +114,7 @@ function GenerateBg(timer){
 initBg = function(){
 	$('#icon-refresh').on('click',function(){
 		GenerateBg(true);
+		$('#dark span').html('Front.');
 	});
 };
 

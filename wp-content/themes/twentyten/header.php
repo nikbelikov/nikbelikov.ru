@@ -6,7 +6,7 @@
 	<meta name="keywords" content="Портфолио Беликова Николая, Беликов Николай, Николай Беликов, frontend, html5, css3, sass, compass, git, gitflow, jquery" />
 	<meta name="description" content="Портфолио Беликова Николая" />
 
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.7">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.6">
 
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -32,4 +32,4 @@
 
 <body>
 
-<div id="dark"><span>Front.</span></div>
+<div id="dark"><span>Загрузка...</span></div>
