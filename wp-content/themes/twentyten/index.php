@@ -1,23 +1,3 @@
-<? // временное для запрета входа для всех юзеров
-	if (!isset($_COOKIE['auth_key']) OR !trim($_COOKIE['auth_key']))
-	{
-	     if (isset($_POST['f_pass']) AND ($_POST['f_pass']=='passgeek36found;'))
-	     {
-	        setcookie('auth_key', time(), time() + 60*60*24);
-	        Header('Location: http://nikbelikov.ru');
-	     }
-	     die('<html><head><title>AUTH</title></head><body><h3>Auth required</h3><form action="" method="post"><input type="password" name="f_pass" value="" /><input type="submit" value="Enter"></form></body></html>');
-	}
-	else
-	{
-	     if (isset($_GET['bye']) AND ($_GET['bye']=='bye'))
-	     {
-	        setcookie('auth_key', NULL, -1);
-	        Header('Location: http://nikbelikov.ru');
-	     }
-	}
-?>
-
 <?php get_header(); ?>
 
 		<section class="main-container contacts-container">
@@ -41,12 +21,11 @@
 		<section id="wrapper" class="bg01">
 			<section class="main-container">
 				<header id="header">
-					<a href="/" id="sitename">nikbelikov.ru</a>
+					<a href="/" id="sitename">nikbelikov.ru <span>(beta)</span></a>
 
 					<nav>
 						<ul>
 							<li><span id="menu-portfolio">Портфолио</span>
-							<?/*<li><span id="menu-blog">Блог</span>*/?>
 							<li><span id="menu-contacts">Контакты</span>
 						</ul>
 					</nav>
