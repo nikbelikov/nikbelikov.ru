@@ -10,7 +10,7 @@
 
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-mobile-web-app-title" content="@_" />
+	<meta name="apple-mobile-web-app-title" content="nikbelikov" />
 
 	<link rel="apple-touch-startup-image" href="startup-image.png" />
 	<link rel="apple-touch-startup-image" href="startup-image-iphone5.png" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
@@ -27,7 +27,7 @@
 
 <section class="wrapper">
 	<ul class="social">
-		<li><a class="icon-twitter" href="https://twitter.com/" target="_blank"></a></li>
+		<li><a class="icon-twitter" href="https://twitter.com/_nikbelikov" target="_blank"></a></li>
 		<li><a class="icon-instagram" href="http://instagram.com/nikbelikov" target="_blank"></a></li>
 		<li><a class="icon-tumblr" href="http://buknotes.tumblr.com/" target="_blank"></a></li>
 		<li><a class="icon-github" href="https://github.com/nikbelikov" target="_blank"></a></li>
