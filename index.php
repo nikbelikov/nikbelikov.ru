@@ -6,7 +6,7 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="Портфолио Николая Беликова" />
 
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.7">
+	<meta name="viewport" content="width=device-960, user-scalable=no, initial-scale=0.7">
 
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -27,14 +27,15 @@
 
 <section class="wrapper">
 	<ul class="social">
-		<li><a class="icon-twitter" href="#"></a></li>
-		<li><a class="icon-instagram" href="#"></a></li>
-		<li><a class="icon-tumblr" href="#"></a></li>
-		<li><a class="icon-github" href="#"></a></li>
-		<li><a class="icon-envelope-alt" href="#"></a></li>
+		<li><a class="icon-twitter" href="https://twitter.com/" target="_blank"></a></li>
+		<li><a class="icon-instagram" href="http://instagram.com/nikbelikov" target="_blank"></a></li>
+		<li><a class="icon-tumblr" href="http://buknotes.tumblr.com/" target="_blank"></a></li>
+		<li><a class="icon-github" href="https://github.com/nikbelikov" target="_blank"></a></li>
+		<li><a class="icon-coffee" href="http://proza.ru/avtor/nikbelikov" target="_blank"></a></li>
+		<li><a class="icon-envelope-alt" href="mailto:nikbelikov@me.com" target="_blank"></a></li>
 	</ul>
 	<footer>
-		<a href="http://nikbelikov.ru/" target="_blank"><?php echo date('Y'); ?> (c) nikbelikov.ru</a>
+		<span><?php echo date('Y'); ?> (c) nikbelikov.ru</span>
 	</footer>
 </section><!-- .wrapper -->
 

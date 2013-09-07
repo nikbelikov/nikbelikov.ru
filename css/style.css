@@ -168,7 +168,7 @@ body,
   position: absolute;
   top: 60px;
   left: 50%;
-  margin-left: -365px;
+  margin-left: -410px;
 }
 
 .social li {
@@ -186,10 +186,10 @@ body,
 
 .social a {
   color: #fff;
-  font-size: 90px;
+  font-size: 70px;
   padding: 20px;
   display: block;
-  width: 90px;
+  width: 80px;
   text-align: center;
   -webkit-transition: background 0.3s ease,-webkit-transform 0.3s ease;
   transition: background 0.3s ease,transform 0.3s ease;
@@ -205,13 +205,14 @@ body,
   transform: rotate(0);
 }
 
-footer a {
+footer span {
   color: #fff;
   padding: 10px 20px;
   display: block;
   margin-left: -96px;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
   text-decoration: none;
+  cursor: default;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -219,7 +220,7 @@ footer a {
   transition: background 0.3s ease;
 }
 
-footer a:hover {
+footer span:hover {
   background: rgba(255,255,255,0.3);
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
