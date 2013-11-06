@@ -18,9 +18,9 @@
 	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
 
-	<link rel="stylesheet" href="css/lib/font-awesome.min.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="/css/lib/font-awesome.min.css" type="text/css" media="screen, projection" />
 	<link href="http://fonts.googleapis.com/css?family=Ubuntu:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="/css/min/style.min.css" type="text/css" media="screen, projection" />
 </head>
 
 <body>
@@ -31,7 +31,8 @@
 		<li><a class="icon-instagram" href="http://instagram.com/nikbelikov" target="_blank"></a></li>
 		<li><a class="icon-tumblr" href="http://buknotes.tumblr.com/" target="_blank"></a></li>
 		<li><a class="icon-github" href="https://github.com/nikbelikov" target="_blank"></a></li>
-		<li><a class="icon-coffee" href="http://proza.ru/avtor/nikbelikov" target="_blank"></a></li>
+		<li><a class="icon-coffee" href="http://nikbelikov.github.io/" target="_blank"></a></li>
+		<li><a class="icon-book" href="http://proza.ru/avtor/nikbelikov" target="_blank"></a></li>
 		<li><a class="icon-envelope-alt" href="mailto:nikbelikov@me.com" target="_blank"></a></li>
 	</ul>
 	<footer>
