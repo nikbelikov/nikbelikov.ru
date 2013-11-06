@@ -150,7 +150,7 @@ summary {
 }
 
 html {
-  background: url(../img/bg.jpg);
+  background: url(/img/bg.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -168,7 +168,7 @@ body,
   position: absolute;
   top: 60px;
   left: 50%;
-  margin-left: -410px;
+  margin-left: -480px;
 }
 
 .social li {
