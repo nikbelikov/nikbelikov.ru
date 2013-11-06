@@ -82,12 +82,12 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 
-body {
+html {
   line-height: 1;
 }
 
@@ -146,7 +146,7 @@ summary {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 html {
@@ -154,7 +154,7 @@ html {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  font-family: "Ubuntu",sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 html,
@@ -172,7 +172,7 @@ body,
 }
 
 .social li {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   float: left;
   margin-right: 20px;
   -webkit-transform: rotate(30deg);
@@ -185,32 +185,32 @@ body,
 }
 
 .social a {
-  color: #fff;
+  color: white;
   font-size: 70px;
   padding: 20px;
   display: block;
   width: 80px;
   text-align: center;
-  -webkit-transition: background 0.3s ease,-webkit-transform 0.3s ease;
-  transition: background 0.3s ease,transform 0.3s ease;
+  -webkit-transition: background 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
   -webkit-transform: rotate(-30deg);
   -ms-transform: rotate(-30deg);
   transform: rotate(-30deg);
 }
 
 .social a:hover {
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   transform: rotate(0);
 }
 
 footer span {
-  color: #fff;
+  color: white;
   padding: 10px 20px;
   display: block;
   margin-left: -96px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   text-decoration: none;
   cursor: default;
   position: absolute;
@@ -221,7 +221,7 @@ footer span {
 }
 
 footer span:hover {
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   transform: rotate(0);

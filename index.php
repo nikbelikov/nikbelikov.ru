@@ -20,7 +20,7 @@
 
 	<link rel="stylesheet" href="css/lib/font-awesome.min.css" type="text/css" media="screen, projection" />
 	<link href="http://fonts.googleapis.com/css?family=Ubuntu:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen, projection" />
 </head>
 
 <body>
