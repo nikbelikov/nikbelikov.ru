@@ -6,7 +6,7 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="Портфолио Николая Беликова" />
 
-	<meta name="viewport" content="width=device-960, user-scalable=no, initial-scale=0.7">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">

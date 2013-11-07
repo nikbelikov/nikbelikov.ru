@@ -1,15 +1,16 @@
 @import compass
 @import compass/reset
 
-$white: #fff
-$black: #999
+$icon-color: red
+$icon-hover-color: #ECA251
+$footer-color: white
 
 *
 	user-select: none
 	-webkit-tap-highlight-color: rgba(0,0,0,0)
 
 html
-	background: url(/img/bg.jpg)
+	background: url(http://saintjosephs.co.uk/wp-content/uploads/2010/04/autumn_tree_1920.jpg)
 	background-repeat: no-repeat
 	background-size: cover
 	font-family: "Ubuntu",sans-serif
@@ -20,35 +21,34 @@ html, body, .wrapper
 
 .social
 	position: absolute
-	top: 60px
-	left: 50%
-	margin-left: -480px
+	top: 0
+	left: 20px
 
 	li
 		background: rgba(white, 0.2)
 		float: left
-		margin-right: 20px
-		transform: rotate(30deg)
+		margin-right: 1px
 
 		&:last-child
 			margin-right: 0
 
 	a
-		color: $white
-		font-size: 70px
-		padding: 20px
+		color: $icon-color
+		font-size: 30px
+		padding: 10px 0 10px
 		display: block
 		width: 80px
 		text-align: center
-		transition: background .3s ease, transform .3s ease
-		transform: rotate(-30deg)
+		transition: background .3s ease, padding .3s ease, box-shadow .3s ease, color .3s ease
 
 		&:hover
+			color: $icon-hover-color
 			background: rgba(white, 0.3)
-			transform: rotate(0)
+			padding: 30px 0 20px
+			box-shadow: 0 10px 20px rgba(black,0.1)
 
 footer span
-	color: $white
+	color: $footer-color
 	padding: 10px 20px
 	display: block
 	margin-left: -96px
@@ -63,3 +63,12 @@ footer span
 	&:hover
 		background: rgba(white, 0.3)
 		transform: rotate(0)
+
+@media (max-width: 605px)
+	.social li
+		float: none
+		margin-right: 0
+
+	.social a
+		width: 90px
+		padding: 10px 0 !important
