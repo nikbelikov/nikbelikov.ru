@@ -150,7 +150,7 @@ summary {
 }
 
 html {
-  background: url(/img/bg.jpg);
+  background: url(http://saintjosephs.co.uk/wp-content/uploads/2010/04/autumn_tree_1920.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -166,18 +166,14 @@ body,
 
 .social {
   position: absolute;
-  top: 60px;
-  left: 50%;
-  margin-left: -480px;
+  top: 0;
+  left: 20px;
 }
 
 .social li {
   background: rgba(255, 255, 255, 0.2);
   float: left;
-  margin-right: 20px;
-  -webkit-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  transform: rotate(30deg);
+  margin-right: 1px;
 }
 
 .social li:last-child {
@@ -185,24 +181,22 @@ body,
 }
 
 .social a {
-  color: white;
-  font-size: 70px;
-  padding: 20px;
+  color: red;
+  font-size: 30px;
+  padding: 10px 0 10px;
   display: block;
   width: 80px;
   text-align: center;
-  -webkit-transition: background 0.3s ease, -webkit-transform 0.3s ease;
-  transition: background 0.3s ease, transform 0.3s ease;
-  -webkit-transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  transform: rotate(-30deg);
+  -webkit-transition: background 0.3s ease, padding 0.3s ease, -webkit-box-shadow 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .social a:hover {
+  color: #eca251;
   background: rgba(255, 255, 255, 0.3);
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
+  padding: 30px 0 20px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 footer span {
@@ -225,4 +219,16 @@ footer span:hover {
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   transform: rotate(0);
+}
+
+@media (max-width: 605px) {
+  .social li {
+    float: none;
+    margin-right: 0;
+  }
+
+  .social a {
+    width: 90px;
+    padding: 10px 0 !important;
+  }
 }
