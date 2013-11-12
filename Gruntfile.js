@@ -6,8 +6,8 @@ module.exports = function(grunt){
 		pkg: grunt.file.readJSON('package.json'),
 		watch: {
 			html: {
-				files: ['index.php'],
-				tasks: ['htmlhint']
+				files: ['index.haml'],
+				tasks: ['haml', 'htmlcompressor']
 			},
 			styles: {
 				files: ['sass/**/*.sass'],
@@ -38,7 +38,7 @@ module.exports = function(grunt){
 		cssmin: {
 			build: {
 				src: 'css/style.css',
-				dest: 'css/min/style.min.css'
+				dest: 'css/style.css'
 			}
 		},
 		// compress js
@@ -49,20 +49,20 @@ module.exports = function(grunt){
 				}
 			}
 		},
-		// check html for errors
-		htmlhint: {
-			build: {
-				options: {
-					'tag-pair': true,
-					'tagname-lowercase': true,
-					'attr-lowercase': true,
-					'attr-value-double-quotes': true,
-					'doctype-first': true,
-					'id-unique': true,
-					'head-script-disabled': true,
-					'style-disabled': true
-				},
-				src: ['index.php']
+		// haml compilation
+		haml: {
+			dist: {
+				files: {
+					'index.php': 'index.haml'
+				}
+			},
+		},
+		// compress php
+		htmlcompressor: {
+			compile: {
+				files: {
+					'index.php': 'index.php'
+				}
 			}
 		}
 	});

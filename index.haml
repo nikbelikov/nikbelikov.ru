@@ -1,0 +1,44 @@
+!!! 5
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+	%head
+		%meta{:charset => "utf-8"}/
+		%title Страничка Беликова Николая
+
+		%meta{:name => "viewport", :content => "width=device-width", 'user-scalable' => "no"}/
+
+		%meta{:name => "apple-mobile-web-app-capable", :content => "yes"}/
+		%meta{:name => "apple-mobile-web-app-status-bar-style", :content => "black"}/
+		%meta{:name => "apple-mobile-web-app-title", :content => "nikbelikov"}/
+
+		%link{:rel => "apple-touch-startup-image", :href => "startup-image.png"}/
+		%link{:rel => "apple-touch-startup-image", :href => "startup-image-iphone5.png", :media => "screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"}/
+
+		%link{:rel => "shortcut icon", :href => "favicon.ico", :type => "image/x-icon"}/
+		%link{:rel => "apple-touch-icon-precomposed", :href => "apple-touch-icon-precomposed.png"}/
+
+		%link{:rel => "stylesheet", :href => "/css/lib/font-awesome.min.css"}/
+		%link{:rel => "stylesheet", :href => "http://fonts.googleapis.com/css?family=Ubuntu:300&amp;subset=latin,cyrillic"}/
+		%link{:rel => "stylesheet", :href => "/css/style.css"}/
+
+	%body
+		%section.wrapper
+			%ul.social
+				%li
+					%a.icon-{:class => "icon-twitter", :href => "https://twitter.com/_nikbelikov", :target => "_blank"}
+				%li
+					%a.icon-{:class => "icon-instagram", :href => "http://instagram.com/nikbelikov", :target => "_blank"}
+				%li
+					%a.icon-{:class => "icon-tumblr", :href => "http://buknotes.tumblr.com/", :target => "_blank"}
+				%li
+					%a.icon-{:class => "icon-github", :href => "https://github.com/nikbelikov", :target => "_blank"}
+				%li
+					%a.icon-{:class => "icon-coffee", :href => "http://nikbelikov.github.io/", :target => "_blank"}
+				%li
+					%a.icon-{:class => "icon-book", :href => "http://proza.ru/avtor/nikbelikov", :target => "_blank"}
+				%li
+					%a.icon-{:class => "icon-unlock-alt", :href => "http://passgenius.ru/", :target => "_blank"}
+				%li
+					%a.icon-{:class => "icon-envelope-alt", :href => "mailto:nikbelikov@me.com", :target => "_blank"}
+
+			%footer
+				%span <?php echo date('Y'); ?> (c) nikbelikov.ru
