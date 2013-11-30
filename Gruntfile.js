@@ -6,8 +6,8 @@ module.exports = function(grunt){
 		pkg: grunt.file.readJSON('package.json'),
 		watch: {
 			html: {
-				files: ['index.haml'],
-				tasks: ['haml', 'htmlcompressor']
+				files: ['index.jade'],
+				tasks: ['jade', 'htmlcompressor']
 			},
 			styles: {
 				files: ['sass/**/*.sass'],
@@ -49,13 +49,19 @@ module.exports = function(grunt){
 				}
 			}
 		},
-		// haml compilation
-		haml: {
-			dist: {
+		// jade compilation
+		jade: {
+			compile: {
+				options: {
+					data: {
+						debug: false
+					},
+					pretty: true
+				},
 				files: {
-					'index.php': 'index.haml'
+					"index.php": ["index.jade"]
 				}
-			},
+			}
 		},
 		// compress php
 		htmlcompressor: {
