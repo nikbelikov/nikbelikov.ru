@@ -2,42 +2,159 @@
 @import compass/reset
 
 $main-color: #1B84A5
+$black: #333
+
+// градиенты
+=v-grad($start-color, $end-color)
+	+filter-gradient($start-color, $end-color)
+	background: $end-color
+	+background-image(linear-gradient($start-color, $end-color))
+
+=r-grad($start-color, $end-color)
+	+filter-gradient($start-color, $end-color)
+	background: $end-color
+	+background-image(radial-gradient($start-color, $end-color))
 
 *
-	user-select: none
+	//user-select: none
 	-webkit-tap-highlight-color: rgba(0,0,0,0)
 	cursor: default
 
 html
-	font: 16px "Raleway", sans-serif
-	color: #333
+	font: 20px "Exo 2", sans-serif
+	color: $black
 
 html, body, section.main
 	width: 100%
 	height: 100%
 
+body
+	background: url(../img/main-bg.jpg) center center no-repeat
+	background-size: cover
+	background-attachment: fixed
+
 h1
 	font-size: 30px
 	margin-bottom: 20px
 
-.sitename
-	font-size: 55px
-	position: fixed
-	top: 50px
-	left: 60px
-
-	.year
-		display: none
-
-section
-	padding: 50px 10px
-
-.os
-	.row
-		.fa
-			font-size: 100px
-			transition: transform .2s ease
-			margin-top: 20px
+a
+	color: $black
+	border-bottom: 1px solid transparent
+	text-decoration: none
 
 .center
 	text-align: center
+
+.sitename
+	font-size: 40px
+	width: 100%
+	position: fixed
+	top: -90px
+	left: 0
+	padding: 20px
+	z-index: 1
+	color: white
+	background: rgba(black,0.2)
+	transition: font-size .5s ease, top .5s ease 2s, background .5s ease, padding .5s ease, width .5s ease
+
+	.year
+		opacity: 0
+		display: inline-block
+		transition: opacity 0s ease
+
+	&.visible
+		top: 0
+
+	&.small
+		font-size: 20px
+		background: rgba(black,0.5)
+		padding: 10px 20px
+		width: 150px
+
+section
+	padding: 50px 10px
+	background: white
+	text-align: center
+
+	&.main
+		padding: 0
+		background: transparent
+		text-align: left
+
+	&.skills
+		background: url(../img/skills.jpg) center center no-repeat
+		background-attachment: fixed
+
+		.row
+			margin-bottom: 40px
+
+		.fa
+			font-size: 70px
+			margin: 0 20px
+
+	&.passgenius
+		background: url(../img/passgenius-light.jpg) center bottom no-repeat
+		background-attachment: fixed
+		height: 400px
+		box-shadow: inset 0 0 10px rgba(black, 0.5)
+		position: relative
+
+		.fa-expand
+			position: absolute
+			top: 20px
+			right: 20px
+			background: rgba(white,0.5)
+			padding: 5px 7px
+			border-radius: 50%
+			cursor: pointer
+			transition: background .2s ease, transform .2s ease
+
+			&:hover
+				background: rgba(white,1)
+				transform: scale(1.3)
+
+	&.in-the-web
+		background: rgba(black, 0.8)
+		color: white
+
+		.fa
+			display: block
+			font-size: 40px
+			cursor: pointer
+
+		a
+			color: white
+			display: inline-block
+			margin-bottom: 20px
+			transition: text-shadow .2s ease
+
+			&:hover
+				text-shadow: 0 0 10px white
+
+	&.twitter
+		+v-grad(#174b92, #599edf)
+		padding: 100px 10px
+		color: white
+
+		&:hover .fa
+			text-shadow: 0 0 20px
+
+		h1 .fa
+			font-size: 100px
+			transition: text-shadow .2s ease
+
+		a
+			color: #00DAF8
+			text-shadow: 0 0 10px
+			margin-right: 10px
+			transition: color .2s ease
+
+			&:hover
+				color: white
+
+
+	&.copyright
+		padding: 10px
+		background: rgba(black, 0.8)
+		color: white
+		font-size: 16px

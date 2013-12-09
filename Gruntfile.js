@@ -7,7 +7,7 @@ module.exports = function(grunt){
 		watch: {
 			html: {
 				files: ['index.jade'],
-				tasks: ['jade', 'htmlcompressor']
+				tasks: ['jade']
 			},
 			styles: {
 				files: ['sass/**/*.sass'],
