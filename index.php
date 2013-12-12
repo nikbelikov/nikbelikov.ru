@@ -95,24 +95,21 @@
         </div>
       </div>
     </section>
-    <section id="passgenius" class="passgenius"><i class="fa fa-expand"></i></section>
+    <section id="passgenius" class="project passgenius"><i class="fa fa-expand"></i><a href="http://passgenius.ru/" target="_blank"><i class="fa fa-sign-in"></i></a></section>
     <section id="in-the-web" class="in-the-web">
       <h1>In the web</h1>
       <div class="row">
         <div class="medium-2 columns"><a href="http://instagram.com/nikbelikov" target="_blank"><i class="fa fa-instagram"></i>photos</a></div>
-        <div class="medium-2 columns"><a href="http://proza.ru/avtor/nikbelikov" target="_blank"><i class="fa fa-book"></i>mind</a></div>
+        <div class="medium-2 columns"><a href="http://proza.ru/avtor/nikbelikov" target="_blank"><i class="fa fa-book"></i>letters</a></div>
         <div class="medium-2 columns"><a href="http://buknotes.tumblr.com/" target="_blank"><i class="fa fa-tumblr"></i>books</a></div>
         <div class="medium-2 columns"><a href="https://github.com/nikbelikov" target="_blank"><i class="fa fa-github"></i>code</a></div>
         <div class="medium-2 columns"><a href="http://nikbelikov.github.io/" target="_blank"><i class="fa fa-coffee"></i>blog</a></div>
         <div class="medium-2 columns"><a href="mailto:nikbelikov@me.com" target="_blank"><i class="fa fa-envelope-o"></i>mail</a></div>
       </div>
     </section>
-    <section id="twitter" class="twitter">
-      <h1><i class="fa fa-twitter"></i></h1>
-      <p class="medium-6 small-centered columns"><a href="https://twitter.com/_nikbelikov">@_nikbelikov:</a>В Ульяновске -4, облачно. Уже виден рассвет, под которым суетятся-ездят люди.</p>
-    </section>
+    <section id="twitter" class="twitter"><a href="https://twitter.com/_nikbelikov" target="_blank"><i class="fa fa-twitter"></i><span>@_nikbelikov</span></a></section>
     <section class="copyright">
-      <p>nikbelikov.ru (c) foundation, jade, font awesome, grunt js</p>
+      <p>nikbelikov.ru (c) <a href="http://foundation.zurb.com/" target="_blank">foundation</a>, <a href="http://jade-lang.com/" target="_blank">jade</a>, <a href="http://fontawesome.io/" target="_blank">font awesome</a>, <a href="http://gruntjs.com/" target="_blank">grunt js</a></p>
     </section>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="js/min/init.min.js"></script>

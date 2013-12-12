@@ -7,15 +7,24 @@ module.exports = function(grunt){
 		watch: {
 			html: {
 				files: ['index.jade'],
-				tasks: ['jade']
+				tasks: ['jade'],
+				options: {
+					livereload: true
+				}
 			},
 			styles: {
 				files: ['sass/**/*.sass'],
-				tasks: ['compass', 'autoprefixer', 'cssmin']
+				tasks: ['compass', 'autoprefixer', 'cssmin'],
+				options: {
+					livereload: true
+				}
 			},
 			js: {
 				files: ['js/init.js'],
-				tasks: ['uglify']
+				tasks: ['uglify'],
+				options: {
+					livereload: true
+				}
 			}
 		},
 		// autoprefix css
