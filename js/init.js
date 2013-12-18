@@ -5,7 +5,7 @@ $(document).ready(function(){
 });
 
 $(window).scroll(function(){
-	var top_pos = $('body').scrollTop(),
+	var top_pos = $(window).scrollTop(),
 		$sitename = $('.sitename');
 
 	if (top_pos > 100) {
@@ -37,9 +37,9 @@ initProjects = function(){
 
 		if ($block.hasClass('expanded')) {
 			// 400 - project container height
-			$('body').animate({scrollTop: $block.offset().top-(body_height-400)/2});
+			$('body, html').animate({scrollTop: $block.offset().top-(body_height-400)/2});
 		} else {
-			$('body').animate({scrollTop: $block.offset().top});
+			$('body, html').animate({scrollTop: $block.offset().top});
 		}
 		$(this).toggleClass('fa-compress');
 		$block.toggleClass('expanded');

@@ -3,7 +3,7 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 	head
 		meta(charset='utf-8')
 		title Страничка Беликова Николая
-		meta(content='width=device-width', name='viewport', user-scalable='no')
+		meta(content='width=device-width, user-scalable=no', name='viewport')
 		meta(content='yes', name='apple-mobile-web-app-capable')
 		meta(content='black', name='apple-mobile-web-app-status-bar-style')
 		meta(content='nikbelikov', name='apple-mobile-web-app-title')
@@ -11,70 +11,56 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 		link(href='startup-image.png', rel='apple-touch-startup-image')
 		link(href='startup-image-iphone5.png', media='screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)', rel='apple-touch-startup-image')
 
-		link(href='favicon.ico', rel='shortcut icon', type='image/x-icon')
-		link(href='apple-touch-icon-precomposed.png', rel='apple-touch-icon-precomposed')
+		link(href='favi.ico', rel='shortcut i', type='image/x-i')
+		link(href='apple-touch-i-precomposed.png', rel='apple-touch-i-precomposed')
 
 		link(href='http://fonts.googleapis.com/css?family=Exo+2:100&subset=cyrillic,latin', rel='stylesheet')
 
-		link(href='/css/lib/font-awesome.min.css', rel='stylesheet')
-		link(href='/css/lib/foundation.min.css', rel='stylesheet')
-		link(href='/css/style.css', rel='stylesheet')
+		link(href='css/lib/font-awesome.min.css', rel='stylesheet')
+		link(href='css/lib/foundation.min.css', rel='stylesheet')
+		link(href='css/style.css', rel='stylesheet')
 
 	body
 		section.main
 			.row
 				.sitename
-					<?/*span.year <?php echo date('Y'); ?> (c)*/?>
 					span.title nikbelikov.ru
 
 		section.skills(id="skills")
-			h1 Skills
+			h1 Magic
 			.row
-				.medium-4.columns
-					p
-						icon.fa.fa-windows
-						icon.fa.fa-linux
-						icon.fa.fa-apple
+				.medium-3.columns
+					i.fa.fa-html5
+					p HTML5, Jade, Haml, Markdown
 
-				.medium-4.columns
-					h1: icon.fa.fa-html5
-					p Valid <br> Jade Haml
-
-				.medium-4.columns
-					h1: icon.fa.fa-css3
+				.medium-3.columns
+					i.fa.fa-css3
 					p Animation Transition LESS Sass Compass Autoprefixer
 
-			.row
-				.medium-4.columns
-					h1: icon.fa.fa-bolt
+				.medium-3.columns
+					i.fa.fa-bolt
 					p Javascript jQuery
 
-				.medium-4.columns
-					h1: icon.fa.fa-github
-					p Git (GitFlow) SVN Mercurial
-
-				.medium-4.columns
-					h1: icon.fa.fa-mobile
-					p Responsive Retina iOS Android
+				.medium-3.columns
+					i.fa.fa-github
+					p Git (GitFlow) SVN Mercurial SourceTree
 
 			.row
-				.medium-4.columns
-					h1: icon.fa.fa-flask
-					p Sublime Emmet GruntJS MAMP Evernote
+				.medium-3.columns
+					i.fa.fa-mobile
+					p Responsive Retina iOS Android
 
-				.medium-4.columns
-					h1: icon.fa.fa-eye
-					p Photoshop PNGExpress Inkscape Gimp
+				.medium-3.columns
+					i.fa.fa-apple
+					p Mavericks Sublime Emmet GruntJS MAMP Evernote
 
-				.medium-4.columns
-					h1: icon.fa.fa-comment-o
-					p: ul.social
-						li: a(href="#") instagram
-						li: a(href="#") twitter
-						li: a(href="#") books
-						li: a(href="#") code
-						li: a(href="#") blog
-						li: a(href="#") mail
+				.medium-3.columns
+					i.fa.fa-desktop
+					p Win Ubuntu Mac VirtualBox IE.Modern
+
+				.medium-3.columns
+					i.fa.fa-eye
+					p PhotoshopCC PngExpress Cloudup
 
 		section.project.passgenius(id="passgenius")
 			i.fa.fa-expand
@@ -109,6 +95,7 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 						| mail
 
 		section.twitter(id="twitter")
+			h1 Twitter
 			a(href="https://twitter.com/_nikbelikov", target="_blank")
 				i.fa.fa-twitter
 				span @_nikbelikov
