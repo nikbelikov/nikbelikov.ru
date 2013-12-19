@@ -7,7 +7,7 @@ module.exports = function(grunt){
 		watch: {
 			html: {
 				files: ['index.jade'],
-				tasks: ['jade'],
+				tasks: ['jade', 'htmlcompressor'],
 				options: {
 					livereload: true
 				}
@@ -82,6 +82,13 @@ module.exports = function(grunt){
 		}
 	});
 
-	grunt.registerTask('default', []);
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-compass');
+	grunt.loadNpmTasks('grunt-autoprefixer');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-jade');
+	grunt.loadNpmTasks('grunt-htmlcompressor');
 
+	grunt.registerTask('default', []);
 };
