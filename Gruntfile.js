@@ -6,16 +6,25 @@ module.exports = function(grunt){
 		pkg: grunt.file.readJSON('package.json'),
 		watch: {
 			html: {
-				files: ['index.haml'],
-				tasks: ['haml', 'htmlcompressor']
+				files: ['index.jade'],
+				tasks: ['jade', 'htmlcompressor'],
+				options: {
+					livereload: true
+				}
 			},
 			styles: {
 				files: ['sass/**/*.sass'],
-				tasks: ['compass', 'autoprefixer', 'cssmin']
+				tasks: ['compass', 'autoprefixer', 'cssmin'],
+				options: {
+					livereload: true
+				}
 			},
 			js: {
 				files: ['js/init.js'],
-				tasks: ['uglify']
+				tasks: ['uglify'],
+				options: {
+					livereload: true
+				}
 			}
 		},
 		// autoprefix css
@@ -49,13 +58,19 @@ module.exports = function(grunt){
 				}
 			}
 		},
-		// haml compilation
-		haml: {
-			dist: {
+		// jade compilation
+		jade: {
+			compile: {
+				options: {
+					data: {
+						debug: false
+					},
+					pretty: true
+				},
 				files: {
-					'index.php': 'index.haml'
+					"index.php": ["index.jade"]
 				}
-			},
+			}
 		},
 		// compress php
 		htmlcompressor: {
@@ -67,6 +82,13 @@ module.exports = function(grunt){
 		}
 	});
 
-	grunt.registerTask('default', []);
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-compass');
+	grunt.loadNpmTasks('grunt-autoprefixer');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-jade');
+	grunt.loadNpmTasks('grunt-htmlcompressor');
 
+	grunt.registerTask('default', []);
 };
