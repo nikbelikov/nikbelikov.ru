@@ -20,7 +20,7 @@
     <section class="main">
       <div class="row">
         <div class="sitename"><span class="title">nikbelikov.ru</span></div>
-      </div>
+      </div><i class="fa fa-angle-double-down down-icon"></i>
     </section>
     <section id="skills" class="skills">
       <h1>Magic</h1>

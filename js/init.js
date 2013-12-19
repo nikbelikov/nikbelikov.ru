@@ -28,6 +28,10 @@ initHeader = function(){
 	$('.sitename').addClass('visible').on('click',function(){
 		$('body').animate({scrollTop: 0});
 	});
+
+	$('.down-icon').addClass('visible').on('click',function(){
+		$('body, html').animate({scrollTop: 700},1000);
+	});
 };
 
 initProjects = function(){

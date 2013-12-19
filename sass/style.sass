@@ -76,6 +76,25 @@ a
 		padding: 10px 20px
 		width: 150px
 
+.down-icon
+	position: absolute
+	top: 45%
+	left: 50%
+	margin: -17px 0 0 -12px
+	color: white
+	font-size: 35px
+	cursor: pointer
+	opacity: 0
+	transition: text-shadow .2s ease, top 1s ease 3s, opacity 1s ease 3s, transform .2s ease
+
+	&.visible
+		top: 50%
+		opacity: 1
+
+	&:hover
+		text-shadow: 0 0 10px
+		transform: scale(1.4)
+
 section
 	padding: 50px 10px
 	text-align: center
@@ -211,3 +230,6 @@ section
 
 		&.in-the-web, &.copyright
 			background-image: url(../img/bg-blur.jpg)
+
+	.down-icon
+		display: none
