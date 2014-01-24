@@ -85,11 +85,12 @@ a
     font-size: 35px
     cursor: pointer
     opacity: 0
-    transition: text-shadow .2s ease, top 1s ease 3s, opacity 1s ease 3s, transform .2s ease
+    transition: opacity .2s ease, transform .2s ease
 
     &.visible
         top: 50%
         opacity: 1
+        transition: text-shadow .2s ease, top 1s ease 3s, opacity 1s ease 3s, transform .2s ease
 
     &:hover
         text-shadow: 0 0 10px
