@@ -64,8 +64,7 @@ html {
   color: #333333;
 }
 html.dark .passgenius {
-  background-image: url(../img/passgenius-dark.jpg);
-  background-attachment: fixed;
+  background: url(../img/passgenius-dark.jpg) fixed;
 }
 html.dark .twitter {
   *zoom: 1;
@@ -83,10 +82,9 @@ html, body, section.main {
 }
 
 body {
-  background: url(../img/bg.jpg) center center no-repeat;
+  background: url(../img/bg.jpg) no-repeat fixed center center;
   -webkit-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 h1 {
@@ -174,8 +172,7 @@ section.main {
   text-align: left;
 }
 section.skills {
-  background-image: url(../img/bg-blur.jpg);
-  background-attachment: fixed;
+  background: url(../img/bg-blur.jpg) fixed;
   color: white;
 }
 section.skills .row .columns {
@@ -194,8 +191,7 @@ section.project.expanded {
   height: 100%;
 }
 section.passgenius {
-  background-image: url(../img/passgenius-light.jpg);
-  background-attachment: fixed;
+  background: url(../img/passgenius-light.jpg) fixed;
   height: 400px;
   -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
