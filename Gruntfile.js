@@ -5,24 +5,15 @@ module.exports = function(grunt){
         watch: {
             html: {
                 files: ['index.jade'],
-                tasks: ['jade', 'htmlcompressor'],
-                options: {
-                    livereload: true
-                }
+                tasks: ['jade', 'htmlcompressor']
             },
             styles: {
                 files: ['sass/**/*.sass'],
-                tasks: ['compass', 'autoprefixer', 'cssmin'],
-                options: {
-                    livereload: true
-                }
+                tasks: ['compass', 'autoprefixer', 'cssmin']
             },
             js: {
                 files: ['js/init.js'],
-                tasks: ['uglify'],
-                options: {
-                    livereload: true
-                }
+                tasks: ['uglify']
             }
         },
         // autoprefix css

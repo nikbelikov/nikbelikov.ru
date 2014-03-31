@@ -172,7 +172,8 @@ section.main {
   text-align: left;
 }
 section.skills {
-  background: url(../img/bg-blur.jpg) fixed;
+  background-image: url(../img/bg-blur.jpg);
+  background-attachment: fixed;
   color: white;
 }
 section.skills .row .columns {

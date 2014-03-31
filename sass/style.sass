@@ -4,7 +4,6 @@
 $main-color: #1B84A5
 $black: #333
 
-// градиенты
 =v-grad($start-color, $end-color)
     +filter-gradient($start-color, $end-color)
     background: $end-color
@@ -106,7 +105,8 @@ section
         text-align: left
 
     &.skills
-        background: url(../img/bg-blur.jpg) fixed
+        background-image: url(../img/bg-blur.jpg)
+        background-attachment: fixed
         color: white
 
         .row .columns
