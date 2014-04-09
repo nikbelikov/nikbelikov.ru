@@ -1,0 +1,1 @@
+Страничка Беликова Николая [nikbelikov.ru](http://nikbelikov.ru/)
