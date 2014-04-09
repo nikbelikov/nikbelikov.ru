@@ -17,20 +17,14 @@ html
     font: 20px "Exo 2", sans-serif
     color: $black
 
-    &.dark
-        .passgenius
-            background: url(../img/passgenius-dark.jpg) fixed
-
-        .twitter
-            +v-grad(#072752, #3770A7)
-
 html, body, section.main
     width: 100%
     height: 100%
 
 body
-    background: url(../img/bg.jpg) no-repeat fixed center center
+    background: url(../img/bg.jpg) center center no-repeat
     background-size: cover
+    background-attachment: fixed
 
 h1
     font-size: 30px
@@ -75,7 +69,7 @@ a
 
 .down-icon
     position: absolute
-    top: 45%
+    top: 65%
     left: 50%
     margin: -17px 0 0 -12px
     color: white
@@ -85,7 +79,7 @@ a
     transition: opacity .2s ease, transform .2s ease
 
     &.visible
-        top: 50%
+        top: 70%
         opacity: 1
         transition: text-shadow .2s ease, top 1s ease 3s, opacity 1s ease 3s, transform .2s ease
 
@@ -108,6 +102,8 @@ section
         background-image: url(../img/bg-blur.jpg)
         background-attachment: fixed
         color: white
+        box-shadow: 0 0 30px rgba(0,0,0,0.3)
+        border-top: 1px solid #BDBDBD
 
         .row .columns
             margin-bottom: 40px
@@ -124,7 +120,8 @@ section
             height: 100%
 
     &.passgenius
-        background: url(../img/passgenius-light.jpg) fixed
+        background-image: url(../img/passgenius.jpg)
+        background-attachment: fixed
         height: 400px
         box-shadow: inset 0 0 10px rgba(black, 0.5)
         position: relative
@@ -213,6 +210,12 @@ section
     body, section
         background-attachment: scroll !important
 
+    section.main, .sitename
+        display: none
+
+    section.passgenius
+        height: 300px
+
     .fa-expand, .fa-compress
         display: none
 
@@ -223,10 +226,17 @@ section
 
     section
         background-size: scroll !important
-        background-position: 0 bottom !important
+        background-position: center bottom !important
 
         &.in-the-web, &.copyright
             background-image: url(../img/bg-blur.jpg)
 
     .down-icon
         display: none
+
+@media(max-width: 640px)
+    section.skills
+        background: #341f1a
+
+    section.in-the-web
+        background: #142734

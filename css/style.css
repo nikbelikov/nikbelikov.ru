@@ -63,18 +63,6 @@ html {
   font: 20px "Exo 2", sans-serif;
   color: #333333;
 }
-html.dark .passgenius {
-  background: url(../img/passgenius-dark.jpg) fixed;
-}
-html.dark .twitter {
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF072752', endColorstr='#FF3770A7');
-  background: #3770a7;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #072752), color-stop(100%, #3770a7));
-  background-image: -webkit-linear-gradient(#072752, #3770a7);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#072752), to(#3770a7));
-  background-image: linear-gradient(#072752, #3770a7);
-}
 
 html, body, section.main {
   width: 100%;
@@ -82,9 +70,10 @@ html, body, section.main {
 }
 
 body {
-  background: url(../img/bg.jpg) no-repeat fixed center center;
+  background: url(../img/bg.jpg) center center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -136,7 +125,7 @@ a {
 
 .down-icon {
   position: absolute;
-  top: 45%;
+  top: 65%;
   left: 50%;
   margin: -17px 0 0 -12px;
   color: white;
@@ -147,7 +136,7 @@ a {
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 .down-icon.visible {
-  top: 50%;
+  top: 70%;
   opacity: 1;
   -webkit-transition: text-shadow 0.2s ease, top 1s ease 3s, opacity 1s ease 3s, -webkit-transform 0.2s ease;
   transition: text-shadow 0.2s ease, top 1s ease 3s, opacity 1s ease 3s, transform 0.2s ease;
@@ -175,6 +164,9 @@ section.skills {
   background-image: url(../img/bg-blur.jpg);
   background-attachment: fixed;
   color: white;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  border-top: 1px solid #bdbdbd;
 }
 section.skills .row .columns {
   margin-bottom: 40px;
@@ -192,7 +184,8 @@ section.project.expanded {
   height: 100%;
 }
 section.passgenius {
-  background: url(../img/passgenius-light.jpg) fixed;
+  background-image: url(../img/passgenius.jpg);
+  background-attachment: fixed;
   height: 400px;
   -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
@@ -299,6 +292,14 @@ section.copyright a:hover {
     background-attachment: scroll !important;
   }
 
+  section.main, .sitename {
+    display: none;
+  }
+
+  section.passgenius {
+    height: 300px;
+  }
+
   .fa-expand, .fa-compress {
     display: none;
   }
@@ -314,7 +315,7 @@ section.copyright a:hover {
   section {
     -webkit-background-size: scroll !important;
     background-size: scroll !important;
-    background-position: 0 bottom !important;
+    background-position: center bottom !important;
   }
   section.in-the-web, section.copyright {
     background-image: url(../img/bg-blur.jpg);
@@ -322,5 +323,15 @@ section.copyright a:hover {
 
   .down-icon {
     display: none;
+  }
+}
+
+@media(max-width: 640px) {
+  section.skills {
+    background: #341f1a;
+  }
+
+  section.in-the-web {
+    background: #142734;
   }
 }

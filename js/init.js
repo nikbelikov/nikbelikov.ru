@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    initDayTime();
     initHeader();
     initProjects();
 });
@@ -18,14 +17,6 @@ $(window).scroll(function(){
         $downicon.addClass('visible');
     }
 });
-
-initDayTime = function(){
-    var hour = new Date();
-    hour = hour.getHours();
-    if(hour >= 19 || hour <= 7 ) {
-        $('html').addClass('dark');
-    }
-};
 
 initHeader = function(){
     $('.sitename').addClass('visible').on('click',function(){
