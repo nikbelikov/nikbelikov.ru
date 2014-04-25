@@ -12,8 +12,30 @@ module.exports = function(grunt){
                 tasks: ['compass', 'autoprefixer', 'cssmin']
             },
             js: {
-                files: ['js/init.js'],
-                tasks: ['uglify']
+                files: ['coffee/*.coffee'],
+                tasks: ['coffee', 'uglify']
+            }
+        },
+        // jade compilation
+        jade: {
+            compile: {
+                options: {
+                    data: {
+                        debug: false
+                    },
+                    pretty: true
+                },
+                files: {
+                    "index.php": ["index.jade"]
+                }
+            }
+        },
+        // compress php
+        htmlcompressor: {
+            compile: {
+                files: {
+                    'index.php': 'index.php'
+                }
             }
         },
         // autoprefix css
@@ -45,33 +67,18 @@ module.exports = function(grunt){
                 }
             }
         },
+        coffee: {
+            compile: {
+                files: {
+                    'js/init.js': 'coffee/init.coffee'
+                }
+            }
+        },
         // compress js
         uglify: {
             build: {
                 files: {
-                    'js/min/init.min.js': ['js/init.js']
-                }
-            }
-        },
-        // jade compilation
-        jade: {
-            compile: {
-                options: {
-                    data: {
-                        debug: false
-                    },
-                    pretty: true
-                },
-                files: {
-                    "index.php": ["index.jade"]
-                }
-            }
-        },
-        // compress php
-        htmlcompressor: {
-            compile: {
-                files: {
-                    'index.php': 'index.php'
+                    'js/init.js': 'js/init.js'
                 }
             }
         }
@@ -81,6 +88,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-coffee');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jade');
     grunt.loadNpmTasks('grunt-htmlcompressor');

@@ -100,9 +100,9 @@ a {
   padding: 20px;
   z-index: 1;
   color: white;
-  background: rgba(0, 0, 0, 0.2);
-  -webkit-transition: font-size 0.5s ease, top 0.5s ease 2s, background 0.5s ease, padding 0.5s ease, width 0.5s ease;
-  transition: font-size 0.5s ease, top 0.5s ease 2s, background 0.5s ease, padding 0.5s ease, width 0.5s ease;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-transition: font-size 0.5s ease, top 0.5s ease 2s, background 0.5s ease, padding 0.5s ease, width 0.5s ease, -webkit-transform 0.5s ease;
+  transition: font-size 0.5s ease, top 0.5s ease 2s, background 0.5s ease, padding 0.5s ease, width 0.5s ease, transform 0.5s ease;
 }
 .sitename.cursor-pointer, .sitename.cursor-pointer span {
   cursor: pointer !important;
@@ -117,15 +117,17 @@ a {
   top: 0;
 }
 .sitename.small {
-  font-size: 20px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
   padding: 10px 20px;
-  width: 150px;
+  width: 260px;
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
 }
 
 .down-icon {
   position: absolute;
-  top: 65%;
+  top: 80%;
   left: 50%;
   margin: -17px 0 0 -12px;
   color: white;
@@ -136,7 +138,7 @@ a {
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 .down-icon.visible {
-  top: 70%;
+  top: 95%;
   opacity: 1;
   -webkit-transition: text-shadow 0.2s ease, top 1s ease 3s, opacity 1s ease 3s, -webkit-transform 0.2s ease;
   transition: text-shadow 0.2s ease, top 1s ease 3s, opacity 1s ease 3s, transform 0.2s ease;
@@ -166,7 +168,7 @@ section.skills {
   color: white;
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-  border-top: 1px solid #bdbdbd;
+  border-top: 1px solid #6b6a6a;
 }
 section.skills .row .columns {
   margin-bottom: 40px;
@@ -237,11 +239,13 @@ section.in-the-web a {
   color: white;
   display: inline-block;
   margin-bottom: 20px;
-  -webkit-transition: text-shadow 0.2s ease;
-  transition: text-shadow 0.2s ease;
+  -webkit-transition: text-shadow 1s ease;
+  transition: text-shadow 1s ease;
 }
 section.in-the-web a:hover {
   text-shadow: 0 0 10px white;
+  -webkit-transition: text-shadow 0.2s ease;
+  transition: text-shadow 0.2s ease;
 }
 section.twitter {
   *zoom: 1;
@@ -256,20 +260,22 @@ section.twitter {
 }
 section.twitter a:hover i, section.twitter a:hover span {
   text-shadow: 0 0 10px;
+  -webkit-transition: text-shadow 0.2s ease;
+  transition: text-shadow 0.2s ease;
 }
 section.twitter .fa {
   font-size: 100px;
   color: white;
   cursor: pointer;
-  -webkit-transition: text-shadow 0.2s ease;
-  transition: text-shadow 0.2s ease;
+  -webkit-transition: text-shadow 1s ease;
+  transition: text-shadow 1s ease;
 }
 section.twitter span {
   color: white;
   margin-right: 10px;
   cursor: pointer !important;
-  -webkit-transition: text-shadow 0.2s ease;
-  transition: text-shadow 0.2s ease;
+  -webkit-transition: text-shadow 1s ease;
+  transition: text-shadow 1s ease;
 }
 section.copyright {
   padding: 10px;
@@ -280,11 +286,13 @@ section.copyright {
 section.copyright a {
   color: white;
   border-bottom: 1px solid transparent;
-  -webkit-transition: border-color 0.2s ease;
-  transition: border-color 0.2s ease;
+  -webkit-transition: border-color 0.6s ease;
+  transition: border-color 0.6s ease;
 }
 section.copyright a:hover {
   border-color: white;
+  -webkit-transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease;
 }
 
 @media(max-width: 769px) {

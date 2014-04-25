@@ -47,8 +47,8 @@ a
     padding: 20px
     z-index: 1
     color: white
-    background: rgba(black,0.2)
-    transition: font-size .5s ease, top .5s ease 2s, background .5s ease, padding .5s ease, width .5s ease
+    background: rgba(white,0.1)
+    transition: font-size .5s ease, top .5s ease 2s, background .5s ease, padding .5s ease, width .5s ease, transform .5s ease
 
     &.cursor-pointer, &.cursor-pointer span
         cursor: pointer !important
@@ -62,14 +62,14 @@ a
         top: 0
 
     &.small
-        font-size: 20px
-        background: rgba(black,0.5)
+        background: rgba(white,0.1)
         padding: 10px 20px
-        width: 150px
+        width: 260px
+        transform: scale(0.5)
 
 .down-icon
     position: absolute
-    top: 65%
+    top: 80%
     left: 50%
     margin: -17px 0 0 -12px
     color: white
@@ -79,7 +79,7 @@ a
     transition: opacity .2s ease, transform .2s ease
 
     &.visible
-        top: 70%
+        top: 95%
         opacity: 1
         transition: text-shadow .2s ease, top 1s ease 3s, opacity 1s ease 3s, transform .2s ease
 
@@ -103,7 +103,7 @@ section
         background-attachment: fixed
         color: white
         box-shadow: 0 0 30px rgba(0,0,0,0.3)
-        border-top: 1px solid #BDBDBD
+        border-top: 1px solid #6B6A6A
 
         .row .columns
             margin-bottom: 40px
@@ -166,10 +166,11 @@ section
             color: white
             display: inline-block
             margin-bottom: 20px
-            transition: text-shadow .2s ease
+            transition: text-shadow 1s ease
 
             &:hover
                 text-shadow: 0 0 10px white
+                transition: text-shadow .2s ease
 
     &.twitter
         +v-grad(#174b92, #599edf)
@@ -179,18 +180,19 @@ section
         a:hover
             i, span
                 text-shadow: 0 0 10px
+                transition: text-shadow .2s ease
 
         .fa
             font-size: 100px
             color: white
             cursor: pointer
-            transition: text-shadow .2s ease
+            transition: text-shadow 1s ease
 
         span
             color: white
             margin-right: 10px
             cursor: pointer !important
-            transition: text-shadow .2s ease
+            transition: text-shadow 1s ease
 
     &.copyright
         padding: 10px
@@ -201,10 +203,11 @@ section
         a
             color: white
             border-bottom: 1px solid transparent
-            transition: border-color .2s ease
+            transition: border-color .6s ease
 
             &:hover
                 border-color: white
+                transition: border-color .2s ease
 
 @media(max-width: 769px)
     body, section
