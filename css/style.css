@@ -100,7 +100,7 @@ a {
   padding: 20px;
   z-index: 1;
   color: white;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.5);
   -webkit-transition: font-size 0.5s ease, top 0.5s ease 2s, background 0.5s ease, padding 0.5s ease, width 0.5s ease, -webkit-transform 0.5s ease;
   transition: font-size 0.5s ease, top 0.5s ease 2s, background 0.5s ease, padding 0.5s ease, width 0.5s ease, transform 0.5s ease;
 }
@@ -127,18 +127,19 @@ a {
 
 .down-icon {
   position: absolute;
-  top: 80%;
+  top: 0;
   left: 50%;
   margin: -17px 0 0 -12px;
   color: white;
   font-size: 35px;
   cursor: pointer;
   opacity: 0;
+  z-index: 1;
   -webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 .down-icon.visible {
-  top: 95%;
+  top: 50px;
   opacity: 1;
   -webkit-transition: text-shadow 0.2s ease, top 1s ease 3s, opacity 1s ease 3s, -webkit-transform 0.2s ease;
   transition: text-shadow 0.2s ease, top 1s ease 3s, opacity 1s ease 3s, transform 0.2s ease;
@@ -166,9 +167,9 @@ section.skills {
   background-image: url(../img/bg-blur.jpg);
   background-attachment: fixed;
   color: white;
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-  border-top: 1px solid #6b6a6a;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid #d5d5d5;
 }
 section.skills .row .columns {
   margin-bottom: 40px;
@@ -189,8 +190,8 @@ section.passgenius {
   background-image: url(../img/passgenius.jpg);
   background-attachment: fixed;
   height: 400px;
-  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
   position: relative;
 }
 section.passgenius:hover .fa-expand, section.passgenius:hover .fa-compress, section.passgenius:hover .fa-sign-in {
@@ -248,14 +249,7 @@ section.in-the-web a:hover {
   transition: text-shadow 0.2s ease;
 }
 section.twitter {
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF174B92', endColorstr='#FF599EDF');
-  background: #599edf;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #174b92), color-stop(100%, #599edf));
-  background-image: -webkit-linear-gradient(#174b92, #599edf);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#174b92), to(#599edf));
-  background-image: linear-gradient(#174b92, #599edf);
-  padding: 100px 10px;
+  background: rgba(0, 0, 0, 0.6);
   color: white;
 }
 section.twitter a:hover i, section.twitter a:hover span {

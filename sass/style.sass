@@ -47,7 +47,7 @@ a
     padding: 20px
     z-index: 1
     color: white
-    background: rgba(white,0.1)
+    background: rgba(black,0.5)
     transition: font-size .5s ease, top .5s ease 2s, background .5s ease, padding .5s ease, width .5s ease, transform .5s ease
 
     &.cursor-pointer, &.cursor-pointer span
@@ -69,17 +69,18 @@ a
 
 .down-icon
     position: absolute
-    top: 80%
+    top: 0
     left: 50%
     margin: -17px 0 0 -12px
     color: white
     font-size: 35px
     cursor: pointer
     opacity: 0
+    z-index: 1
     transition: opacity .2s ease, transform .2s ease
 
     &.visible
-        top: 95%
+        top: 50px
         opacity: 1
         transition: text-shadow .2s ease, top 1s ease 3s, opacity 1s ease 3s, transform .2s ease
 
@@ -102,8 +103,8 @@ section
         background-image: url(../img/bg-blur.jpg)
         background-attachment: fixed
         color: white
-        box-shadow: 0 0 30px rgba(0,0,0,0.3)
-        border-top: 1px solid #6B6A6A
+        box-shadow: 0 0 30px rgba(0,0,0,0.5)
+        border-top: 1px solid #D5D5D5
 
         .row .columns
             margin-bottom: 40px
@@ -123,7 +124,7 @@ section
         background-image: url(../img/passgenius.jpg)
         background-attachment: fixed
         height: 400px
-        box-shadow: inset 0 0 10px rgba(black, 0.5)
+        box-shadow: inset 0 0 30px rgba(black, 0.5)
         position: relative
 
         &:hover
@@ -173,8 +174,7 @@ section
                 transition: text-shadow .2s ease
 
     &.twitter
-        +v-grad(#174b92, #599edf)
-        padding: 100px 10px
+        background: rgba(black, 0.6)
         color: white
 
         a:hover
