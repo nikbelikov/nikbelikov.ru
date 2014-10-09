@@ -36,6 +36,7 @@ initProjects = ->
       $block.removeClass('expanded')
     else
       $page.animate scrollTop: $block.offset().top
-      $(this).toggleClass('fa-compress')
       $block.addClass('expanded')
+
+    $(this).toggleClass('fa-compress')
   return
