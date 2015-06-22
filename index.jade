@@ -31,19 +31,19 @@ html
             .row
                 .medium-3.columns
                     i.fa.fa-html5
-                    p HTML5 Jade Haml Markdown Retina SVG Validation
+                    p HTML5 Jade Markdown Retina SVG Validation Polymer
 
                 .medium-3.columns
                     i.fa.fa-css3
-                    p MCSS Animation LESS Sass Compass Autoprefixer
+                    p CSS3 MCSS Animation LESS Sass Scss Autoprefixer
 
                 .medium-3.columns
                     i.fa.fa-bolt
-                    p Javascript CoffeeScript jQuery Grunt Gulp Bower
+                    p Javascript jQuery Grunt Gulp Angularjs requirejs Browserify
 
                 .medium-3.columns
                     i.fa.fa-github
-                    p Git (GitFlow) SVN Mercurial Tower GitHub
+                    p Git (GitFlow) Mercurial Tower GitHub Bower npm
 
             .row
                 .medium-3.columns
@@ -52,7 +52,7 @@ html
 
                 .medium-3.columns
                     i.fa.fa-apple
-                    p Yosemite WebStorm Emmet MAMP LiveReload Evernote Mailbox ForkLift
+                    p Yosemite WebStorm Emmet MAMP Vagrant LiveReload
 
                 .medium-3.columns
                     i.fa.fa-desktop
@@ -60,7 +60,7 @@ html
 
                 .medium-3.columns
                     i.fa.fa-eye
-                    p PhotoshopCC PngExpress CSSHat iDraw Monosnap
+                    p PhotoshopCC PngExpress CSSHat iDraw
 
         section.project.passgenius(id="passgenius")
             i.fa.fa-expand
@@ -86,7 +86,7 @@ html
                         i.fa.fa-github
                         | code
                 .medium-2.columns
-                    a(href="http://nikbelikov.github.io/", target="_blank")
+                    a(href="https://medium.com/@nikbelikov", target="_blank")
                         i.fa.fa-coffee
                         | blog
                 .medium-2.columns
@@ -103,5 +103,7 @@ html
         section.copyright
             p nikbelikov.ru (с) <a href="http://foundation.zurb.com/" target="_blank">foundation</a>, <a href="http://jade-lang.com/" target="_blank">jade</a>, <a href="http://fontawesome.io/" target="_blank">font awesome</a>, <a href="http://gruntjs.com/" target="_blank">grunt js</a>
 
-        script(src="http://code.jquery.com/jquery-latest.min.js")
-        script(src="js/init.js")
+        script(src="js/modernizr.custom.14873.js")
+        script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+        script(type='text/javascript').
+            (function(){var a,b;$(function(){a(),b()}),$(window).scroll(function(){var a,b,c;c=$(window).scrollTop(),b=$(".sitename"),a=$(".down-icon"),c>100?(b.addClass("small cursor-pointer"),a.removeClass("visible")):(b.removeClass("small cursor-pointer"),a.addClass("visible"))}),a=function(){$(".sitename").addClass("visible").on("click",function(){return $("body").animate({scrollTop:0})}),$(".down-icon").addClass("visible").on("click",function(){return $("body, html").animate({scrollTop:700},1e3)})},b=function(){$(".fa-expand").on("click",function(){var a,b,c;return a=$(this).parent(),b=$("body, html"),c=$("body").outerHeight(),a.hasClass("expanded")?(b.animate({scrollTop:a.offset().top-(c-400)/2}),a.removeClass("expanded")):(b.animate({scrollTop:a.offset().top}),a.addClass("expanded")),$(this).toggleClass("fa-compress")})}}).call(this);
