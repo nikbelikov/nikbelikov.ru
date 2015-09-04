@@ -1,17 +1,45 @@
 {
-    "name": "ProjectGrunt",
-    "version": "0.1.0",
-    "author": "Nikolay Belikov",
-    "private": true,
-    "devDependencies": {
-        "grunt": "~0.4.0",
-        "grunt-contrib-cssmin": "*",
-        "grunt-contrib-coffee": "*",
-        "grunt-contrib-uglify": "*",
-        "grunt-contrib-watch": "*",
-        "grunt-contrib-compass": "*",
-        "grunt-autoprefixer": "*",
-        "grunt-htmlcompressor": "~0.1.8",
-        "grunt-contrib-jade": "~0.8.0"
-    }
+  "name": "Project",
+  "description": "Your project description",
+  "repository": {
+    "type": "git",
+    "url": "your git repo"
+  },
+  "author": "Author",
+  "dependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "bootstrap-sass": "^3.3.4",
+    "browser-sync": "^2.8.2",
+    "browserify": "^10.2.0",
+    "browserify-shim": "^3.8.6",
+    "cssnano": "^2.6.1",
+    "event-stream": "^3.3.1",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.2.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jade": "^1.0.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-postcss": "^6.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.2.0",
+    "gulp-uncss": "^1.0.1",
+    "gulp-webp": "^2.3.0",
+    "jquery": "^2.1.4",
+    "underscore": "^1.8.3",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "browser": {
+    "modernizr": "./bower_components/modernizr/modernizr.js"
+  },
+  "browserify-shim": {
+    "modernizr": "Modernizr"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  }
 }
