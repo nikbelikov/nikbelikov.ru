@@ -1,0 +1,82 @@
+.projects
+    position: fixed
+    width: 500%
+    height: 50%
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%) rotate(-45deg)
+    background: $color-projects-bg
+    z-index: 1
+    transition: top $animation-speed, left $animation-speed, transform $animation-speed, width $animation-speed / 2, height $animation-speed
+
+    @media (min-width: 400px)
+        transform: translate(-50%, -50%) rotate(-15deg)
+
+    @media (min-width: 800px)
+        transform: translate(-50%, -50%) rotate(-10deg)
+
+    .icon-projects
+        fill: $color-projects-text
+        position: absolute
+        top: 50%
+        left: 50%
+        opacity: 1
+        transform: translate(-50%, -50%) rotate(45deg)
+        transition: opacity $animation-speed
+
+        @media (min-width: 400px)
+            transform: translate(-50%, -50%) rotate(15deg)
+
+        @media (min-width: 800px)
+            transform: translate(-50%, -50%) rotate(10deg)
+            width: 70px !important
+            height: 70px !important
+
+body.view-projects
+    .projects
+        width: 200%
+        height: 200%
+
+        .icon-projects
+            opacity: 0
+
+    .close-section
+        opacity: 1
+        right: 10px
+        transition: right $animation-speed $animation-speed
+        z-index: 2
+
+        &:before, &:after
+            height: 3px
+            background: $color-projects-text
+            border: 1px solid $color-projects-bg
+            transition: transform $animation-speed $animation-speed * 2
+
+        &:before
+            transform: rotate(45deg)
+
+        &:after
+            transform: rotate(-45deg)
+
+    .projects-list
+        transform: scale(1)
+        left: 0
+        opacity: 1
+        transition: transform $animation-speed, opacity $animation-speed, left 0s 0s
+
+.projects-list
+    width: 100%
+    height: 100%
+    position: fixed
+    opacity: 0
+    top: 0
+    left: -9999px
+    transform: scale(0.9)
+    overflow: auto
+    z-index: 1
+    transition: transform $animation-speed, opacity $animation-speed, left 0s $animation-speed
+    -webkit-overflow-scrolling: touch
+
+    img
+        max-width: 100%
+        height: auto

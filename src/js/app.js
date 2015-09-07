@@ -1,7 +1,4 @@
 "use strict";
 
-var Modernizr = require('modernizr');
-
-// module example
-var testModule = require('./modules/test.js');
-testModule.init();
+var Sections = require('./modules/sections.js');
+Sections.init();

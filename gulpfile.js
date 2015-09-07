@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
-var autoprefixer = require('autoprefixer-core');
+var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
 var browserify = require('browserify');
 var vinylSourceStream = require('vinyl-source-stream');
@@ -37,8 +37,8 @@ gulp.task('jade', function() {
 var postcssPlugins = [
     autoprefixer({
         browsers: ['last 2 versions']
-    }),
-    cssnano()
+    })
+    //cssnano()
 ];
 
 gulp.task('sass', ['jade'], function () {
@@ -48,7 +48,12 @@ gulp.task('sass', ['jade'], function () {
             suffix: ".min"
         }))
         //.pipe($.uncss({
-        //    html: ['index.html']
+        //    html: ['dist/index.html'],
+        //    ignore: [
+        //        '/.view-magic/',
+        //        'body.view-projects',
+        //        'body.view-social'
+        //    ]
         //}))
         .pipe($.postcss(postcssPlugins))
         .pipe(gulp.dest('dist/css'))

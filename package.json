@@ -7,7 +7,7 @@
   },
   "author": "Author",
   "dependencies": {
-    "autoprefixer-core": "^5.2.1",
+    "autoprefixer": "^6.0.1",
     "bootstrap-sass": "^3.3.4",
     "browser-sync": "^2.8.2",
     "browserify": "^10.2.0",
@@ -15,7 +15,6 @@
     "cssnano": "^2.6.1",
     "event-stream": "^3.3.1",
     "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^2.2.0",
     "gulp-clean": "^0.3.1",
     "gulp-concat": "^2.5.2",
     "gulp-imagemin": "^2.2.1",
