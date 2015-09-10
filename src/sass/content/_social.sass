@@ -19,7 +19,7 @@
         top: 80%
         left: 80%
         transform: translate(-80%, -80%)
-        transition: top $animation-speed, left $animation-speed, transform $animation-speed
+        transition: top $animation-speed, left $animation-speed, transform $animation-speed, opacity $animation-speed
 
         @media (min-width: 800px)
             width: 70px !important
@@ -48,6 +48,11 @@
         transform: translateX(-10px)
         transition: opacity $animation-speed, transform $animation-speed, top 0s $animation-speed
 
+        svg
+            @media (min-width: 1280px)
+                width: 70px !important
+                height: 70px !important
+
 body.view-social
     .magic
         top: -50%
@@ -68,6 +73,11 @@ body.view-social
 
             @media (min-width: 800px)
                 top: 110px
+
+            @media (min-width: 1280px)
+                opacity: 0
+                top: 80%
+                left: 80%
 
         .close-section
             opacity: 1
