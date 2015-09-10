@@ -3,6 +3,7 @@ var browserSync = require('browser-sync').create();
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
 var browserify = require('browserify');
+var riotify = require('riotify');
 var vinylSourceStream = require('vinyl-source-stream');
 var es = require('event-stream');
 var $ = require('gulp-load-plugins')();
@@ -12,7 +13,7 @@ gulp.task('copy-bootstrap', function () {
         .pipe(gulp.dest('src/sass/bootstrap'));
 });
 
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', ['sass', 'browserify'], function() {
     browserSync.init({
         server: "./dist"
     });
@@ -20,13 +21,13 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch('src/jade/**/*.jade', ['jade']);
     gulp.watch(['src/sass/**/*.sass', 'src/sass/**/*.scss'], ['sass']);
     gulp.watch('src/img/**/*', ['webp']);
-    gulp.watch('src/js/**/*.js', ['browserify']);
+    gulp.watch('src/js/**/*', ['browserify']);
 });
 
 gulp.task('jade', function() {
     return gulp.src('src/jade/*.jade')
         .pipe($.jade({
-            pretty: "    "
+            //pretty: "    "
         }).on('error', function (err) {
             console.log(err);
         }))
@@ -37,11 +38,11 @@ gulp.task('jade', function() {
 var postcssPlugins = [
     autoprefixer({
         browsers: ['last 2 versions']
-    })
-    //cssnano()
+    }),
+    cssnano()
 ];
 
-gulp.task('sass', ['jade'], function () {
+gulp.task('sass', function () {
     gulp.src('src/sass/**/*.sass')
         .pipe($.sass().on('error', $.sass.logError))
         .pipe($.rename({
@@ -50,14 +51,12 @@ gulp.task('sass', ['jade'], function () {
         //.pipe($.uncss({
         //    html: ['dist/index.html'],
         //    ignore: [
-        //        '/.view-magic/',
-        //        'body.view-projects',
-        //        'body.view-social'
+        //        '/.*\.view\-.*/g'
         //    ]
         //}))
         .pipe($.postcss(postcssPlugins))
         .pipe(gulp.dest('dist/css'))
-        .pipe(browserSync.stream({once: true}));
+        .pipe(browserSync.stream());
 });
 
 gulp.task('csslibs', function () {
@@ -104,7 +103,8 @@ gulp.task('browserify', function() {
     var tasks = files.map(function(entry) {
         return browserify({
             entries: ['src/js/' + entry],
-            debug: true
+            debug: true,
+            transform: [riotify]
         })
             .bundle()
             .pipe(vinylSourceStream(entry))

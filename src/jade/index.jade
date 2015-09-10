@@ -1,6 +1,6 @@
 doctype html
 
-html.no-js
+html
 
     include includes/head
 
@@ -40,14 +40,7 @@ html.no-js
                     .close-section
 
                     .magic__text
-                        p HTML5 Jade Markdown Retina SVG Validation Polymer
-                        p CSS3 MCSS Animation LESS Sass Scss Postcss Autoprefixer
-                        p Javascript jQuery Grunt Gulp Angularjs Requirejs Browserify
-                        p Git (GitFlow) Tower GitHub Bower npm
-                        p Adaptive iOS Android Bootstrap Foundation
-                        p El Capitan WebStorm Emmet MAMP Vagrant LiveReload
-                        p Win Ubuntu Mac VirtualBox IE.Modern
-                        p PhotoshopCC Sketch PngExpress CSSHat
+                        magic
 
                 .projects
                     svg.icon-projects
@@ -56,24 +49,7 @@ html.no-js
                 .close-section
 
                 div.projects-list
-                    picture
-                        source(srcset="img/passgenius640.webp 400w, img/passgenius1200.webp 640w", type="image/webp")
-                        img(src="img/passgenius640.jpg", alt="image", srcset="img/passgenius640.jpg 400w, img/passgenius1200.jpg 640w")
-                    picture
-                        source(srcset="img/eve640.webp 400w, img/eve1200.webp 640w", type="image/webp")
-                        img(src="img/eve640.jpg", alt="image", srcset="img/eve640.jpg 400w, img/eve1200.jpg 640w")
-                    picture
-                        source(srcset="img/floc640.webp 400w, img/floc1200.webp 640w", type="image/webp")
-                        img(src="img/floc640.jpg", alt="image", srcset="img/floc640.jpg 400w, img/floc1200.jpg 640w")
-                    picture
-                        source(srcset="img/letter640.webp 400w, img/letter1200.webp 640w", type="image/webp")
-                        img(src="img/letter640.jpg", alt="image", srcset="img/letter640.jpg 400w, img/letter1200.jpg 640w")
-                    picture
-                        source(srcset="img/andylight640.webp 400w, img/andylight1200.webp 640w", type="image/webp")
-                        img(src="img/andylight640.png", alt="image", srcset="img/andylight640.png 400w, img/andylight1200.png 640w")
-                    picture
-                        source(srcset="img/20century640.webp 400w, img/20century1200.webp 640w", type="image/webp")
-                        img(src="img/20century640.jpg", alt="image", srcset="img/20century640.jpg 400w, img/20century1200.jpg 640w")
+                    projects
 
                 .social
                     svg.icon-social
@@ -83,42 +59,8 @@ html.no-js
 
                     .social__icons
                         .row
-                            .col-xs-4.col-sm-2.text-center
-                                a(href="http://instagram.com/nikbelikov", target="_blank")
-                                    svg.icon-photos
-                                        use(xlink:href="#icon-photos")
-                                    div Photos
-                            .col-xs-4.col-sm-2.text-center
-                                a(href="http://proza.ru/avtor/nikbelikov", target="_blank")
-                                    svg.icon-pen
-                                        use(xlink:href="#icon-pen")
-                                    div Characters
-                            .col-xs-4.col-sm-2.text-center
-                                a(href="http://buknotes.ru/", target="_blank")
-                                    svg.icon-book
-                                        use(xlink:href="#icon-book")
-                                    div Books
-                            .col-xs-4.col-sm-2.text-center
-                                a(href="https://github.com/nikbelikov", target="_blank")
-                                    svg.icon-github
-                                        use(xlink:href="#icon-github")
-                                    div Code
-                            .col-xs-4.col-sm-2.text-center
-                                a(href="https://medium.com/@nikbelikov", target="_blank")
-                                    svg.icon-cup
-                                        use(xlink:href="#icon-cup")
-                                    div Blog
-                            .col-xs-4.col-sm-2.text-center
-                                a(href="mailto:nikbelikov@me.com", target="_blank")
-                                    svg.icon-mail
-                                        use(xlink:href="#icon-mail")
-                                    div Mail
-                            .col-xs-12.text-center
-                                a(href="https://twitter.com/_nikbelikov", target="_blank")
-                                    svg.icon-twitter
-                                        use(xlink:href="#icon-twitter")
-                                    div Twitter
-                            .col-xs-12.text-center
+                            social
+                            .col-xs-12.text-center.copyright
                                 p 2011-2015 &copy; nikbelikov.ru
 
         include includes/footer

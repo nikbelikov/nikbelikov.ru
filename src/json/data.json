@@ -1,0 +1,52 @@
+{
+  "magic": [
+    "HTML5 Jade Markdown Retina SVG Validation Polymer",
+    "CSS3 MCSS Animation LESS Sass Scss Postcss Autoprefixer",
+    "Javascript jQuery Grunt Gulp Angularjs Riot Requirejs Browserify",
+    "Git (GitFlow) Tower GitHub Bower npm",
+    "Adaptive iOS Android Bootstrap Foundation",
+    "OSX WebStorm Emmet MAMP Vagrant LiveReload",
+    "Win Ubuntu Mac VirtualBox IE.Modern",
+    "PhotoshopCC Sketch PngExpress CSSHat"
+  ],
+  "projects": [
+    "passgenius",
+    "eve",
+    "floc",
+    "letter",
+    "andylight",
+    "20century"
+  ],
+  "social": [
+    {
+      "name": "Photos",
+      "url": "http://instagram.com/nikbelikov",
+      "icon": "photos"
+    },
+    {
+      "name": "Characters",
+      "url": "http://proza.ru/avtor/nikbelikov",
+      "icon": "pen"
+    },
+    {
+      "name": "Books",
+      "url": "http://buknotes.ru/",
+      "icon": "book"
+    },
+    {
+      "name": "Code",
+      "url": "https://github.com/nikbelikov",
+      "icon": "github"
+    },
+    {
+      "name": "Blog",
+      "url": "https://medium.com/@nikbelikov",
+      "icon": "cup"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/_nikbelikov",
+      "icon": "twitter"
+    }
+  ]
+}
