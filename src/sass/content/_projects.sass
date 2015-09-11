@@ -45,6 +45,7 @@ body.view-projects
         right: 10px
         transition: right $animation-speed $animation-speed
         z-index: 2
+        transform: scale(1.0)
 
         &:before, &:after
             height: 3px
@@ -77,8 +78,8 @@ body.view-projects
     transition: transform $animation-speed, opacity $animation-speed, left 0s $animation-speed
     -webkit-overflow-scrolling: touch
 
-    @media (min-width: 1280px)
-        padding: 10px
+    @media (min-width: 900px)
+        padding: 0 5%
 
     img
         max-width: 100%
@@ -87,3 +88,6 @@ body.view-projects
         @media (min-width: 900px)
             width: 50%
             float: left
+
+    + .close-section
+        transform: scale(0)
