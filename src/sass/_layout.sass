@@ -1,7 +1,3 @@
-html, body
-    height: 100%
-    overflow: hidden
-
 ::selection
     background: $select-text-bg
     color: $select-text-color
@@ -10,11 +6,31 @@ html, body
     background: $select-text-bg
     color: $select-text-color
 
-.main-wrapper
-    min-width: $layout-min-width
-    max-width: $layout-max-width
-    margin: 0 auto
-    min-height: 100%
-    height: auto !important
+html, body
+    height: 100%
+    +mainfont(18px)
+    color: $color-text
+    line-height: 1.5rem
+
+    @media(min-width: $screen-lg-desktop)
+        font-size: 23px
+
+    @media(min-width: 1600px)
+        font-size: 28px
+
+body
+    background-position: center center
+    background-attachment: fixed
+    background-repeat: no-repeat
+    background-size: cover
     height: 100%
 
+.no-webp body
+    background-image: url(#{$img}/bg-main.jpg)
+
+.webp body
+    background-image: url(#{$img}/bg-main.webp)
+
+.content
+    position: relative
+    z-index: 1

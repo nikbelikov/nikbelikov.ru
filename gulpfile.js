@@ -3,7 +3,6 @@ var browserSync = require('browser-sync').create();
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
 var browserify = require('browserify');
-var riotify = require('riotify');
 var vinylSourceStream = require('vinyl-source-stream');
 var es = require('event-stream');
 var $ = require('gulp-load-plugins')();
@@ -11,6 +10,11 @@ var $ = require('gulp-load-plugins')();
 gulp.task('copy-bootstrap', function () {
     gulp.src('node_modules/bootstrap-sass/assets/**/*')
         .pipe(gulp.dest('src/sass/bootstrap'));
+});
+
+gulp.task('copy-font', function () {
+    gulp.src('src/font/*')
+        .pipe(gulp.dest('dist/font'));
 });
 
 gulp.task('serve', ['sass', 'browserify'], function() {
@@ -103,8 +107,7 @@ gulp.task('browserify', function() {
     var tasks = files.map(function(entry) {
         return browserify({
             entries: ['src/js/' + entry],
-            debug: true,
-            transform: [riotify]
+            debug: true
         })
             .bundle()
             .pipe(vinylSourceStream(entry))
@@ -117,5 +120,5 @@ gulp.task('browserify', function() {
     return es.merge.apply(null, tasks);
 });
 
-gulp.task('build', ['sass', 'csslibs', 'webp', 'uglify']);
+gulp.task('build', ['sass', 'csslibs', 'copy-font', 'webp', 'uglify']);
 gulp.task('default', ['serve']);
