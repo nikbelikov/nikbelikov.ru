@@ -98,7 +98,7 @@ gulp.task('webp', ['images'], function () {
 gulp.task('uglify', ['browserify'], function() {
     return gulp.src('dist/js/*.js')
         .pipe($.uglify({
-            preserveComments: 'some'
+            //preserveComments: 'some'
         }))
         .pipe(gulp.dest('dist/js'));
 });
