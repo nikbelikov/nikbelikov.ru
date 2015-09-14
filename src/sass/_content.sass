@@ -22,7 +22,7 @@ h1
         padding: 0
         animation: color-switch 60s infinite
 
-    @media(min-width: 1600px)
+    @media(min-width: $screen-largest)
         left: 20%
 
     span
@@ -52,7 +52,7 @@ a
         top: 5.35rem
         left: 15%
 
-    @media(min-width: 1600px)
+    @media(min-width: $screen-largest)
         left: 20%
 
     li
@@ -121,7 +121,7 @@ body.view-skills
                         $val: $i/20
                         transition-delay: #{$val}s
 
-    @media(min-width: 1600px)
+    @media(min-width: $screen-largest)
         .skills
             right: 8.33rem
             width: 40%

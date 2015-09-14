@@ -17,7 +17,7 @@ gulp.task('copy-font', function () {
         .pipe(gulp.dest('dist/font'));
 });
 
-gulp.task('serve', ['sass', 'browserify'], function() {
+gulp.task('serve', function() {
     browserSync.init({
         server: "./dist"
     });
@@ -52,12 +52,15 @@ gulp.task('sass', function () {
         .pipe($.rename({
             suffix: ".min"
         }))
-        //.pipe($.uncss({
-        //    html: ['dist/index.html'],
-        //    ignore: [
-        //        '/.*\.view\-.*/g'
-        //    ]
-        //}))
+        .pipe($.uncss({
+            html: ['dist/index.html'],
+            ignore: [
+                /body\.view.[a-zA-z\s\.:\-()0-9]*/,
+                '#bg',
+                '.no-webp body',
+                '.webp body'
+            ]
+        }))
         .pipe($.postcss(postcssPlugins))
         .pipe(gulp.dest('dist/css'))
         .pipe(browserSync.stream());
