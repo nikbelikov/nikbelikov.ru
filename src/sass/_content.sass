@@ -29,6 +29,9 @@ h1
         color: $color-text
         transition: color $animation-speed
 
+p
+    margin-bottom: 1rem
+
 a
     color: $color-hightlight
 
@@ -130,11 +133,19 @@ body.view-skills
     padding: 0 1.11rem 1.11rem
     text-align: center
 
+    a
+        margin-top: 0.5rem
+        display: block
+
     @media(min-width: $screen-lg-desktop)
         opacity: 0
         padding: 0
         position: absolute
         left: -9999px
+
+        a
+            margin-top: 0
+            display: inline
 
         p
             position: relative

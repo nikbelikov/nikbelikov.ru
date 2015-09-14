@@ -123,5 +123,5 @@ gulp.task('browserify', function() {
     return es.merge.apply(null, tasks);
 });
 
-gulp.task('build', ['sass', 'csslibs', 'copy-font', 'webp', 'uglify']);
+gulp.task('build', ['jade', 'sass', 'csslibs', 'copy-font', 'webp', 'uglify']);
 gulp.task('default', ['serve']);
