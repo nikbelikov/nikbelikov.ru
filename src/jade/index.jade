@@ -1,0 +1,39 @@
+doctype html
+
+html
+
+    include includes/head
+
+    body
+        main.content
+            canvas#bg
+            h1 Front
+                span end
+
+            ul.menu
+                li(data-class="skills") My skills
+                li(data-class="about") About me
+
+            .skills
+                p.text-center My skills:
+                p HTML5 Jade Markdown Retina SVG Validation Polymer
+                p CSS3 MCSS BEM Animation LESS Sass Scss Postcss Autoprefixer
+                p Javascript jQuery Grunt Gulp Angularjs Riot Requirejs Browserify
+                p Git (GitFlow) GitHub Bower npm
+                p Responsive iOS Android Bootstrap Foundation
+                p OSX WebStorm Emmet MAMP Vagrant LiveReload BrowserSync
+                p Design in Photoshop Creative Cloud
+
+            .about
+                p About me:
+                p You can find me at: <br/>
+                    a(href="https://twitter.com/_nikbelikov", target="_blank")  Twitter <br/>
+                    a(href="http://instagram.com/nikbelikov", target="_blank") Instagram <br/>
+                    a(href="https://medium.com/@nikbelikov", target="_blank") Medium
+                p I also like to: <br/>
+                    a(href="https://github.com/nikbelikov", target="_blank") Code some sh*t <br/>
+                    a(href="http://proza.ru/avtor/nikbelikov", target="_blank") Write stories <br/>
+                    a(href="http://buknotes.ru/", target="_blank") Read books
+
+            .copyright.text-center
+                p 2011-2015 (c) nikbelikov.ru

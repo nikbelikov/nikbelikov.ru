@@ -1,0 +1,191 @@
+@keyframes color-switch
+    0%
+        color: $color-hightlight
+    50%
+        color: $color-text
+    100%
+        color: $color-hightlight
+
+h1
+    padding: 2.22rem 0 0
+    margin: 0
+    text-align: center
+    font-size: 1.78rem
+    color: $color-hightlight
+    cursor: default
+    transition: color $animation-speed
+
+    @media(min-width: $screen-lg-desktop)
+        position: absolute
+        top: 5.35rem
+        left: 15%
+        padding: 0
+        animation: color-switch 60s infinite
+
+    @media(min-width: $screen-largest)
+        left: 20%
+
+    span
+        color: $color-text
+        transition: color $animation-speed
+
+p
+    margin-bottom: 1rem
+
+a
+    color: $color-hightlight
+
+    &:hover, &:focus
+        color: lighten($color-hightlight, 40%)
+        text-decoration: none
+
+    &:active
+        color: darken($color-hightlight, 20%)
+
+.menu
+    list-style: none
+    padding: 0
+    margin-top: 2rem
+    text-align: center
+    display: none
+
+    @media(min-width: $screen-lg-desktop)
+        display: inline-block
+        position: absolute
+        top: 5.35rem
+        left: 15%
+
+    @media(min-width: $screen-largest)
+        left: 20%
+
+    li
+        display: inline-block
+        margin: 0 1rem
+        cursor: pointer
+        transition: color $animation-speed
+        position: relative
+
+        @media(min-width: $screen-lg-desktop)
+            margin: 0 1.28rem 0 0
+
+        &:after
+            content: ''
+            display: block
+            width: 0
+            height: 1px
+            position: absolute
+            bottom: 1px
+            left: 50%
+            transform: translateX(-50%)
+            background: $color-text
+            transition: width $animation-speed, background $animation-speed
+
+        &:hover
+            color: $color-hightlight
+
+            &:after
+                width: 100%
+                background: $color-hightlight
+
+.skills
+    padding: 1.11rem
+    text-align: center
+
+    @media(min-width: $screen-lg-desktop)
+        opacity: 0
+        padding: 0
+        position: absolute
+        left: -9999px
+
+        p
+            position: relative
+            transform: translateX(-10px)
+            opacity: 0
+
+            &:first-child
+                display: none
+
+body.view-skills
+    @media(min-width: $screen-lg-desktop)
+        .skills
+            opacity: 1
+            width: 50%
+            left: auto
+            right: 3.33rem
+            top: 5.35rem
+
+            p
+                transform: translateX(0)
+                opacity: 1
+                transition: transform $animation-speed / 2, opacity $animation-speed / 2
+
+                @for $i from 1 through 9
+                    &:nth-child(#{$i})
+                        $val: $i/20
+                        transition-delay: #{$val}s
+
+    @media(min-width: $screen-largest)
+        .skills
+            right: 8.33rem
+            width: 40%
+
+.about
+    padding: 0 1.11rem 1.11rem
+    text-align: center
+
+    a
+        margin-top: 0.5rem
+        display: block
+
+    @media(min-width: $screen-lg-desktop)
+        opacity: 0
+        padding: 0
+        position: absolute
+        left: -9999px
+
+        a
+            margin-top: 0
+            display: inline
+
+        p
+            position: relative
+            transform: translateX(10px)
+            opacity: 0
+
+            &:first-child
+                display: none
+
+        a
+            transition: color $animation-speed * 2
+
+            &:hover
+                transition: color 0s
+
+body.view-about
+    @media(min-width: $screen-lg-desktop)
+        .about
+            opacity: 1
+            width: 50%
+            left: auto
+            right: 3.33rem
+            top: 5.35rem
+
+            p
+                transform: translateX(0)
+                margin-bottom: 1.66rem
+                opacity: 1
+                transition: transform $animation-speed / 2, opacity $animation-speed / 2
+
+                @for $i from 1 through 3
+                    &:nth-child(#{$i})
+                        $val: $i/20
+                        transition-delay: #{$val}s
+
+.copyright
+    font-size: 0.44rem
+
+    @media(min-width: $screen-lg-desktop)
+        position: fixed
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
