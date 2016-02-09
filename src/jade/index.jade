@@ -1,22 +1,22 @@
 doctype html
 
-html
+html(lang="en")
 
     include includes/head
 
     body
         main.content
             canvas#bg
-            h1 Front
+            h1(aria-hidden="true") Front
                 span end
 
             ul.menu
-                li(data-class="skills") My skills
-                li(data-class="about") About me
+                li(data-class="skills" aria-hidden="true") My skills
+                li(data-class="about" aria-hidden="true") About me
 
             .skills
                 p.text-center My skills:
-                p HTML5 Jade Markdown Retina SVG Validation Polymer ARIA
+                p HTML5 Jade Markdown Retina SVG ARIA Validation Polymer
                 p CSS3 MCSS BEM Flexbox Animation LESS Sass Scss Postcss Autoprefixer
                 p Javascript jQuery Grunt Gulp Angularjs Riot Requirejs Browserify
                 p Git (GitFlow) GitHub Bower npm
@@ -27,13 +27,16 @@ html
             .about
                 p About me:
                 p You can find me at: <br/>
-                    a(href="https://twitter.com/_nikbelikov", target="_blank")  Twitter <br/>
-                    a(href="http://instagram.com/nikbelikov", target="_blank") Instagram <br/>
-                    a(href="https://medium.com/@nikbelikov", target="_blank") Medium
+                    a(href="https://twitter.com/_nikbelikov", target="_blank" aria-label="Link to my Twitter") Twitter <br/>
+                    a(href="http://instagram.com/nikbelikov", target="_blank" aria-label="Link to my Instagram") Instagram <br/>
+                    a(href="https://medium.com/@nikbelikov", target="_blank" aria-label="Link to my blog") Medium
                 p I also like to: <br/>
-                    a(href="https://github.com/nikbelikov", target="_blank") Code some sh*t <br/>
-                    a(href="http://proza.ru/avtor/nikbelikov", target="_blank") Write stories <br/>
-                    a(href="http://buknotes.ru/", target="_blank") Read books
+                    a(href="https://github.com/nikbelikov", target="_blank" aria-label="Link to my github account") Code some sh*t <br/>
+                    a(href="http://proza.ru/avtor/nikbelikov", target="_blank" aria-label="Link to my stories") Write stories <br/>
+                    a(href="http://buknotes.ru/", target="_blank" aria-label="Link to my books blog") Read books
+                p My projects: <br/>
+                    a(href="http://passgenius.ru/", target="_blank" aria-label="Password generator for iPhone") passgenius.ru <br/>
+                    a(href="https://goo.gl/3xt6MV", target="_blank" aria-label="Google Chrome extension for web-developers") floc
 
-            .copyright.text-center
+            .copyright.text-center(aria-hidden="true")
                 p 2011-2016 (c) nikbelikov.ru
