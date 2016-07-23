@@ -1,5 +1,3 @@
-"use strict";
-
 require('browsernizr/test/img/webp');
 require('browsernizr');
 
