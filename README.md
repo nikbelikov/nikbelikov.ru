@@ -1,1 +1,1 @@
-Страничка Беликова Николая [nikbelikov.ru](http://nikbelikov.ru/) (c) 2011-2016
+Страничка Беликова Николая [nikbelikov.ru](http://nikbelikov.ru/) (c) 2011-2017
