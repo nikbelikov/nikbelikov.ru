@@ -54,13 +54,13 @@ var Sections = {
         var closest = [];
         var p1 = points[i];
         for (var j = 0; j < points.length; j++) {
-          var p2 = points[j]
+          var p2 = points[j];
           if (!(p1 == p2)) {
             var placed = false;
-            for (var k = 0; k < 5; k++) {
+            for (var l = 0; l < 5; l++) {
               if (!placed) {
-                if (closest[k] == undefined) {
-                  closest[k] = p2;
+                if (closest[l] == undefined) {
+                  closest[l] = p2;
                   placed = true;
                 }
               }
@@ -80,9 +80,8 @@ var Sections = {
       }
 
       // assign a circle to each point
-      for (var i in points) {
-        var c = new Circle(points[i], 2 + Math.random() * 2, 'rgba(255,255,255,0.3)');
-        points[i].circle = c;
+      for (var point in points) {
+        points[point].circle = new Circle(points[point], 2 + Math.random() * 2, 'rgba(255,255,255,0.3)');
       }
     }
 
@@ -157,7 +156,7 @@ var Sections = {
     }
 
     function shiftPoint(p) {
-      TweenLite.to(p, 1 + 1 * Math.random(), {
+      TweenLite.to(p, 1 + Math.random(), {
         x: p.originX - 50 + Math.random() * 100,
         y: p.originY - 50 + Math.random() * 100, ease: Circ.easeInOut,
         onComplete: function () {
