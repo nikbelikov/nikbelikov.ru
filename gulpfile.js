@@ -30,9 +30,7 @@ gulp.task('serve', function () {
 
 gulp.task('jade', function () {
   return gulp.src('src/jade/*.jade')
-    .pipe($.jade({
-      //pretty: "    "
-    }).on('error', function (err) {
+    .pipe($.jade().on('error', function (err) {
       console.log(err);
     }))
     .pipe(gulp.dest('dist'))
