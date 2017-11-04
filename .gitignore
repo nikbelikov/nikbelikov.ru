@@ -1,6 +1,9 @@
-.DS_Store
-.idea
-.sass-cache
-bower_components
+# Project dependencies
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
-dist
+.cache/
+# Build directory
+public/
+.DS_Store
+yarn-error.log
+/.idea
