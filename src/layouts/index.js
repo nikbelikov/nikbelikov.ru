@@ -10,7 +10,7 @@ const MainWrapper = ({ children }) => (
       title="nikbelikov.ru"
       meta={[
         { name: 'description', content: 'Nikolay Belikov\'s page' },
-        { name: 'keywords', content: 'frontend, developing, web, personal website, website' },
+        { name: 'keywords', content: 'frontend, developing, frontend developer, web, personal website, website' },
       ]}
     />
     <div>

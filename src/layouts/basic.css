@@ -638,15 +638,27 @@ body * {
 a {
   color: #db073d;
   text-decoration: none;
-  transition: color 1s;
-}
-
-a:hover {
-  color: #fdb1c5;
-  transition: color 0s;
 }
 
 a:active,
 a:focus {
   color: #780421;
+}
+
+@media(min-width: 900px) {
+  a {
+    color: #db073d;
+    text-decoration: none;
+    transition: color 1s;
+  }
+
+  a:hover {
+    color: #fdb1c5;
+    transition: color 0s;
+  }
+
+  a:active,
+  a:focus {
+    color: #780421;
+  }
 }
