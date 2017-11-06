@@ -1,0 +1,30 @@
+.content {
+  padding: 30px 10px;
+}
+
+.title {
+  color: #db073d;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  text-align: center;
+  display: none;
+}
+
+.skills {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.skillsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.copyright {
+  text-transform: uppercase;
+}
