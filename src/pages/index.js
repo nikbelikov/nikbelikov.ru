@@ -1,56 +1,58 @@
 import React from 'react';
 import styles from './index.module.css';
 
+const YEAR = '2017';
+
+const SOCIAL = [
+  { name: 'Twitter', url: 'https://twitter.com/_nikbelikov' },
+  { name: 'Instagram', url: 'http://instagram.com/nikbelikov' },
+  { name: 'Medium', url: 'https://medium.com/@nikbelikov' },
+  { name: 'Youtube', url: 'https://www.youtube.com/c/НиколайБеликов' },
+];
+
+const OTHER = [
+  { name: 'Code some sh*t', url: 'https://github.com/nikbelikov' },
+  { name: 'Write stories', url: 'http://proza.ru/avtor/nikbelikov' },
+  { name: 'Read books', url: 'http://buknotes.ru' },
+];
+
+const PROJECTS = [
+  { name: 'watchcards.ru', url: 'http://watchcards.ru/' },
+  { name: 'passgenius', url: 'http://nikbelikov.ru/passgenius' },
+  { name: 'floc extension', url: 'https://goo.gl/3xt6MV' },
+  { name: '20th century', url: 'https://github.com/nikbelikov/20th-century' },
+];
+
+const renderLinkItem = (collection) => (
+  <ul className={styles.list}>
+    {collection.map(item => {
+      return (
+        <li key={item.name}><a href={item.url} rel="noopener noreferrer" target="_blank">{item.name}</a></li>
+      );
+    })}
+  </ul>
+);
+
 const IndexPage = () => (
   <div className={styles.content}>
     <h1 className={styles.title}>Front<span className={styles.titleEnd}>end</span> developer</h1>
-    <ul className={styles.menu}>
-      <li>My skills</li>
-      <li>About me</li>
-    </ul>
-
-    <section className={styles.skills}>
-      <h2>My skills:</h2>
-      <ul className={styles.list}>
-        <li>ES2015 jQuery Grunt Gulp React ReactNative Redux ESLint Babel Browserify</li>
-        <li>CSS3 BEM Flexbox Grids LESS Sass Scss Postcss CssModules Autoprefixer</li>
-        <li>Responsive iOS Android Bootstrap Foundation Mobile-First Emails</li>
-        <li>HTML5 Jade Haml Markdown Retina SVG Canvas ARIA Validation</li>
-        <li>Git (GitFlow) GitHub npm yarn MacOS WebStorm Emmet Alfred</li>
-        <li>Adobe Photoshop CC & Sketch</li>
-      </ul>
-    </section>
 
     <section>
       <h2>About me:</h2>
-      <p>
+      <section>
         <h3 className={styles.listTitle}>You can find me at:</h3>
-        <ul className={styles.list}>
-          <li><a href="">Twitter</a></li>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Medium</a></li>
-          <li><a href="">Youtube</a></li>
-        </ul>
-      </p>
-      <p>
+        {renderLinkItem(SOCIAL)}
+      </section>
+      <section>
         <h3 className={styles.listTitle}>I also like to:</h3>
-        <ul className={styles.list}>
-          <li><a href="">Code some sh*t</a></li>
-          <li><a href="">Write stories</a></li>
-          <li><a href="">Read books</a></li>
-        </ul>
-      </p>
-      <p>
+        {renderLinkItem(OTHER)}
+      </section>
+      <section>
         <h3 className={styles.listTitle}>My projects:</h3>
-        <ul className={styles.list}>
-          <li><a href="">watchcards.ru</a></li>
-          <li><a href="">passgenius</a></li>
-          <li><a href="">floc extension</a></li>
-          <li><a href="">20th century</a></li>
-        </ul>
-      </p>
+        {renderLinkItem(PROJECTS)}
+      </section>
     </section>
-    <div className={styles.copyright}>2017 &copy; nikbelikov.ru</div>
+    <div className={styles.copyright}>{YEAR} &copy; nikbelikov.ru</div>
   </div>
 );
 
