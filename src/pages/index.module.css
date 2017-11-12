@@ -2,6 +2,23 @@
   padding: 20px 10px;
 }
 
+.canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.2;
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .canvas {
+    display: block;
+  }
+}
+
 .title {
   color: #db073d;
 }

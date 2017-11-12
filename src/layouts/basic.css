@@ -630,10 +630,16 @@ pre tt:after {
 
 body {
   height: 100%;
-  background: #000 url(../../src/images/bg-main.jpg) no-repeat fixed center center;
+  background: #000;
   background-size: cover;
   color: white;
   text-align: center;
+}
+
+@media(min-width: 900px) {
+  body {
+    background: #000 url(../../src/images/bg-main.jpg) no-repeat fixed center center;
+  }
 }
 
 body * {
