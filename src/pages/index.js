@@ -213,13 +213,12 @@ export default class IndexPage extends Component {
 
   render() {
     return (
-      <div className={styles.content}>
+      <section className={styles.content}>
         <canvas id="bg" className={styles.canvas} />
 
-        <h1 className={styles.title}>Front<span className={styles.titleEnd}>end</span> developer</h1>
+        <h1 className={styles.title}>Frontend developer</h1>
 
-        <section>
-          <h2>About me:</h2>
+        <div className={styles.blocks}>
           <section>
             <h3 className={styles.listTitle}>You can find me at:</h3>
             {renderLinkItem(SOCIAL)}
@@ -232,9 +231,9 @@ export default class IndexPage extends Component {
             <h3 className={styles.listTitle}>My projects:</h3>
             {renderLinkItem(PROJECTS)}
           </section>
-        </section>
+        </div>
         <div className={styles.copyright}>{YEAR} &copy; nikbelikov.ru</div>
-      </div>
+      </section>
     );
   }
 }
