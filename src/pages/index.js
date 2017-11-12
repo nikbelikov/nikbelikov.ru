@@ -48,9 +48,6 @@ export default class IndexPage extends Component {
       height = window.innerHeight;
       target = {x: width / 2, y: height / 2};
 
-      largeHeader = document.querySelector('body');
-      largeHeader.style.height = height + 'px';
-
       canvas = document.getElementById('bg');
       canvas.width = width;
       canvas.height = height;
@@ -108,7 +105,6 @@ export default class IndexPage extends Component {
       if (!('ontouchstart' in window)) {
         window.addEventListener('mousemove', mouseMove);
       }
-      window.addEventListener('scroll', scrollCheck);
       window.addEventListener('resize', resize);
     }
 
@@ -127,14 +123,9 @@ export default class IndexPage extends Component {
       target.y = posy;
     }
 
-    function scrollCheck() {
-      animateHeader = document.body.scrollTop <= height;
-    }
-
     function resize() {
       width = window.innerWidth;
       height = window.innerHeight;
-      largeHeader.style.height = height + 'px';
       canvas.width = width;
       canvas.height = height;
     }
