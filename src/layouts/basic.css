@@ -638,6 +638,7 @@ body {
 @media(min-width: 900px) {
   body {
     background: #000 url(../../src/images/bg-main.jpg) no-repeat fixed center center;
+    background-size: cover;
   }
 }
 
