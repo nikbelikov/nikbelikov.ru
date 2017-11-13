@@ -7,7 +7,7 @@ import './basic.css'
 const MainWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="nikbelikov.ru"
+      title="nikbelikov.ru - Frontend developer"
       meta={[
         { name: 'description', content: 'Nikolay Belikov\'s page' },
         { name: 'keywords', content: 'frontend, developing, frontend developer, web, personal website, website' },
