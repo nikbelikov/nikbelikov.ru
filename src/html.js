@@ -1,7 +1,5 @@
-import React from "react";
-import favicon16x16 from './images/favicons/favicon-16x16.png';
-import favicon32x32 from './images/favicons/favicon-32x32.png';
-import appleTouchIcon from './images/favicons/apple-touch-icon.png';
+import React from 'react';
+import logoImage from './images/favicon.png';
 
 let stylesStr;
 if (process.env.NODE_ENV === `production`) {
@@ -33,14 +31,11 @@ module.exports = class HTML extends React.Component {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           <meta name="description" content="Frontend developer"/>
-          <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon}/>
-          <link rel="icon" type="image/png" sizes="32x32" href={favicon32x32}/>
-          <link rel="icon" type="image/png" sizes="16x16" href={favicon16x16}/>
           <meta name="theme-color" content="#ffffff"/>
           <meta property="og:url" content="http://nikbelikov.ru/"/>
           <meta property="og:type" content="website"/>
           <meta property="og:title" content="nikbelikov.ru"/>
-          <meta property="og:image" content={appleTouchIcon}/>
+          <meta property="og:image" content={logoImage}/>
           <meta property="og:description" content="Frontend developer"/>
           <meta property="og:site_name" content="nikbelikov.ru"/>
           <meta name="apple-mobile-web-app-capable" content="yes"/>
