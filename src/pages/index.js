@@ -60,7 +60,7 @@ export default class IndexPage extends Component {
             {renderLinkItem(PROJECTS)}
           </section>
         </div>
-        <div className={styles.copyright}>{YEAR} &copy; nikbelikov.ru</div>
+        <div className={styles.copyright} aria-hidden="true">{YEAR} &copy; nikbelikov.ru</div>
       </section>
     );
   }
