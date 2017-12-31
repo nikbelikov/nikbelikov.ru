@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import canvasBg from '../shared/canvasBg';
 import styles from './index.module.css';
 
-const YEAR = '2017';
+const YEAR = '2018';
 
 const SOCIAL = [
   { name: 'Twitter', url: 'https://twitter.com/_nikbelikov' },
