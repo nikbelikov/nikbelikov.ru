@@ -8,13 +8,13 @@ const SOCIAL = [
   { name: 'Instagram', url: 'http://instagram.com/nikbelikov' },
   { name: 'Telegram', url: 'http://t.me/nikbelikov' },
   { name: 'Medium', url: 'https://medium.com/@nikbelikov' },
-  { name: 'Twitter', url: 'https://twitter.com/_nikbelikov' },
   { name: 'Mail', url: 'mailto:nikmail88@gmail.com' },
 ];
 
 const OTHER = [
   { name: 'Code some sh*t', url: 'https://github.com/nikbelikov' },
   { name: 'Write stories', url: 'http://proza.ru/avtor/nikbelikov' },
+  { name: 'Read books', url: 'http://buknotes.ru' },
   { name: 'Play guitar', url: 'https://goo.gl/HGf5gj' },
 ];
 
@@ -22,7 +22,6 @@ const PROJECTS = [
   { name: 'Floc extension', url: 'https://goo.gl/3xt6MV' },
   { name: 'Watchcards.ru', url: 'http://watchcards.ru/' },
   { name: '20th century', url: 'https://github.com/nikbelikov/20th-century' },
-  { name: 'Buknotes.ru', url: 'http://buknotes.ru' },
   { name: 'Passgenius', url: 'http://nikbelikov.ru/passgenius' },
 ];
 
