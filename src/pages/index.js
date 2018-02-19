@@ -8,7 +8,7 @@ const SOCIAL = [
   { name: 'Instagram', url: 'http://instagram.com/nikbelikov' },
   { name: 'Telegram', url: 'http://t.me/nikbelikov' },
   { name: 'Medium', url: 'https://medium.com/@nikbelikov' },
-  { name: 'Mail', url: 'mailto:nikmail88@gmail.com' },
+  { name: 'Mail', url: 'mailto:nikbelikov@me.com' },
 ];
 
 const OTHER = [
