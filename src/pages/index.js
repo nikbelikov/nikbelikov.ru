@@ -12,7 +12,6 @@ const SOCIAL = [
 ];
 
 const OTHER = [
-  { name: 'Code some sh*t', url: 'https://github.com/nikbelikov' },
   { name: 'Write stories', url: 'http://proza.ru/avtor/nikbelikov' },
   { name: 'Read books', url: 'http://buknotes.ru' },
   { name: 'Play guitar', url: 'https://goo.gl/HGf5gj' },
