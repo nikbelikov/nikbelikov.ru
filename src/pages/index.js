@@ -53,7 +53,7 @@ export default class IndexPage extends Component {
       <section className={styles.content}>
         <canvas id="bg" className={styles.canvas} />
 
-        <h1 className={styles.title}>Frontend developer</h1>
+        <h1 className={styles.title}>Frontend and iOS developer</h1>
 
         <div className={styles.blocks}>
           <section>
