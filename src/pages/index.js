@@ -7,22 +7,19 @@ const YEAR = '2018';
 const SOCIAL = [
   { name: 'Instagram', url: 'http://instagram.com/nikbelikov' },
   { name: 'Telegram', url: 'http://t.me/nikbelikov' },
+  { name: 'Youtube', url: 'https://www.youtube.com/channel/UCXk1dy5LeUWFEG2lsVgN_5A' },
   { name: 'Medium', url: 'https://medium.com/@nikbelikov' },
+  { name: 'Github', url: 'https://github.com/nikbelikov' },
   { name: 'Mail', url: 'mailto:nikbelikov@me.com' },
-];
-
-const OTHER = [
-  { name: 'Code some sh*t', url: 'https://github.com/nikbelikov' },
-  { name: 'Write stories', url: 'http://proza.ru/avtor/nikbelikov' },
-  { name: 'Read books', url: 'http://buknotes.ru' },
-  { name: 'Play guitar', url: 'https://goo.gl/HGf5gj' },
 ];
 
 const PROJECTS = [
   { name: 'Floc extension', url: 'https://goo.gl/3xt6MV' },
   { name: 'Watchcards.ru', url: 'http://watchcards.ru/' },
   { name: '20th century', url: 'https://github.com/nikbelikov/20th-century' },
+  { name: 'Buknotes.ru', url: 'http://buknotes.ru' },
   { name: 'Passgenius', url: 'http://nikbelikov.ru/passgenius' },
+  { name: 'Carcodes', url: 'https://itunes.apple.com/ru/app/carcodes/id1369007603?mt=8' },
 ];
 
 const renderLinks = (collection) => (
@@ -57,15 +54,11 @@ export default class IndexPage extends Component {
 
         <div className={styles.blocks}>
           <section>
-            <h3 className={styles.listTitle}>You can find me at:</h3>
+            <h3 className={styles.listTitle}>Social:</h3>
             {renderLinks(SOCIAL)}
           </section>
           <section>
-            <h3 className={styles.listTitle}>I also like to:</h3>
-            {renderLinks(OTHER)}
-          </section>
-          <section>
-            <h3 className={styles.listTitle}>My projects:</h3>
+            <h3 className={styles.listTitle}>Projects:</h3>
             {renderLinks(PROJECTS)}
           </section>
         </div>
