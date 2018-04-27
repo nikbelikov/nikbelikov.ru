@@ -4,7 +4,7 @@ import styles from './index.module.css';
 
 const YEAR = '2018';
 
-const SOCIAL = [
+const CONTACTS = [
   { name: 'Instagram', url: 'http://instagram.com/nikbelikov' },
   { name: 'Telegram', url: 'http://t.me/nikbelikov' },
   { name: 'Youtube', url: 'https://www.youtube.com/channel/UCXk1dy5LeUWFEG2lsVgN_5A' },
@@ -54,8 +54,8 @@ export default class IndexPage extends Component {
 
         <div className={styles.blocks}>
           <section>
-            <h3 className={styles.listTitle}>Social:</h3>
-            {renderLinks(SOCIAL)}
+            <h3 className={styles.listTitle}>Contacts:</h3>
+            {renderLinks(CONTACTS)}
           </section>
           <section>
             <h3 className={styles.listTitle}>Projects:</h3>
