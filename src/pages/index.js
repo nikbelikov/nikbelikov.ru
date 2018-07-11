@@ -15,9 +15,9 @@ const CONTACTS = [
 
 const PROJECTS = [
   { name: 'Floc extension', url: 'https://goo.gl/3xt6MV' },
-  { name: 'Watchcards.ru', url: 'http://watchcards.ru/' },
   { name: '20th century', url: 'https://github.com/nikbelikov/20th-century' },
   { name: 'Buknotes.ru', url: 'http://buknotes.ru' },
+  { name: 'Watchcards', url: 'https://itunes.apple.com/ru/app/watchcards/id1358392937?mt=8' },
   { name: 'Passgenius', url: 'http://nikbelikov.ru/passgenius' },
   { name: 'Carcodes', url: 'https://itunes.apple.com/ru/app/carcodes/id1369007603?mt=8' },
 ];
